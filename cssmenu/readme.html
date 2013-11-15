@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="menu_source/menu_jquery.js"></script>
+<style type="text/css">
+  body{padding:20px; font-size:14px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+  h2 {font-weight:bold; color:#000099; margin: 20px 0px 10px 0; font-size: 1.5em;}
+  p span {color:#006600; font-weight:bold; }
+  a, a:link, a:visited {color:#0000FF;}
+  textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 13px; font-family: Consolas,monospace;}
+  textarea.html {height: 300px;}
+  textarea.css {height: 50px;}
+  p {margin: 0 0 10px 0; line-height: 1.5; font-size: 1em;}
+  code, pre {font-family: Consolas,monospace; color: green;}
+  ol li {margin: 0 0 15px 0;}
+
+  .thirds {width: 30%; margin: 0 5% 0 0; float: left;}
+  .thirds.last {margin-right: 0; float: left;}   
+  .thirds textarea {height: 50px; font-size: .9em;}
+</style>
+
+
+</head>
+
+<body>
+
+
+<style type="text/css">#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+}
+#cssmenu ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li {
+  float: left;
+  padding: 0px;
+}
+#cssmenu li a {
+  background: #333333 url('menu_assets/images/seperator.png') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  color: #cccccc;
+}
+#cssmenu ul ul a {
+  color: #cccccc;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #2580a1 url('menu_assets/images/hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  background: url('menu_assets/images/sub_sep.png') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #2580a1 url('menu_assets/images/hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu p {
+  clear: left;
+}
+</style>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Widgets</span></a></li>
+         <li><a href='#'><span>Menus</span></a></li>
+         <li class='last'><a href='#'><span>Products</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Company</span></a>
+      <ul>
+         <li><a href='#'><span>About</span></a></li>
+         <li class='last'><a href='#'><span>Location</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div>
+
+<div style="clear:both; margin: 0 0 30px 0;">&nbsp;</div>
+
+<h2>Installation Instructions</h2>
+<p>These instructions will only work if you are installing your menu on a remote server or have a localhost server setup on your computer. For more help installing your menu, please visit the <a href="http://cssmenumaker.com/resources">Resources</a> section of our site. </p>
+<ol>
+   <li>Upload the <code>menu_source</code> folder to the root directory of your website. This is usually where your <code>index.html</code> or <code>index.php</code> file is.</li>
+   <li>Copy and paste the code below somewhere between the <code>&lt;head>&lt;/head></code> tags.
+	 	<textarea class='css'><link href="/menu_assets/styles.css" rel="stylesheet" type="text/css"></textarea>
+	  
+	 </li>
+   <li>Copy and paste the HTML below where ever you want your menu to show up.<textarea class='html'><div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Products</span></a>
+      <ul>
+         <li><a href='#'><span>Widgets</span></a></li>
+         <li><a href='#'><span>Menus</span></a></li>
+         <li class='last'><a href='#'><span>Products</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Company</span></a>
+      <ul>
+         <li><a href='#'><span>About</span></a></li>
+         <li class='last'><a href='#'><span>Location</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Contact</span></a></li>
+</ul>
+</div></textarea></li>
+</ol>
+
+
+<div class="thirds">
+<h2>Share the Love</h2>
+<p>If you are using our menus for free, then please consider giving us a link from your site. We have spent alot of time on these menus and would greatly appreciate a little credit.</p>
+<textarea readonly="readonly"><a href="http://cssmenumaker.com" title="Drop Down Menus">Drop Down Menu by CSSMenuMaker.com</a></textarea>
+</div>
+
+<div class="thirds">
+<h2>Menu Showcase</h2>
+<p>Every month we publish a blog post and a newsletter showcasing some of the sites that use our menus. 
+Our blog and newsletters are seen by thousands of people a day, so if your site is included in our showcase 
+you can expect some serious traffic.</p>
+<p>To submit your site visit the <a href="http://cssmenumaker.com/showcase">Menu Showcase</a> form.</p>
+</div>
+
+<div class="thirds last">
+<h2>Troubleshooting</h2>
+<p>Visit our <a href="http://cssmenumaker.com/resources">Resources</a> section more installation guides and troubleshooting materials.</p>
+</div>
+
+</body>
+</html>
