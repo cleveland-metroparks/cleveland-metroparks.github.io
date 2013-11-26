@@ -17,8 +17,8 @@
 
         encodedUrl = location.search;
         var replace = /\?/g;
-//        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
-		var decodedUrl = encodedUrl.split(',')
+        var qmarkstrip = encodedUrl.replace(replace, "")
+		var decodedUrl = qmarkstrip.split(',')
 /*        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
 		// Thanks to http://stackoverflow.com/questions/18992537/setting-floating-points-in-google-graph-charts
         // Create the data table.
