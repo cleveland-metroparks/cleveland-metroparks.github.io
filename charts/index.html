@@ -17,7 +17,7 @@
 
         encodedUrl = location.search;
         var replace = /\?/g;
-        var topping = encodedUrl.replace(replace, "");
+        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
 
         // Create the data table.
         var data = new google.visualization.DataTable();
