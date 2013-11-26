@@ -18,7 +18,7 @@
         encodedUrl = location.search;
         var replace = /\?/g;
         var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
-		// thanks to http://stackoverflow.com/questions/18992537/setting-floating-points-in-google-graph-charts
+		// Thanks to http://stackoverflow.com/questions/18992537/setting-floating-points-in-google-graph-charts
         // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Land Cover');
