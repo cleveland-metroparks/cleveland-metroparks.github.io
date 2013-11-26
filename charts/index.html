@@ -15,24 +15,36 @@
       // draws it.
       function drawChart() {
 
+	    // grab info from the search string
         encodedUrl = location.search;
+		// get rid of the question mark
         var replace = /\?/g;
         var qmarkstrip = encodedUrl.replace(replace, "")
+		// convert to array of values
 		var decodedUrl = qmarkstrip.split(',')
-/*        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
+		// encode values as float
 		// Thanks to http://stackoverflow.com/questions/18992537/setting-floating-points-in-google-graph-charts
         // Create the data table.
+        var tc = Math.round(decodedUrl[0] * 100) / 100;
+		var gs = Math.round(decodedUrl[1] * 100) / 100;
+		var bs = Math.round(decodedUrl[2] * 100) / 100;
+        var h2o = Math.round(decodedUrl[3] * 100) / 100;
+		var bd = Math.round(decodedUrl[4] * 100) / 100;
+		var rr = Math.round(decodedUrl[5] * 100) / 100;
+		var op = Math.round(decodedUrl[6] * 100) / 100;
+		// create visualization
         var data = new google.visualization.DataTable();
+		// add us some data
         data.addColumn('string', 'Land Cover');
         data.addColumn('number', 'Acres');
         data.addRows([
-          ['Tree Canopy', 3],
-          ['Grass/Shrub', 1],
-          ['Bare Soil', topping],
-          ['Water', 1],
-          ['Building', 2],
-		  ['Roads & Rail', 2],
-		  ['Other Pavement', 2]
+          ['Tree Canopy', tc],
+          ['Grass/Shrub', gs],
+          ['Bare Soil', bs],
+          ['Water', h2o],
+          ['Building', bd],
+		  ['Roads & Rail', rr],
+		  ['Other Pavement', op]
         ]);
 
         // Set chart options
@@ -43,8 +55,7 @@
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
-		*/
-		document.write(decodedUrl[0]);
+
       }
     </script>
   </head>
