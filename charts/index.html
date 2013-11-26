@@ -17,7 +17,9 @@
 
         encodedUrl = location.search;
         var replace = /\?/g;
-        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
+//        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
+		var decodedUrl = encodedUrl.split(',')
+/*        var topping = Math.round(encodedUrl.replace(replace, "") * 100) / 100;
 		// Thanks to http://stackoverflow.com/questions/18992537/setting-floating-points-in-google-graph-charts
         // Create the data table.
         var data = new google.visualization.DataTable();
@@ -41,6 +43,8 @@
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
+		*/
+		document.write(decodedUrl[0]);
       }
     </script>
   </head>
