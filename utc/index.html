@@ -46,8 +46,11 @@
 
           // you can get the native map to work with it
           // depending if you use google maps or leaflet
-          map = vis.getNativeMap();
-
+          ////map = vis.getNativeMap();
+          L.tileLayer('http://c.tile.stamen.com/toner-background/{Z}/{X}/{Y}.png', {
+          			maxZoom: 18,
+          			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+          		}).addTo(map);
           // now, perform any operations you need
           // map.setZoom(3)
           // map.setCenter(new google.maps.Latlng(...))
