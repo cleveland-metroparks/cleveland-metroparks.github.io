@@ -31,9 +31,10 @@
           zoom: 11
         });
 //http://tile.stamen.com/toner-lite/12/655/1583.png
-        L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+        L.tileLayer('http://tile.stamen.com/toner-litey/{z}/{x}/{y}.png', {
           attribution: 'Stamen',
-		  maxZoom: 15
+		  maxZoom: 15,
+		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
         }).addTo(map);
 
         cartodb.createLayer(map, 'http://cleveland-metroparks.cartodb.com/api/v2/viz/05af5a7c-668d-11e3-8914-cb7f69afe66f/viz.json')
