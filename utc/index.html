@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Easy example | CartoDB.js</title>
+    <title>Leaflet example | CartoDB.js</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
@@ -12,55 +12,55 @@
         margin: 0;
       }
     </style>
-
     <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
+      <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.ie.css" />
     <![endif]-->
   </head>
   <body>
     <div id="map"></div>
-
+    
     <!-- include cartodb.js library -->
     <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
 
     <script>
       function main() {
-        cartodb.createVis('map', 'http://cleveland-metroparks.cartodb.com/api/v2/viz/05af5a7c-668d-11e3-8914-cb7f69afe66f/viz.json', {
-            shareable: true,
-            title: true,
-            description: true,
-            search: true,
-            tiles_loader: true,
-            center_lat: 41.460,
-            center_lon: -81.67,
-            zoom: 11
-        })
-        .done(function(vis, layers) {
-          // layer 0 is the base layer, layer 1 is cartodb layer
-          // setInteraction is disabled by default
-          layers[1].setInteraction(true);
-          layers[1].on('featureOver', function(e, pos, latlng, data) {
+        var map = new L.Map('map', {
+          zoomControl: false,
+          center: [41.460, -81.67],
+          zoom: 11
+        });
+
+        L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
+          attribution: 'Stamen'
+        }).addTo(map);
+
+        cartodb.createLayer(map, 'http://cleveland-metroparks.cartodb.com/api/v2/viz/05af5a7c-668d-11e3-8914-cb7f69afe66f/viz.json')
+         .addTo(map)
+         .on('done', function(layer) {
+
+          layer.setInteraction(true);
+
+          layer.on('featureOver', function(e, pos, latlng, data) {
             cartodb.log.log(e, pos, latlng, data);
           });
 
-          // you can get the native map to work with it
-          // depending if you use google maps or leaflet
-          ////map = vis.getNativeMap();
-          L.tileLayer('http://c.tile.stamen.com/toner-background/{Z}/{X}/{Y}.png', {
-          			maxZoom: 18,
-          			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
-          		}).addTo(map);
-          // now, perform any operations you need
-          // map.setZoom(3)
-          // map.setCenter(new google.maps.Latlng(...))
-        })
-        .error(function(err) {
-          console.log(err);
+          layer.on('error', function(err) {
+            cartodb.log.log('error: ' + err);
+          });
+        }).on('error', function() {
+          cartodb.log.log("some error occurred");
         });
+
+        L.tileLayer('http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png', {
+          attribution: 'Stamen'
+        }).addTo(map);
+		
       }
 
+      // you could use $(window).load(main);
       window.onload = main;
     </script>
   </body>
 </html>
+
