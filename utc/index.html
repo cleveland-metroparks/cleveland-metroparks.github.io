@@ -30,8 +30,8 @@
           center: [41.460, -81.67],
           zoom: 11
         });
-
-        L.tileLayer('http://tile.stamen.com/toner/{z}/{x}/{y}.png', {
+//http://tile.stamen.com/toner-lite/12/655/1583.png
+        L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
           attribution: 'Stamen'
         }).addTo(map);
 
@@ -54,7 +54,8 @@
 
         L.tileLayer('http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png', {
           attribution: 'Stamen'
-        }).addTo(map);
+        }).addTo(map)
+		.bringToFront();;
 		
       }
 
