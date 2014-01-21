@@ -28,10 +28,12 @@
       function main() {
         var map = new L.Map('map', {
           zoomControl: false,
-//          center: [41.460, -81.67],
-          center: [45.528, -122.680],          
+          center: [41.460, -81.67],
+//          center: [45.528, -122.680],          
           zoom: 11
         });
+
+
         L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
           attribution: 'Stamen',
 		  maxZoom: 15,
