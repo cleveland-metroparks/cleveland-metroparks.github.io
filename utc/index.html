@@ -63,9 +63,10 @@
 	L.esri.featureLayer("http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Parks_pdx/FeatureServer/0", {
 	     	style: function (feature) {
           	return { color: "#70ca49", weight: 2 };
-        	},
+        	}
+        	/*,
         	onEachFeature: function (feature, layer) {
-          	layer.bindPopup(L.Util.template(template, feature.properties));
+          	layer.bindPopup(L.Util.template(template, feature.properties));*/
         	}
       	}).addTo(map);
 		
