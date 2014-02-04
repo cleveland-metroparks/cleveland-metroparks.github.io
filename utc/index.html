@@ -44,7 +44,8 @@
 		  minZoom: 17,
 		  maxZoom: 17,		  
 		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
-        }).addTo(map);
+        }).addTo(map)
+		  .bringToFront();
 		
         L.tileLayer('http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/UTC_Parcel_Existing/MapServer/WMTS/tile/1.0.0/PLAN_TILED_Cuyahoga_LandCover_2011_CPC/default/GoogleMapsCompatible/{z}/{y}/{x}', {
           attribution: 'Not Stamen',
@@ -74,18 +75,6 @@
           attribution: 'Stamen'
         }).addTo(map)
 		.bringToFront();
-
-		//http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/UTC_Parcel_Existing/MapServer
-		
-		L.esri.featureLayer("http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Parks_pdx/FeatureServer/0", {
-	     	style: function (feature) {
-          	return { color: "#70ca49", weight: 2 };
-        	} 
-        	/*,
-        	onEachFeature: function (feature, layer) {
-          	layer.bindPopup(L.Util.template(template, feature.properties));
-        	}*/
-      	}).addTo(map);
 		
       }
 
