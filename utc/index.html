@@ -33,12 +33,20 @@
           zoom: 11
         });
 
-
         L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
           attribution: 'Stamen',
 		  maxZoom: 15,
 		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
         }).addTo(map);
+		
+        L.tileLayer('http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/Cuyahoga_LandCover_2011_CPC/MapServer/WMTS/tile/1.0.0/PLAN_TILED_Cuyahoga_LandCover_2011_CPC/default/GoogleMapsCompatible/{z}/{y}/{x}', {
+          attribution: 'Not Stamen',
+		  minZoom: 16,
+		  maxZoom: 18,		  
+		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
+        }).addTo(map);
+		
+		
 
         cartodb.createLayer(map, 'http://cleveland-metroparks.cartodb.com/api/v2/viz/05af5a7c-668d-11e3-8914-cb7f69afe66f/viz.json')
          .addTo(map)
@@ -62,10 +70,12 @@
         }).addTo(map)
 		.bringToFront();
 
-	L.esri.featureLayer("http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Parks_pdx/FeatureServer/0", {
+		//http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/UTC_Parcel_Existing/MapServer
+		
+		L.esri.featureLayer("http://services.arcgis.com/rOo16HdIMeOBI4Mb/arcgis/rest/services/Parks_pdx/FeatureServer/0", {
 	     	style: function (feature) {
           	return { color: "#70ca49", weight: 2 };
-        	}
+        	} 
         	/*,
         	onEachFeature: function (feature, layer) {
           	layer.bindPopup(L.Util.template(template, feature.properties));
