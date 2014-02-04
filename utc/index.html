@@ -52,8 +52,8 @@
 		  minZoom: 16,
 		  maxZoom: 16,		  
 		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
-        }).addTo(map);		
-
+        }).addTo(map);
+		
         cartodb.createLayer(map, 'http://cleveland-metroparks.cartodb.com/api/v2/viz/05af5a7c-668d-11e3-8914-cb7f69afe66f/viz.json')
          .addTo(map)
          .on('done', function(layer) {
