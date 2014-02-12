@@ -33,7 +33,7 @@
           zoom: 11,
         });
 
-        L.tileLayer('http://tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
+        L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
           attribution: 'Stamen',
 		  maxZoom: 15,
 		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
@@ -79,9 +79,9 @@
           cartodb.log.log("some error occurred");
         });
 
-        L.tileLayer('http://tile.stamen.com/toner-labels/{z}/{x}/{y}.png', {
+        L.tileLayer('http://{s}.tile.stamen.com/toner-labels/{z}/{x}/{y}.png', {
           attribution: 'Stamen',
-		  maxZoom: 17
+		  maxZoom: 18
         }).addTo(map)
 		.bringToFront();
       }
