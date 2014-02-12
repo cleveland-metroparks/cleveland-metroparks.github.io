@@ -42,11 +42,19 @@
         L.tileLayer('http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/Cuyahoga_LandCover_2011_CPC/MapServer/WMTS/tile/1.0.0/PLAN_TILED_Cuyahoga_LandCover_2011_CPC/default/GoogleMapsCompatible/{z}/{y}/{x}', {
           attribution: 'Not Stamen',
 		  minZoom: 17,
-		  maxZoom: 17,		  
+		  maxZoom: 18,		  
 		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
         }).addTo(map)
 		  .bringToFront();
-		
+
+        L.tileLayer('http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/UTC_Parcel_Only/MapServer/WMTS/tile/1.0.0/PLAN_TILED_UTC_Parcel_Only/default/GoogleMapsCompatible/{z}/{y}/{x}', {
+          attribution: 'Not Stamen',
+		  minZoom: 17,
+		  maxZoom: 18,		  
+		  errorTileUrl: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStyzXdR5V4U_BF_DOOBAl3eEJGeNw54O40_Gxj5nXRMc-49Ega0A'
+        }).addTo(map)
+		  .bringToFront();
+		  
         L.tileLayer('http://maps.cuyahogacounty.us/arcgis/rest/services/PLAN_TILED/UTC_Parcel_Existing/MapServer/WMTS/tile/1.0.0/PLAN_TILED_Cuyahoga_LandCover_2011_CPC/default/GoogleMapsCompatible/{z}/{y}/{x}', {
           attribution: 'Not Stamen',
 		  minZoom: 16,
