@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ORAM Form</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		html, body, #map {
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<oram>
+	
+	  <site>
+	    <div>
+	      <label for="sitename">Site Name:</label>
+	      <input type="text" name="sitename" value="" id="sitename" placeholder="Fowles Marsh" required/>          
+	    </div>
+	    <div>
+	      <label for="siteid">Site ID:</label>
+	      <input type="text" name="siteid" value="" id="siteid" placeholder="Site ID" required/>
+	    </div>
+	    <div>
+	      <label for="date">Date:</label>
+	      <input type="date" name="date" value="" id="date" required/>
+	    </div>
+	    <div>
+	      <label for="recorder">Data Recorded By:</label>
+	      <input type="text" name="recorder" value="" id="recorder" list=personlist required>
+	      <datalist id="personlist">
+	      	<option value="Bryan">
+	      	<option value="Ryan">
+	      	<option value="Palindrome">
+	      </datalist>
+	    </div>
+	  </site>
+	  
+	  <metric1>
+	    <div>
+	      <label for="wetlandarea">Wetland Area:</label> <br/>
+	      <input type="radio" name="wetlandarea" value="6">&gt;50 acres<br />
+	      <input type="radio" name="wetlandarea" value="5">25 to &lt;50 acres<br />
+	      <input type="radio" name="wetlandarea" value="4">10 to &lt;25 acres<br />	      
+	      <input type="radio" name="wetlandarea" value="3">3 to &lt;10 acres<br />
+	      <input type="radio" name="wetlandarea" value="2">0.3 to &lt;3 acres<br />
+	      <input type="radio" name="wetlandarea" value="1">0.1 to &lt;0.33 acres<br />	      
+	      <input type="radio" name="wetlandarea" value="0">&lt 0.1;50 acres<br />	      	      
+	    </div>
+	  </metric1>
+
+	  <metric2>
+	    <div>
+	      <label for="bufferwidth">Calculate average buffer width:</label> <br/>
+	      <input type="radio" name="bufferwidth" value="7">WIDE-Buffers average 50m (164ft) or more around wetland perimeter<br />
+	      <input type="radio" name="bufferwidth" value="4">MEDIUM-Buffers average 25 to &lt; 50m (82 to &lt;164ft) around wetland perimeter<br />
+	      <input type="radio" name="bufferwidth" value="1">NARROW-Buffers average 10 to &lt; 25m (32 to &lt;82ft) around wetland perimeter<br />	      
+	      <input type="radio" name="bufferwidth" value="0">VERY NARROW-Buffers average &lt;10m (&lt;32ft) around wetland perimeter<br />
+	    </div>
+	    <div>
+	      <label for="landuse">Intensity of surrounding land use</label> <br/>
+	      <input type="radio" name="landuse" value="7">VERY LOW<br />
+	      <input type="radio" name="landuse" value="6"><br />
+	      <input type="radio" name="landuse" value="5">LOW<br />	      
+	      <input type="radio" name="landuse" value="4"><br />
+	      <input type="radio" name="landuse" value="3">MODERATELY HIGH<br />
+	      <input type="radio" name="landuse" value="2"><br />
+	      <input type="radio" name="landuse" value="1">HIGH<br />	      
+	    </div>
+	  </metric2>
+
+	</oram>
+
+	<script>
+	</script>
+</body>
+</html>
