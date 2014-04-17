@@ -44,22 +44,25 @@
       <ul id="maplinks">
 	  <!-- These links serve two purposes: zoom to streams on click and to open their respective DIVs simultaneously -->
 	  <!-- the javascript in the href allows the links to open the DIVs; the rest of the code is found in behi.js line 143 -->
-		 <li><a href="javascript:tabSwitch_2(1, 11, 'tab_', 'content_');" id="tab_1">BEHI Intro</a></li>
-		 <li><a href="javascript:tabSwitch_2(2, 11, 'tab_', 'content_');" id="tab_2">BEHI Totals</a></li>
-		 <li><a href="javascript:tabSwitch_2(3, 11, 'tab_', 'content_');" id="tab_3" data-position='41.3745,-81.833038'>Abram Creek</a></li>
-         <li><a href="javascript:tabSwitch_2(4, 11, 'tab_', 'content_');" id="tab_4" data-position='41.5047,-81.495'>Euclid Creek (Acacia)</a></li>
-		 <li><a href="javascript:tabSwitch_2(5, 11, 'tab_', 'content_');" id="tab_5" data-position='41.421,-81.6385'>Mill Creek</a></li>
-         <li><a href="javascript:tabSwitch_2(6, 11, 'tab_', 'content_');" id="tab_6" data-position='41.3752,-81.5513'>Deerlick Run</a></li>
-         <li><a href="javascript:tabSwitch_2(7, 11, 'tab_', 'content_');" id="tab_7" data-position='41.3543,-81.583'>Sagamore Creek</a></li>
-         <li><a href="javascript:tabSwitch_2(8, 11, 'tab_', 'content_');" id="tab_8" data-position='41.4197,-81.4244'>Sulphur Springs</a></li>
-         <li><a href="javascript:tabSwitch_2(9, 11, 'tab_', 'content_');"id="tab_9" data-position='41.279871,-81.756'>Timberlane</a></li>
-         <li class='last'><a href="javascript:tabSwitch_2(10, 11, 'tab_', 'content_');"id="tab_10" data-position='41.383056,-81.696053'>West Creek</a></li>
+		 <li><a href="javascript:tabSwitch_2(1, 12, 'tab_', 'content_');" id="tab_1">BEHI Intro</a></li>
+		 <li><a href="javascript:tabSwitch_2(2, 12, 'tab_', 'content_');" id="tab_2">BEHI Totals</a></li>
+		 <li><a href="javascript:tabSwitch_2(3, 12, 'tab_', 'content_');" id="tab_3" data-position='41.3745,-81.833038'>Abram Creek</a></li>
+		 <li><a href="javascript:tabSwitch_2(4, 12, 'tab_', 'content_');" id="tab_4" data-position='41.3752,-81.5513'>Deerlick Run</a></li>
+         <li><a href="javascript:tabSwitch_2(5, 12, 'tab_', 'content_');" id="tab_5" data-position='41.5047,-81.495'>Euclid Creek (Acacia)</a></li>
+		 <li><a href="javascript:tabSwitch_2(6, 12, 'tab_', 'content_');" id="tab_6" data-position='41.421,-81.6385'>Mill Creek</a></li>
+         <li><a href="javascript:tabSwitch_2(7, 12, 'tab_', 'content_');" id="tab_7" data-position='41.3543,-81.583'>Sagamore Creek</a></li>
+		 <li><a href="javascript:tabSwitch_2(8, 12, 'tab_', 'content_');" id="tab_8" data-position='41.297,-81.584'>Snowville</a></li>
+         <li><a href="javascript:tabSwitch_2(9, 12, 'tab_', 'content_');" id="tab_9" data-position='41.4197,-81.4244'>Sulphur Springs</a></li>
+         <li><a href="javascript:tabSwitch_2(10, 12, 'tab_', 'content_');"id="tab_10" data-position='41.279871,-81.756'>Timberlane</a></li>
+         <li class='last'><a href="javascript:tabSwitch_2(11, 11, 'tab_', 'content_');"id="tab_11" data-position='41.383056,-81.696053'>West Creek</a></li>
       </ul>
    </li>
-   <li class='has-sub'><a href="javascript:tabSwitch_2(11, 11, 'tab_', 'content_');"id="tab_11"><span>Score-Value Charts</span></a></li>
+   <li class='has-sub'><a href="javascript:tabSwitch_2(12, 12, 'tab_', 'content_');"id="tab_12"><span>Score-Value Charts</span></a></li>
 </ul>
 </div>
-
+	
+	<!-- The content divs hold the information for each tab including the tables and graphs -->
+	<!-- All the charts and tables were created using the google charts API -->
 	<div id="content_1" class="content">
 		<h1>Bank Erosion Hazard Index (BEHI)</h1>
 		
@@ -118,8 +121,7 @@
 			<p>sen@clevelandmetroparks.com</p>
 		</div>
 		
-	</div>
-	
+	</div>	
 	
 	<div id="content_2" class="content">
 	<h1>BEHI Totals</h1>
@@ -139,10 +141,11 @@
 						['Euclid Creek (Acacia)', 4763.83, 24],
 						['Mill Creek', 11312.53, 13],
 						['Sagamore Creek', 21494.23, 58],
+						['Snowville', 19977.46, 83]
 						['Sulphur Springs', 16567.42, 69],
 						['Timberlane', 8246.61, 53],
 						['West Creek', 22966.92, 60],
-						['TOTAL', 108054.24, 339]
+						['TOTAL', 127435.85, 422]
 					]);
 
 					var table = new google.visualization.Table(document.getElementById('table_totals'));
@@ -164,7 +167,7 @@
 								data.addColumn('number', 'Length');
 								data.addColumn('number', 'LengthMax');
 
-								data.addRows(8);
+								data.addRows(9);
 								data.setValue(0, 0, 'Abram Creek');
 								data.setValue(0, 1, 12264.52);
 								data.setValue(0, 2, 0);
@@ -185,17 +188,21 @@
 								data.setValue(4, 1, 21494.23);
 								data.setValue(4, 2, 0);
 
-								data.setValue(5, 0, 'Sulphur Springs');
-								data.setValue(5, 1, 16567.42);
+								data.setValue(5, 0, 'Snowville');
+								data.setValue(5, 1, 19977.46);
 								data.setValue(5, 2, 0);
 
-								data.setValue(6, 0, 'Timberlane');
-								data.setValue(6, 1, 8246.61);
+								data.setValue(6, 0, 'Sulphur Springs');
+								data.setValue(6, 1, 16567.42);
 								data.setValue(6, 2, 0);
 
-								data.setValue(7, 0, 'West Creek');
-								data.setValue(7, 1, 22966.92);
+								data.setValue(7, 0, 'Timberlane');
+								data.setValue(7, 1, 8246.61);
 								data.setValue(7, 2, 0);
+
+								data.setValue(8, 0, 'West Creek');
+								data.setValue(8, 1, 22966.92);
+								data.setValue(8, 2, 0);
 
 								var chart = new google.visualization.BarChart(document.getElementById('bargraph_totals'));
 					  chart.draw(data, {isStacked: true, width: 400, height: 240,
@@ -216,12 +223,12 @@
       				function drawChart() {
         			var data = google.visualization.arrayToDataTable([
           				['Rank', 'Length'],
-          				['Extreme', 784.01],
-          				['Very High', 1292.33],
-          				['High', 6717],
-          				['Moderate', 6680.50],
-          				['Low', 1447.36],
-          				['Rank Not Needed', 68166.12],
+          				['Extreme', 1458.79],
+          				['Very High', 3386.37],
+          				['High', 13270.79],
+          				['Moderate', 10732.12],
+          				['Low', 2140.04],
+          				['Rank Not Needed', 127435.85],
         			]);
 
         			var options = {
@@ -311,6 +318,70 @@
 	</div>
 	
 	<div id="content_4" class="content">
+		<h1>Deerlick Run</h1>
+		<table class="total_table">
+			<tr><td>Total Length Assessed</td><td class="length_column">10,438.18 ft</td></tr>
+		</table>
+		
+		<div id="table_deerlick"></div>
+		    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+				<script type='text/javascript'>
+				  google.load('visualization', '1', {packages:['table']});
+				  google.setOnLoadCallback(drawTable);
+				  function drawTable() {
+					var data = new google.visualization.DataTable();
+					data.addColumn('string', 'Rank');
+					data.addColumn('number', 'Length (ft)');
+					data.addColumn('number', 'Percent (%)');
+					data.addRows([
+						['Extreme', 151.68, {v: 1.5, f: '1.5%'}],
+						['Very High', 173.12, {v: 1.7, f: '1.7%'}],
+						['High', 1189.55, {v: 11.4, f: '11.4%'}],
+						['Moderate', 463.55, {v: 4.4, f: '4.4%'}],
+						['Low', 308.62, {v: 3.0, f: '3.0%'}],
+						['Rank Not Needed', 8151.66, {v: 78.1, f: '78.1%'}]
+					]);
+
+					var table = new google.visualization.Table(document.getElementById('table_deerlick'));
+					table.draw(data, {showRowNumber: true});
+					}
+    			</script>
+		
+		<h3>Length by Rank</h3>
+		<div id="piechart_deerlick" style="width: 90%; height: auto; float:left; margin: 5%;"></div>
+		    <script type="text/javascript">
+      			google.load("visualization", "1", {packages:["corechart"]});
+      			google.setOnLoadCallback(drawChart);
+      				function drawChart() {
+        				var data = google.visualization.arrayToDataTable([
+          					['Rank', 'Length'],
+          					['Extreme', 151.68],
+          					['Very High', 173.12],
+          					['High', 1189.55],
+          					['Moderate', 463.55],
+          					['Low', 308.62],
+          					['Rank Not Needed', 8151.66],
+        				]);
+
+        			var options = {
+          			chartArea: {left: '20px', right: '20px', width: '90%', height: '90%'},
+          			pieSliceText: 'none',
+          				slices: {  0: {offset: 0.0, color: '#5D150F'},
+                     		 1: {offset: 0.0, color: '#FE0000'},
+                     		 2: {offset: 0.0, color: '#F9AC10'},
+                     		 3: {offset: 0.0, color: '#FEFE00'},
+                     		 4: {offset: 0.0, color: '#00BE00'},
+                     		 5: {offset: 0.0, color: '#C4C4C4'},
+          					},
+        				};
+
+        			var chart = new google.visualization.PieChart(document.getElementById('piechart_deerlick'));
+        			chart.draw(data, options);
+      			}
+    		</script>
+	</div>
+	
+	<div id="content_5" class="content">
 		<h1>Euclid Creek (Acacia)</h1>
 		<table class="total_table">
 			<tr><td>Total Length Assessed</td><td class="length_column">4,763.83 ft</td></tr>
@@ -374,7 +445,7 @@
     		</script>
 	</div>
 	
-	<div id="content_5" class="content">
+	<div id="content_6" class="content">
 		<h1>Mill Creek</h1>
 				<table class="total_table">
 			<tr><td>Total Length Assessed</td><td class="length_column">11,312.53 ft</td></tr>
@@ -434,70 +505,6 @@
 
         		var chart = new google.visualization.PieChart(document.getElementById('piechart_millcreek'));
         		chart.draw(data, options);
-      			}
-    		</script>
-	</div>
-	
-	<div id="content_6" class="content">
-		<h1>Deerlick Run</h1>
-		<table class="total_table">
-			<tr><td>Total Length Assessed</td><td class="length_column">10,438.18 ft</td></tr>
-		</table>
-		
-		<div id="table_deerlick"></div>
-		    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
-				<script type='text/javascript'>
-				  google.load('visualization', '1', {packages:['table']});
-				  google.setOnLoadCallback(drawTable);
-				  function drawTable() {
-					var data = new google.visualization.DataTable();
-					data.addColumn('string', 'Rank');
-					data.addColumn('number', 'Length (ft)');
-					data.addColumn('number', 'Percent (%)');
-					data.addRows([
-						['Extreme', 151.68, {v: 1.5, f: '1.5%'}],
-						['Very High', 173.12, {v: 1.7, f: '1.7%'}],
-						['High', 1189.55, {v: 11.4, f: '11.4%'}],
-						['Moderate', 463.55, {v: 4.4, f: '4.4%'}],
-						['Low', 308.62, {v: 3.0, f: '3.0%'}],
-						['Rank Not Needed', 8151.66, {v: 78.1, f: '78.1%'}]
-					]);
-
-					var table = new google.visualization.Table(document.getElementById('table_deerlick'));
-					table.draw(data, {showRowNumber: true});
-					}
-    			</script>
-		
-		<h3>Length by Rank</h3>
-		<div id="piechart_deerlick" style="width: 90%; height: auto; float:left; margin: 5%;"></div>
-		    <script type="text/javascript">
-      			google.load("visualization", "1", {packages:["corechart"]});
-      			google.setOnLoadCallback(drawChart);
-      				function drawChart() {
-        				var data = google.visualization.arrayToDataTable([
-          					['Rank', 'Length'],
-          					['Extreme', 151.68],
-          					['Very High', 173.12],
-          					['High', 1189.55],
-          					['Moderate', 463.55],
-          					['Low', 308.62],
-          					['Rank Not Needed', 8151.66],
-        				]);
-
-        			var options = {
-          			chartArea: {left: '20px', right: '20px', width: '90%', height: '90%'},
-          			pieSliceText: 'none',
-          				slices: {  0: {offset: 0.0, color: '#5D150F'},
-                     		 1: {offset: 0.0, color: '#FE0000'},
-                     		 2: {offset: 0.0, color: '#F9AC10'},
-                     		 3: {offset: 0.0, color: '#FEFE00'},
-                     		 4: {offset: 0.0, color: '#00BE00'},
-                     		 5: {offset: 0.0, color: '#C4C4C4'},
-          					},
-        				};
-
-        			var chart = new google.visualization.PieChart(document.getElementById('piechart_deerlick'));
-        			chart.draw(data, options);
       			}
     		</script>
 	</div>
@@ -567,6 +574,70 @@
 	</div>
 	
 	<div id="content_8" class="content">
+		<h1>Snowville</h1>
+		<table class="total_table">
+			<tr><td>Total Length Assessed</td><td class="length_column">21,494.23 ft</td></tr>
+		</table>
+		
+		<div id="table_snowville"></div>
+		    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+				<script type='text/javascript'>
+				  google.load('visualization', '1', {packages:['table']});
+				  google.setOnLoadCallback(drawTable);
+				  function drawTable() {
+					var data = new google.visualization.DataTable();
+					data.addColumn('string', 'Rank');
+					data.addColumn('number', 'Length (ft)');
+					data.addColumn('number', 'Percent (%)');
+					data.addRows([
+						['Extreme', 42.16, {v: 0.2, f: '0.2%'}],
+						['Very High', 205.45, {v: 1.0, f: '1.0%'}],
+						['High', 1119.13, {v: 5.6, f: '5.6%'}],
+						['Moderate', 1963.98, {v: 9.8, f: '9.8%'}],
+						['Low', 677.95, {v: 3.4, f: '3.4%'}],
+						['Rank Not Needed', 15968.80, {v: 79.9, f: '79.9%'}]
+					]);
+
+					var table = new google.visualization.Table(document.getElementById('table_snowville'));
+					table.draw(data, {showRowNumber: true});
+					}
+    			</script>
+		
+		<h3>Length by Rank</h3>
+		<div id="piechart_snowville" style="width: 90%; height: auto; float:left; margin: 5%;"></div>
+		    <script type="text/javascript">
+      			google.load("visualization", "1", {packages:["corechart"]});
+      			google.setOnLoadCallback(drawChart);
+      				function drawChart() {
+        				var data = google.visualization.arrayToDataTable([
+          					['Rank', 'Length'],
+          					['Extreme', 42.16],
+          					['Very High', 205.45],
+          					['High', 1119.13],
+          					['Moderate', 1963.98],
+          					['Low', 677.95],
+          					['Rank Not Needed', 15968.80],
+        				]);
+
+        			var options = {
+          				chartArea: {left: '20px', right: '20px', width: '90%', height: '90%'},
+          				pieSliceText: 'none',
+          				slices: {  0: {offset: 0.0, color: '#5D150F'},
+                     		 1: {offset: 0.0, color: '#FE0000'},
+                     		 2: {offset: 0.0, color: '#F9AC10'},
+                     		 3: {offset: 0.0, color: '#FEFE00'},
+                     		 4: {offset: 0.0, color: '#00BE00'},
+                     		 5: {offset: 0.0, color: '#C4C4C4'},
+          					},
+        				};
+
+        			var chart = new google.visualization.PieChart(document.getElementById('piechart_snowville'));
+        			chart.draw(data, options);
+      			}
+    		</script>
+	</div>
+	
+	<div id="content_9" class="content">
 		<h1>Sulphur Springs</h1>
 		<table class="total_table">
 			<tr><td>Total Length Assessed</td><td class="length_column">16,567.42 ft</td></tr>
@@ -630,7 +701,7 @@
     </script>
 	</div>
 	
-	<div id="content_9" class="content">
+	<div id="content_10" class="content">
 		<h1>Timberlane</h1>
 				<table class="total_table">
 			<tr><td>Total Length Assessed</td><td class="length_column">8246.61 ft</td></tr>
@@ -694,7 +765,7 @@
     		</script>
 	</div>
 	
-	<div id="content_10" class="content">
+	<div id="content_11" class="content">
 		<h1>West Creek</h1>
 				<table class="total_table">
 			<tr><td>Total Length Assessed</td><td class="length_column">22,966.92 ft</td></tr>
@@ -758,7 +829,10 @@
     		</script>
 	</div>
 	
-	<div id="content_11" class="content">
+	<div id="content_12" class="content">
+	
+	<!-- This is the only table not created with google charts. This was an export from excel. -->
+	
 		<h1>BEHI Score-Value Charts</h1>
 
 		<p>These tables may be used to associate BEHI scores with actual recorded values for certain metrics.</p>

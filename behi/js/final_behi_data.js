@@ -12764,6 +12764,2958 @@ var geoJson = {
           41.36856524
         ]
       }
+    },
+	{
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 1,
+        "bank_id": 1,
+        "Latitude": 41.30717,
+        "Longitude": -81.5857,
+        "Bank": "R",
+        "height": "4",
+        "length": 55,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 14.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 340,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1556.jpg'],['images/stream_banks/snowville/7_15/IMG_1557.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5857,
+          41.30717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 2,
+        "bank_id": 2,
+        "Latitude": 41.30655,
+        "Longitude": -81.58598,
+        "Bank": "R",
+        "height": "5",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.5,
+        "dens_val": 75,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 2.5,
+        "surf_val": 75,
+        "tot_score": 13,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 341,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1558.jpg'],['images/stream_banks/snowville/7_15/IMG_1559.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58598,
+          41.30655
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 3,
+        "bank_id": 3,
+        "Latitude": 41.30687,
+        "Longitude": -81.58606,
+        "Bank": "L",
+        "height": "6",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 2.5,
+        "root_score": 2.75,
+        "root_val": 75,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 28,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 342,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1560.jpg'],['images/stream_banks/snowville/7_15/IMG_1561.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58606,
+          41.30687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 4,
+        "bank_id": 4,
+        "Latitude": 41.30653,
+        "Longitude": -81.58624,
+        "Bank": "L",
+        "height": "6",
+        "length": 60,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 25.75,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 343,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1562.jpg'],['images/stream_banks/snowville/7_15/IMG_1563.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58624,
+          41.30653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 5,
+        "bank_id": 5,
+        "Latitude": 41.30593,
+        "Longitude": -81.58618,
+        "Bank": "L",
+        "height": "4",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 5,
+        "root_score": 4,
+        "root_val": 50,
+        "dens_score": 4.25,
+        "dens_val": 50,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 30.25,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 344,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1564.jpg'],['images/stream_banks/snowville/7_15/IMG_1565.jpg'],['images/stream_banks/snowville/7_15/IMG_1566.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58618,
+          41.30593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 6,
+        "bank_id": 6,
+        "Latitude": 41.30599,
+        "Longitude": -81.58604,
+        "Bank": "R",
+        "height": "3",
+        "length": null,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2,
+        "dens_val": 80,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 14.25,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 345,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1567.jpg'],['images/stream_banks/snowville/7_15/IMG_1568.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58604,
+          41.30599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 7,
+        "bank_id": 7,
+        "Latitude": 41.3059,
+        "Longitude": -81.58585,
+        "Bank": "L",
+        "height": "3",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 17,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 346,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1569.jpg'],['images/stream_banks/snowville/7_15/IMG_1570.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58585,
+          41.3059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 8,
+        "bank_id": 8,
+        "Latitude": 41.30529,
+        "Longitude": -81.5857,
+        "Bank": "L",
+        "height": "3",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 5.5,
+        "dens_val": 35,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 23.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 347,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1571.jpg'],['images/stream_banks/snowville/7_15/IMG_1572.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5857,
+          41.30529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 9,
+        "bank_id": 9,
+        "Latitude": 41.30518,
+        "Longitude": -81.58561,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 4.75,
+        "root_val": 40,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 10,
+        "surf_val": 0,
+        "tot_score": 27.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 348,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1573.jpg'],['images/stream_banks/snowville/7_15/IMG_1574.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58561,
+          41.30518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 10,
+        "bank_id": 10,
+        "Latitude": 41.30506,
+        "Longitude": -81.58544,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.25,
+        "dens_val": 65,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 16.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 349,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1575.jpg'],['images/stream_banks/snowville/7_15/IMG_1576.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58544,
+          41.30506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 11,
+        "bank_id": 11,
+        "Latitude": 41.30513,
+        "Longitude": -81.58517,
+        "Bank": "R",
+        "height": "4",
+        "length": 60,
+        "mat_score": 5,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 27.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 350,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1577.jpg'],['images/stream_banks/snowville/7_15/IMG_1578.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58517,
+          41.30513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 12,
+        "bank_id": 12,
+        "Latitude": 41.30475,
+        "Longitude": -81.58524,
+        "Bank": "L",
+        "height": "3",
+        "length": 65,
+        "mat_score": 7,
+        "strat_scor": 0,
+        "root_score": 3.5,
+        "root_val": 60,
+        "dens_score": 6,
+        "dens_val": 25,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 30.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 351,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1579.jpg'],['images/stream_banks/snowville/7_15/IMG_1580.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58524,
+          41.30475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 13,
+        "bank_id": 13,
+        "Latitude": 41.30479,
+        "Longitude": -81.58473,
+        "Bank": "L",
+        "height": "5",
+        "length": 50,
+        "mat_score": 7,
+        "strat_scor": 2,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 29.75,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 352,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1581.jpg'],['images/stream_banks/snowville/7_15/IMG_1582.jpg'],['images/stream_banks/snowville/7_15/IMG_1583.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58473,
+          41.30479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 14,
+        "bank_id": 14,
+        "Latitude": 41.30336,
+        "Longitude": -81.58461,
+        "Bank": "R",
+        "height": "3",
+        "length": null,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 6,
+        "dens_val": 25,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 25,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 353,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1584.jpg'],['images/stream_banks/snowville/7_15/IMG_1585.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58461,
+          41.30336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 15,
+        "bank_id": 15,
+        "Latitude": 41.30322,
+        "Longitude": -81.58471,
+        "Bank": "L",
+        "height": "4",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 4.25,
+        "dens_val": 50,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 19.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 354,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1586.jpg'],['images/stream_banks/snowville/7_15/IMG_1587.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58471,
+          41.30322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 16,
+        "bank_id": 16,
+        "Latitude": 41.30296,
+        "Longitude": -81.5849,
+        "Bank": "L",
+        "height": null,
+        "length": null,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 16.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 355,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1588.jpg'],['images/stream_banks/snowville/7_15/IMG_1589.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5849,
+          41.30296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 17,
+        "bank_id": 17,
+        "Latitude": 41.30283,
+        "Longitude": -81.58437,
+        "Bank": "R",
+        "height": "3",
+        "length": 105,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 17.5,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 356,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1590.jpg'],['images/stream_banks/snowville/7_15/IMG_1591.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58437,
+          41.30283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 18,
+        "bank_id": 18,
+        "Latitude": 41.30199,
+        "Longitude": -81.58408,
+        "Bank": "R",
+        "height": "3",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 6,
+        "dens_val": 25,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 22,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 357,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1592.jpg'],['images/stream_banks/snowville/7_15/IMG_1593.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58408,
+          41.30199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 19,
+        "bank_id": 19,
+        "Latitude": 41.30117,
+        "Longitude": -81.58439,
+        "Bank": "R",
+        "height": "4",
+        "length": 95,
+        "mat_score": 7,
+        "strat_scor": 3,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 8,
+        "dens_val": 15,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 35.5,
+        "rank": "Very High",
+        "marker-color": "#FF0000",
+        "marker-size": "small",
+        "sort": 358,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1594.jpg'],['images/stream_banks/snowville/7_15/IMG_1595.jpg'],['images/stream_banks/snowville/7_15/IMG_1596.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58439,
+          41.30117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 20,
+        "bank_id": 20,
+        "Latitude": 41.30115,
+        "Longitude": -81.58462,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 45,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 1,
+        "dens_val": 90,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 11.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 359,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1597.jpg'],['images/stream_banks/snowville/7_15/IMG_1598.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58462,
+          41.30115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 21,
+        "bank_id": 21,
+        "Latitude": 41.30124,
+        "Longitude": -81.58485,
+        "Bank": "L",
+        "height": "3",
+        "length": 105,
+        "mat_score": 3,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 1,
+        "dens_val": 90,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 15.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 360,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1599.jpg'],['images/stream_banks/snowville/7_15/IMG_1600.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58485,
+          41.30124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 22,
+        "bank_id": 22,
+        "Latitude": 41.30135,
+        "Longitude": -81.58549,
+        "Bank": "R",
+        "height": "3",
+        "length": 45,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 21,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 361,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1601.jpg'],['images/stream_banks/snowville/7_15/IMG_1602.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58549,
+          41.30135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 23,
+        "bank_id": 23,
+        "Latitude": 41.30123,
+        "Longitude": -81.58517,
+        "Bank": "L",
+        "height": "1.5",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 1.5,
+        "dens_val": 85,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 15.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 362,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1603.jpg'],['images/stream_banks/snowville/7_15/IMG_1604.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58517,
+          41.30123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 24,
+        "bank_id": 24,
+        "Latitude": 41.3013,
+        "Longitude": -81.58587,
+        "Bank": "R",
+        "height": "2.5",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": null,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 4.25,
+        "dens_val": 50,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 18.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 363,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1605.jpg'],['images/stream_banks/snowville/7_15/IMG_1606.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58587,
+          41.3013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 25,
+        "bank_id": 25,
+        "Latitude": 41.30133,
+        "Longitude": -81.58606,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 45,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 4.25,
+        "dens_val": 50,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 18.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 364,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1607.jpg'],['images/stream_banks/snowville/7_15/IMG_1608.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58606,
+          41.30133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 26,
+        "bank_id": 26,
+        "Latitude": 41.30134,
+        "Longitude": -81.58623,
+        "Bank": "L",
+        "height": null,
+        "length": null,
+        "mat_score": 8,
+        "strat_scor": 3,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 32,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 365,
+		"images":[['images/stream_banks/snowville/7_15/IMG_1609.jpg'],['images/stream_banks/snowville/7_15/IMG_1610.jpg'],['images/stream_banks/snowville/7_15/IMG_1611.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58623,
+          41.30134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 27,
+        "bank_id": 1,
+        "Latitude": 41.30071,
+        "Longitude": -81.58458,
+        "Bank": "L",
+        "height": "4.5",
+        "length": 111,
+        "mat_score": 2,
+        "strat_scor": 0,
+        "root_score": 3.5,
+        "root_val": 60,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 4,
+        "angle_val": 60,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 23.5,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 366,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1616.jpg'],['images/stream_banks/snowville/7_16/IMG_1617.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58458,
+          41.30071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 28,
+        "bank_id": 2,
+        "Latitude": 41.30069,
+        "Longitude": -81.58455,
+        "Bank": "R",
+        "height": "4",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 18.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 367,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1618.jpg'],['images/stream_banks/snowville/7_16/IMG_1619.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58455,
+          41.30069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 29,
+        "bank_id": 3,
+        "Latitude": 41.30055,
+        "Longitude": -81.58459,
+        "Bank": "L",
+        "height": "4.5",
+        "length": 90,
+        "mat_score": 0,
+        "strat_scor": 5,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 9.5,
+        "surf_val": 5,
+        "tot_score": 32,
+        "rank": "Very High",
+        "marker-color": "#FF0000",
+        "marker-size": "small",
+        "sort": 368,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1620.jpg'],['images/stream_banks/snowville/7_16/IMG_1621.jpg'],['images/stream_banks/snowville/7_15/IMG_1622.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58459,
+          41.30055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 30,
+        "bank_id": 4,
+        "Latitude": 41.30038,
+        "Longitude": -81.58454,
+        "Bank": "R",
+        "height": "5",
+        "length": 85,
+        "mat_score": 2.5,
+        "strat_scor": 5,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 1.5,
+        "dens_val": 85,
+        "angle_scor": 8.25,
+        "angle_val": 95,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 23.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 369,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1623.jpg'],['images/stream_banks/snowville/7_16/IMG_1624.jpg'],['images/stream_banks/snowville/7_16/IMG_1625.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58454,
+          41.30038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 31,
+        "bank_id": 5,
+        "Latitude": 41.30028,
+        "Longitude": -81.58457,
+        "Bank": "L",
+        "height": "5",
+        "length": 50,
+        "mat_score": 7,
+        "strat_scor": 2,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 7,
+        "angle_val": 85,
+        "surf_score": 10,
+        "surf_val": 0,
+        "tot_score": 33.5,
+        "rank": "Very High",
+        "marker-color": "#FF0000",
+        "marker-size": "small",
+        "sort": 370,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1626.jpg'],['images/stream_banks/snowville/7_16/IMG_1627.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58457,
+          41.30028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 32,
+        "bank_id": 6,
+        "Latitude": 41.30028,
+        "Longitude": -81.58454,
+        "Bank": "R",
+        "height": "6",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 2.5,
+        "dens_val": 75,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 2.5,
+        "surf_val": 75,
+        "tot_score": 15.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 371,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1628.jpg'],['images/stream_banks/snowville/7_16/IMG_1629.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58454,
+          41.30028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 33,
+        "bank_id": 7,
+        "Latitude": 41.29996,
+        "Longitude": -81.58481,
+        "Bank": "R",
+        "height": "7",
+        "length": 70,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 8.5,
+        "root_val": 10,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 2.25,
+        "angle_val": 25,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 26.75,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 372,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1630.jpg'],['images/stream_banks/snowville/7_16/IMG_1631.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58481,
+          41.29996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 34,
+        "bank_id": 8,
+        "Latitude": 41.3001,
+        "Longitude": -81.58457,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 45,
+        "mat_score": 3,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 2,
+        "dens_val": 80,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 19.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 373,
+		"images":[['images/stream_banks/snowville/7_16/IMG_1632.jpg'],['images/stream_banks/snowville/7_16/IMG_1633.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58457,
+          41.3001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 35,
+        "bank_id": 1,
+        "Latitude": 41.29989,
+        "Longitude": -81.58495,
+        "Bank": "R",
+        "height": "5",
+        "length": 85,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 20,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 374,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1634.jpg'],['images/stream_banks/snowville/7_18/IMG_1635.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58495,
+          41.29989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 36,
+        "bank_id": 2,
+        "Latitude": 41.29994,
+        "Longitude": -81.58496,
+        "Bank": "L",
+        "height": "4",
+        "length": 85,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 4.25,
+        "dens_val": 50,
+        "angle_scor": 5.5,
+        "angle_val": 75,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 18.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 375,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1636.jpg'],['images/stream_banks/snowville/7_18/IMG_1637.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58496,
+          41.29994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 37,
+        "bank_id": 3,
+        "Latitude": 41.29992,
+        "Longitude": -81.58509,
+        "Bank": "R",
+        "height": "3",
+        "length": 60,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 4.5,
+        "angle_val": 65,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 20.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 376,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1638.jpg'],['images/stream_banks/snowville/7_18/IMG_1639.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58509,
+          41.29992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 38,
+        "bank_id": 4,
+        "Latitude": 41.29989,
+        "Longitude": -81.58528,
+        "Bank": "L",
+        "height": "4",
+        "length": 45,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 13.75,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 377,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1640.jpg'],['images/stream_banks/snowville/7_18/IMG_1641.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58528,
+          41.29989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 39,
+        "bank_id": 5,
+        "Latitude": 41.29975,
+        "Longitude": -81.58525,
+        "Bank": "R",
+        "height": "4",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.25,
+        "dens_val": 65,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 16,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 378,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1642.jpg'],['images/stream_banks/snowville/7_18/IMG_1643.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58525,
+          41.29975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 40,
+        "bank_id": 6,
+        "Latitude": 41.2995,
+        "Longitude": -81.58521,
+        "Bank": "L",
+        "height": "4.5",
+        "length": 80,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 18,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 379,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1644.jpg'],['images/stream_banks/snowville/7_18/IMG_1645.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58521,
+          41.2995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 41,
+        "bank_id": 7,
+        "Latitude": 41.29938,
+        "Longitude": -81.58513,
+        "Bank": "L",
+        "height": "3",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 17.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 380,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1646.jpg'],['images/stream_banks/snowville/7_18/IMG_1647.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58513,
+          41.29938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 42,
+        "bank_id": 8,
+        "Latitude": 41.29927,
+        "Longitude": -81.58499,
+        "Bank": "L",
+        "height": "3",
+        "length": 55,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 19.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 381,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1648.jpg'],['images/stream_banks/snowville/7_18/IMG_1649.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58499,
+          41.29927
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 43,
+        "bank_id": 9,
+        "Latitude": 41.29933,
+        "Longitude": -81.58497,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 17,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 382,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1650.jpg'],['images/stream_banks/snowville/7_18/IMG_1651.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58497,
+          41.29933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 44,
+        "bank_id": 10,
+        "Latitude": 41.29937,
+        "Longitude": -81.58475,
+        "Bank": "L",
+        "height": "2",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.5,
+        "dens_val": 75,
+        "angle_scor": 9,
+        "angle_val": 110,
+        "surf_score": 3.25,
+        "surf_val": 65,
+        "tot_score": 14.75,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 383,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1652.jpg'],['images/stream_banks/snowville/7_18/IMG_1653.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58475,
+          41.29937
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 45,
+        "bank_id": 11,
+        "Latitude": 41.29916,
+        "Longitude": -81.5846,
+        "Bank": "R",
+        "height": "5",
+        "length": 105,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 15.25,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 384,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1654.jpg'],['images/stream_banks/snowville/7_18/IMG_1655.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5846,
+          41.29916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 46,
+        "bank_id": 12,
+        "Latitude": 41.29885,
+        "Longitude": -81.58466,
+        "Bank": "L",
+        "height": "3",
+        "length": 90,
+        "mat_score": 3,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 18.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 385,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1656.jpg'],['images/stream_banks/snowville/7_18/IMG_1657.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58466,
+          41.29885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 47,
+        "bank_id": 13,
+        "Latitude": 41.29848,
+        "Longitude": -81.58418,
+        "Bank": "R",
+        "height": "4",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 14.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 386,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1658.jpg'],['images/stream_banks/snowville/7_18/IMG_1659.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58418,
+          41.29848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 48,
+        "bank_id": 14,
+        "Latitude": 41.29832,
+        "Longitude": -81.5842,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 15,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 18.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 387,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1660.jpg'],['images/stream_banks/snowville/7_18/IMG_1661.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5842,
+          41.29832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 49,
+        "bank_id": 15,
+        "Latitude": 41.29811,
+        "Longitude": -81.58419,
+        "Bank": "R",
+        "height": "2",
+        "length": 2.5,
+        "mat_score": 5,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 26,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 388,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1662.jpg'],['images/stream_banks/snowville/7_18/IMG_1663.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58419,
+          41.29811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 50,
+        "bank_id": 16,
+        "Latitude": 41.29776,
+        "Longitude": -81.58374,
+        "Bank": "R",
+        "height": "3",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 9,
+        "angle_val": 110,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 16,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 389,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1664.jpg'],['images/stream_banks/snowville/7_18/IMG_1665.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58374,
+          41.29776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 51,
+        "bank_id": 17,
+        "Latitude": 41.29745,
+        "Longitude": -81.58365,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 55,
+        "mat_score": 2,
+        "strat_scor": 0,
+        "root_score": 4,
+        "root_val": 50,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 30.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 390,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1666.jpg'],['images/stream_banks/snowville/7_18/IMG_1667.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58365,
+          41.29745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 52,
+        "bank_id": 18,
+        "Latitude": 41.29714,
+        "Longitude": -81.58347,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 30,
+        "mat_score": 2,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 23,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 391,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1668.jpg'],['images/stream_banks/snowville/7_18/IMG_1669.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58347,
+          41.29714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 53,
+        "bank_id": 19,
+        "Latitude": 41.29699,
+        "Longitude": -81.58347,
+        "Bank": "L",
+        "height": "3",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 5.5,
+        "surf_val": 35,
+        "tot_score": 19.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 392,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1670.jpg'],['images/stream_banks/snowville/7_18/IMG_1671.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58347,
+          41.29699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 54,
+        "bank_id": 20,
+        "Latitude": 41.2967,
+        "Longitude": -81.58345,
+        "Bank": "L",
+        "height": "2.5",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 10,
+        "angle_val": 120,
+        "surf_score": 4.35,
+        "surf_val": 50,
+        "tot_score": 20.1,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 393,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1672.jpg'],['images/stream_banks/snowville/7_18/IMG_1673.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58345,
+          41.2967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 55,
+        "bank_id": 21,
+        "Latitude": 41.29666,
+        "Longitude": -81.58359,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 14.5,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 394,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1674.jpg'],['images/stream_banks/snowville/7_18/IMG_1675.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58359,
+          41.29666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 56,
+        "bank_id": 22,
+        "Latitude": 41.29654,
+        "Longitude": -81.58371,
+        "Bank": "L",
+        "height": "2.5",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 10,
+        "angle_val": 120,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 18.5,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 395,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1676.jpg'],['images/stream_banks/snowville/7_18/IMG_1677.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58371,
+          41.29654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 57,
+        "bank_id": 23,
+        "Latitude": 41.29634,
+        "Longitude": -81.58361,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5.5,
+        "dens_val": 35,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 16.5,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 396,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1678.jpg'],['images/stream_banks/snowville/7_18/IMG_1679.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58361,
+          41.29634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 58,
+        "bank_id": 24,
+        "Latitude": 41.29615,
+        "Longitude": -81.58346,
+        "Bank": "R",
+        "height": "4",
+        "length": 65,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 20.5,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 397,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1680.jpg'],['images/stream_banks/snowville/7_18/IMG_1681.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58346,
+          41.29615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 59,
+        "bank_id": 25,
+        "Latitude": 41.29597,
+        "Longitude": -81.58357,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2,
+        "dens_val": 80,
+        "angle_scor": 9,
+        "angle_val": 110,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 14,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 398,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1682.jpg'],['images/stream_banks/snowville/7_18/IMG_1683.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58357,
+          41.29597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 60,
+        "bank_id": 26,
+        "Latitude": 41.29581,
+        "Longitude": -81.58364,
+        "Bank": "L",
+        "height": "5.5",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 20,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 399,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1684.jpg'],['images/stream_banks/snowville/7_18/IMG_1685.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58364,
+          41.29581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 61,
+        "bank_id": 27,
+        "Latitude": 41.29575,
+        "Longitude": -81.58359,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 20,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 5,
+        "dens_val": 40,
+        "angle_scor": 9,
+        "angle_val": 110,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 22,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 400,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1686.jpg'],['images/stream_banks/snowville/7_18/IMG_1687.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58359,
+          41.29575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 62,
+        "bank_id": 28,
+        "Latitude": 41.29524,
+        "Longitude": -81.58348,
+        "Bank": "L",
+        "height": "5.5",
+        "length": 30,
+        "mat_score": 4,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5.5,
+        "dens_val": 35,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 25,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 401,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1688.jpg'],['images/stream_banks/snowville/7_18/IMG_1689.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58348,
+          41.29524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 63,
+        "bank_id": 29,
+        "Latitude": 41.29512,
+        "Longitude": -81.58353,
+        "Bank": "R",
+        "height": "4.5",
+        "length": 65,
+        "mat_score": 9,
+        "strat_scor": 0,
+        "root_score": 4.75,
+        "root_val": 40,
+        "dens_score": 8.5,
+        "dens_val": 10,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 36.25,
+        "rank": "Extreme",
+        "marker-color": "#5F1610",
+        "marker-size": "small",
+        "sort": 402,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1690.jpg'],['images/stream_banks/snowville/7_18/IMG_1691.jpg'],['images/stream_banks/snowville/7_18/IMG_1692.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58353,
+          41.29512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 64,
+        "bank_id": 30,
+        "Latitude": 41.29467,
+        "Longitude": -81.58342,
+        "Bank": "L",
+        "height": "4",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 20.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 403,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1693.jpg'],['images/stream_banks/snowville/7_18/IMG_1694.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58342,
+          41.29467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 65,
+        "bank_id": 31,
+        "Latitude": 41.29467,
+        "Longitude": -81.58326,
+        "Bank": "L",
+        "height": "5",
+        "length": 15,
+        "mat_score": 0,
+        "strat_scor": 2,
+        "root_score": 3.5,
+        "root_val": 60,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 9.5,
+        "surf_val": 5,
+        "tot_score": 28.75,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 404,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1695.jpg'],['images/stream_banks/snowville/7_18/IMG_1696.jpg'],['images/stream_banks/snowville/7_18/IMG_1697.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58326,
+          41.29467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 66,
+        "bank_id": 32,
+        "Latitude": 41.29455,
+        "Longitude": -81.5833,
+        "Bank": "L",
+        "height": "4",
+        "length": 15,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 6,
+        "root_val": 30,
+        "dens_score": 8.5,
+        "dens_val": 10,
+        "angle_scor": 3.5,
+        "angle_val": 50,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 25,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 405,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1698.jpg'],['images/stream_banks/snowville/7_18/IMG_1699.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.5833,
+          41.29455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 67,
+        "bank_id": 33,
+        "Latitude": 41.29398,
+        "Longitude": -81.58371,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 6,
+        "surf_val": 30,
+        "tot_score": 20.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 406,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1700.jpg'],['images/stream_banks/snowville/7_18/IMG_1701.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58371,
+          41.29398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 68,
+        "bank_id": 34,
+        "Latitude": 41.29389,
+        "Longitude": -81.58359,
+        "Bank": "R",
+        "height": ">10",
+        "length": 70,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5.5,
+        "dens_val": 35,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 21,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 407,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1702.jpg'],['images/stream_banks/snowville/7_18/IMG_1703.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58359,
+          41.29389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 69,
+        "bank_id": 35,
+        "Latitude": 41.29397,
+        "Longitude": -81.58374,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 50,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 18.25,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 408,
+		"images":[['images/stream_banks/snowville/7_18/IMG_1704.jpg'],['images/stream_banks/snowville/7_18/IMG_1705.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58374,
+          41.29397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 70,
+        "bank_id": 36,
+        "Latitude": 41.29359,
+        "Longitude": -81.58357,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 15,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 3.5,
+        "root_val": 60,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 24.5,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 409,
+		"images":[['images/stream_banks/snowville/7_23/P1010003.jpg'],['images/stream_banks/snowville/7_23/P1010004.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58357,
+          41.29359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 71,
+        "bank_id": 1,
+        "Latitude": 41.29347,
+        "Longitude": -81.58331,
+        "Bank": "R",
+        "height": "3.5",
+        "length": 45,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 4,
+        "root_val": 50,
+        "dens_score": 8,
+        "dens_val": 15,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 27,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 410,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0000.jpg'],['images/stream_banks/snowville/7_26/G130726-0001.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58331,
+          41.29347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 72,
+        "bank_id": 2,
+        "Latitude": 41.29349,
+        "Longitude": -81.58337,
+        "Bank": "L",
+        "height": "3",
+        "length": 15,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 8,
+        "angle_val": 95,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 15.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 411,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0002.jpg'],['images/stream_banks/snowville/7_26/G130726-0003.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58337,
+          41.29349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 73,
+        "bank_id": 3,
+        "Latitude": 41.29306,
+        "Longitude": -81.58344,
+        "Bank": "L",
+        "height": "2.5",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 5.5,
+        "dens_val": 35,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 4.25,
+        "surf_val": 50,
+        "tot_score": 16.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 412,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0004.jpg'],['images/stream_banks/snowville/7_26/G130726-0005.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58344,
+          41.29306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 74,
+        "bank_id": 4,
+        "Latitude": 41.29299,
+        "Longitude": -81.58346,
+        "Bank": "R",
+        "height": "3",
+        "length": 65,
+        "mat_score": 2,
+        "strat_scor": 0,
+        "root_score": 2.5,
+        "root_val": 80,
+        "dens_score": 5.75,
+        "dens_val": 30,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 8,
+        "surf_val": 15,
+        "tot_score": 24.25,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 413,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0006.jpg'],['images/stream_banks/snowville/7_26/G130726-0007.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58346,
+          41.29299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 75,
+        "bank_id": 5,
+        "Latitude": 41.29247,
+        "Longitude": -81.58397,
+        "Bank": "L",
+        "height": "2",
+        "length": 25,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8,
+        "angle_val": 90,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 15.75,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 414,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0008.jpg'],['images/stream_banks/snowville/7_26/G130726-0009.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58397,
+          41.29247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 76,
+        "bank_id": 6,
+        "Latitude": 41.29225,
+        "Longitude": -81.58425,
+        "Bank": "R",
+        "height": "4",
+        "length": 65,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 3.5,
+        "dens_val": 60,
+        "angle_scor": 5.5,
+        "angle_val": 75,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 18,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 415,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0010.jpg'],['images/stream_banks/snowville/7_26/G130726-0011.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58425,
+          41.29225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 77,
+        "bank_id": 7,
+        "Latitude": 41.29219,
+        "Longitude": -81.58472,
+        "Bank": "L",
+        "height": "2.5",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8.5,
+        "angle_val": 100,
+        "surf_score": 3.5,
+        "surf_val": 60,
+        "tot_score": 14.75,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 416,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0012.jpg'],['images/stream_banks/snowville/7_26/G130726-0013.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58472,
+          41.29219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 78,
+        "bank_id": 8,
+        "Latitude": 41.29189,
+        "Longitude": -81.58489,
+        "Bank": "L",
+        "height": "4",
+        "length": 30,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2.25,
+        "root_val": 85,
+        "dens_score": 8.5,
+        "dens_val": 10,
+        "angle_scor": 4,
+        "angle_val": 60,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 23.75,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 417,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0014.jpg'],['images/stream_banks/snowville/7_26/G130726-0015.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58489,
+          41.29189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 79,
+        "bank_id": 9,
+        "Latitude": 41.29175,
+        "Longitude": -81.58507,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 35,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 6,
+        "dens_val": 25,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 7,
+        "surf_val": 20,
+        "tot_score": 20,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 418,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0016.jpg'],['images/stream_banks/snowville/7_26/G130726-0017.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58507,
+          41.29175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 80,
+        "bank_id": 10,
+        "Latitude": 41.29148,
+        "Longitude": -81.58518,
+        "Bank": "R",
+        "height": "2.5",
+        "length": 55,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 2,
+        "root_val": 90,
+        "dens_score": 7,
+        "dens_val": 20,
+        "angle_scor": 5,
+        "angle_val": 70,
+        "surf_score": 5,
+        "surf_val": 40,
+        "tot_score": 19,
+        "rank": "Moderate",
+        "marker-color": "#FFFF00",
+        "marker-size": "small",
+        "sort": 419,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0018.jpg'],['images/stream_banks/snowville/7_26/G130726-0019.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58518,
+          41.29148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 81,
+        "bank_id": 11,
+        "Latitude": 41.29122,
+        "Longitude": -81.58538,
+        "Bank": "L",
+        "height": "3.5",
+        "length": 40,
+        "mat_score": 0,
+        "strat_scor": 0,
+        "root_score": 0,
+        "root_val": 100,
+        "dens_score": 2.75,
+        "dens_val": 70,
+        "angle_scor": 8.25,
+        "angle_val": 95,
+        "surf_score": 3,
+        "surf_val": 70,
+        "tot_score": 14,
+        "rank": "Low",
+        "marker-color": "#00C000",
+        "marker-size": "small",
+        "sort": 420,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0020.jpg'],['images/stream_banks/snowville/7_26/G130726-0021.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58538,
+          41.29122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Location": "Snowville",
+        "bank_num": 82,
+        "bank_id": 12,
+        "Latitude": 41.29116,
+        "Longitude": -81.58525,
+        "Bank": "R",
+        "height": "4",
+        "length": 65,
+        "mat_score": 0,
+        "strat_scor": 2,
+        "root_score": 3,
+        "root_val": 70,
+        "dens_score": 8,
+        "dens_val": 15,
+        "angle_scor": 6,
+        "angle_val": 80,
+        "surf_score": 9,
+        "surf_val": 10,
+        "tot_score": 28,
+        "rank": "High",
+        "marker-color": "#FAAD12",
+        "marker-size": "small",
+        "sort": 421,
+		"images":[['images/stream_banks/snowville/7_26/G130726-0022.jpg'],['images/stream_banks/snowville/7_26/G130726-0023.jpg']]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.58525,
+          41.29116
+        ]
+      }
     }
   ]
 }

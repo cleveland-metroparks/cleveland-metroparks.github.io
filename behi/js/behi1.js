@@ -97,7 +97,7 @@ var imagery = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cf
 });
 
 // BEHI line data hosted as a mapbox layer created in TileMill
-var behi = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.41zcl3di/{z}/{x}/{y}.jpg', {
+var behi = L.tileLayer('http://a.tiles.mapbox.com/v3/cleveland-metroparks.tgrs5rk9/{z}/{x}/{y}.jpg', {
 	minZoom: 10,	
     maxZoom: 18
 }).addTo(map);
