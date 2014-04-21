@@ -31,25 +31,18 @@ background-color:#BFCBD4;
 
 #mainpic
 {
-background-image:url('../img/IMG_0410.JPG');
-background-repeat:no-repeat;
 width:960px;
-height:359px;	
+height:429px;	
 margin:0 auto;
 border-radius:50px;
 }
 
-#mainpic img {
-position:absolute;
-margin-left:580px;
-margin-top:10px;
-width:30%;
-}
 
 #content_main_img{
 width:960px;
-height:359px;
+height:429px;
 padding:0px;
+background-color:transparent;
 }
 
 .off
