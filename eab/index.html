@@ -5,24 +5,29 @@
 <title>EAB | Cleveland Metroparks</title>
 
 <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
-	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
-	<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v2/themes/css/cartodb.css">
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-	<script src="js/jquery-1.11.0.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
-	<link href="css/lightbox.css" rel="stylesheet" />
-	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/slider.css" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+   // Can also be used with $(document).ready()
+		$(document).ready(function () {
+				$('.flexslider').flexslider({
+					animation: 'fade',
+					slideshow: false,
+					controlsContainer: '.flexslider'
+				});
+			});
+	</script>
 
 
 </head>
-<body style="overflow:auto">
+<body style="overflow:auto" class="impress-not-supported">
 
 
 
@@ -40,26 +45,84 @@
 		
 		<div class="content">
 			<h3>What is the Emerald Ash Borer?</h3>
-			<p><a href="http://www1.extension.umn.edu/garden/insects/find/emerald-ash-borer/img/M1242-5-lg.jpg" rel="lightbox" title="Adult Emerald Ash Borer beetle">The Emerald ash borer (EAB) (<i>Agrilus planipennis</i>)</a> is a wood-boring beetle that completes its lifecycle inside ash trees (<i>Fraxinus spp.</i>). Native to Asia, this beetle was first identified killing ash trees in the Detroit, Michigan area in 2002. EAB likely arrived to the United States as a result of an accidental introduction of infested shipping pallets originating from China.</p>
+			<p>The Emerald ash borer (EAB) (<i>Agrilus planipennis</i>)</a> is a wood-boring beetle that completes its lifecycle inside ash trees (<i>Fraxinus spp.</i>). Native to Asia, this beetle was first identified killing ash trees in the Detroit, Michigan area in 2002. EAB likely arrived to the United States as a result of an accidental introduction of infested shipping pallets originating from China.</p>
 		</div>
 		
 		<div class="content">
 			<h3>Why is EAB a problem?</h3>
-			<p>Adult EAB lay their eggs on the bark of ash trees and once the larvae hatch they burrow into the cambium (area between the bark and wood) of the tree. Here <a href="img/cmp3_094.png" rel="lightbox" title="&quot;S&quot-shaped galleries created by EAB larvae">the larvae bore &quot;S&quot;-shaped patterns or galleries into the tree</a> as they feed. This feeding process is what damages the ash tree by destroying the tissues that bring water and nutrients from the base to the canopy. As the adult beetles emerge they bore distinctive <a href="img/IMG_0406.jpg" rel="lightbox" title="&quot;D&quot;-shaped hole left by an adult EAB and damage caused by a woodpecker">&quot;D&quot;-shaped holes in the trunk.</a><br/><br/> 
-			Since being identified, EAB has killed tens of millions of ash trees <a href="img/EAB_positive_crop.png" rel="lightbox">throughout the U.S. and Canada.</a> The first EAB record for Cuyahoga County was in 2006 along I-71 near Middleburg Heights. Effective October 2006 Cleveland Metroparks modified public policy to prohibit the transportation of firewood through Cleveland Metroparks. Significant EAB infestations were documented in 2008 along Big Creek Parkway and in Brecksville Reservation.</p>
+			<p>Adult EAB lay their eggs on the bark of ash trees and once the larvae hatch they burrow into the cambium (area between the bark and wood) of the tree. Here the larvae bore &quot;S&quot;-shaped patterns or galleries into the tree as they feed. This feeding process is what damages the ash tree by destroying the tissues that bring water and nutrients from the base to the canopy. As the adult beetles emerge they bore distinctive &quot;D&quot;-shaped holes in the trunk.<br/><br/> 
+			Since being identified, EAB has killed tens of millions of ash trees throughout the U.S. and Canada. The first EAB record for Cuyahoga County was in 2006 along I-71 near Middleburg Heights. Effective October 2006 Cleveland Metroparks modified public policy to prohibit the transportation of firewood through Cleveland Metroparks. Significant EAB infestations were documented in 2008 along Big Creek Parkway and in Brecksville Reservation.</p>
+		</div>
+			
+		<div class="content">
+			<h3>Photos</h3>
+				<div class="flex-container">
+				<div class="flexslider">
+				  <ul class="slides">
+					<li>
+					  <img src="img/eab_adult.jpg" />
+					  <p>Adult EAB on an ash tree leaf - aphis.usda.gov</p>
+					</li>						
+					<li>
+					  <img src="img/eab_adult2.jpg" />
+					  <p>Close up of an adult EAB on an ash tree - aphis.usda.gov</p>
+					</li>					
+					<li>
+					  <img src="img/eab_damage2.jpg" />
+					  <p>A "D"-shaped exit hole and woodpecker damage</p>
+					</li>
+					<li>
+					  <img src="img/eab_damage1.png" />
+					  <p>"S"-shaped gallery caused by the EAB moving through the tree</p>
+					</li>
+					<li>
+					  <img src="img/eab_damage3.jpg" />
+					  <p>Galleries packed with frass and an adult EAB inside the ash tree</p>
+					</li>
+					<li>
+					  <img src="img/eab_damage4.jpg" />
+					  <p>An adult EAB found inside an ash tree</p>
+					</li>
+					<li>
+					  <img src="img/eab_larvae.jpg" />
+					  <p>EAB larvae</p>
+					</li>
+					<li>
+					  <img src="img/eab_range.jpg" />
+					  <p>States (US)/Provinces (Canada) where EAB has been positively confirmed</p>
+					</li>
+					<li>
+					  <img src="img/training.jpg" />
+					  <p>Staff and volunteers going through "Ash Mapping" training</p>
+					</li>					
+					<li>
+					  <img src="img/prism_trap.jpg" />
+					  <p>An adult EAB caught in a purple prism trap</p>
+					</li>					
+					<li>
+					  <img src="img/dead_ash.jpg" />
+					  <p>Dead ash trees seen from the APT</p>
+					</li>
+					<li>
+					  <img src="img/eab_treatment.png" />
+					  <p>An ash tree receiving a pesticide treatment through injections</p>
+					</li>
+				  </ul>
+				</div>
+				</div>
 		</div>
 			
 		<div class="content">
 			<h3>What is being done about EAB?</h3>
-			<p>As of 2012, EAB has been positively identified in nine reservations (Bradley Woods, Huntington, Rocky River, Mill Stream Run, Big Creek, Hinckley, Brookside, Brecksville, and South Chagrin). In order to better track the EAB, the Cleveland Metroparks uses <a href="http://www.montgomerynews.com/content/articles/2011/07/20/souderton_independent/news/doc4e2762bad4ee30370006111.jpg" rel="lightbox" title="A purple prism trap used to capture/identify adult EAB beetles">purple prism traps</a> to catch adult specimens. Adult EAB are attracted to the trap by a chemical that mimics the odors of an ash tree. When the EAB bores into the fabric, <a href="img/IMG_0398.jpg" rel="lightbox" title="Adult EAB captured inside a purple prism trap">it becomes trapped by a glue coating the inside.</a> The traps are placed in trees in the late spring when the adult EABs emerge and begin flying, then removed in late summer/early fall, when the adults are no longer flying. These traps pose no risk to humans, domestic pets, or wildlife and are used for tracking purposes only. These traps are not a method of EAB removal. <br/><br/>
-			Ash trees infested with EAB can be <a href="img/IMG_1643.png" rel="lightbox" title="Infested ash tree being treated with pesticides">treated with pesticides,</a> but this method requires multiple treatments and is very expensive. The most effective treatment for EAB infested trees is to remove ash trees before they die. Once dead, ash trees become very brittle and pose a major threat to people walking near them. To prevent any accidents the Cleveland Metroparks is proactively removing any ash trees that are within falling distance of public areas, roads, and paths. It is estimated that nearly 8,000 ash trees fall within these areas and will have to be removed.</p>
+			<p>As of 2012, EAB has been positively identified in nine reservations (Bradley Woods, Huntington, Rocky River, Mill Stream Run, Big Creek, Hinckley, Brookside, Brecksville, and South Chagrin). In order to better track the EAB, the Cleveland Metroparks uses purple prism (see below) traps to catch adult specimens. Adult EAB are attracted to the trap by a chemical that mimics the odors of an ash tree. When the EAB bores into the fabric, it becomes trapped by a glue coating the inside. The traps are placed in trees in the late spring when the adult EABs emerge and begin flying, then removed in late summer/early fall, when the adults are no longer flying. These traps pose no risk to humans, domestic pets, or wildlife and are used for tracking purposes only. These traps are not a method of EAB removal. <br/><br/>
+			Ash trees infested with EAB can be treated with pesticides, but this method requires multiple treatments and is very expensive. The most effective treatment for EAB infested trees is to remove ash trees before they die. Once dead, ash trees become very brittle and pose a major threat to people walking near them. To prevent any accidents the Cleveland Metroparks is proactively removing any ash trees that are within falling distance of public areas, roads, and paths. It is estimated that nearly 8,000 ash trees fall within these areas and will have to be removed.</p>
 		</div>
 			
 		<div class="content">
 			<h3>Ash Mapping - A citizen science approach</h3>
         	<p>In 2011, Cleveland Metroparks began an &quot;Ash Mapping&quot; program where volunteers were recruited from Cleveland Metroparks Trail Monitors roster.  Trail Monitors spend time hiking and biking on the APT, bridle trails, and natural surface trails to assist park visitors with questions, emergency situations, and report trail conditions to park management staff.  They are knowledgeable about the Park District, but that knowledge is not a prerequisite to the ash mapping project.  Enthusiasm, physical ability, and a willingness to learn species identification are the most important criteria.</p>
 
-			<p>Training consisted of a one-day session with both <a href="img/cmp3_115.png" rel="lightbox" title="Volunteers and staff learning to survey ash trees for signs of woodpecker damage" >classroom and field training exercises.</a>  Project goals, EAB biology, tree species identification, survey design and techniques, and an introduction to data collection were presented during the indoor session.  Field training included use of equipment (hand-held global positioning system (GPS) receivers and laser distance measuring devices), data form use, estimation of tree size, species identification, and recognition of woodpecker feeding on ash trees.  At the end of the field exercises, volunteers practiced the survey regimen from start to finish.  Teams of two were assembled for 4 of Cleveland Metroparks 16 reservations.</p>	
+			<p>Training consisted of a one-day session with both classroom and field training exercises. Project goals, EAB biology, tree species identification, survey design and techniques, and an introduction to data collection were presented during the indoor session.  Field training included use of equipment (hand-held global positioning system (GPS) receivers and laser distance measuring devices), data form use, estimation of tree size, species identification, and recognition of woodpecker feeding on ash trees.  At the end of the field exercises, volunteers practiced the survey regimen from start to finish.  Teams of two were assembled for 4 of Cleveland Metroparks 16 reservations.</p>	
 		</div>
 		
 		<div class="content">
@@ -74,6 +137,7 @@
 		<div class="content">
 			<h3>Ash Mapping Results</h3>
 			<div class="map" id="map"></div>
+			&nbsp
 		</div>
 		
 
@@ -103,6 +167,7 @@
 		<div class="content">
 			<h3>North American Ash Tree Ranges</h3>
 			<div class="map" id="map2"></div>
+			&nbsp
 		</div>
 		
 		<div class="content">	
@@ -135,9 +200,9 @@
       </div>
    </div>
    
- <!-- Adds map1 & map2 -->
-<script type="text/javascript" src="js/map1.js"></script>
-<script type="text/javascript" src="js/map2.js"></script>
+	 <!-- Adds map1 & map2 -->
+	<script type="text/javascript" src="js/map1.js"></script>
+	<script type="text/javascript" src="js/map2.js"></script>
 
 </body>
 </html>
