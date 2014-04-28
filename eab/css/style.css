@@ -109,11 +109,21 @@ padding-top:10px;
 padding-bottom:10px;
 }
 
+.content p a:link {color:#6EC43E;}
+
+.content p a:visited {color:#0099DF;}
+
+.content p a:hover {color:#E2780E;}
+
 .content li a:link {color:#6EC43E;}
 
 .content li a:visited {color:#0099DF;}
 
 .content li a:hover {color:#E2780E;}
+
+#quarantine_map{
+padding:5px 0px 30px 0px;
+}
 
 #map{background-color:#eee; top: 10px; left: 0; bottom: 20px; width: 940px; height:500px; margin-bottom:30px;}
 #map2{background-color:#eee; position:relative; top: 10px; left: 0; bottom: 20px; width: 940px; height:500px; margin-bottom:30px;}

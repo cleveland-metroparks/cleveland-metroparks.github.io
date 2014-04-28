@@ -1,6 +1,8 @@
-var map = L.map('map')
-	.setView([41.385, -81.708], 10);
-
+	var map = L.map('map', {
+		center: [41.385, -81.708],
+		zoom: 10,
+		minZoom: 10
+	});
 
 	
 var myLayer = L.mapbox.featureLayer().addTo(map);
