@@ -1004,4 +1004,7 @@ var overlayMaps = {
     "<img src='img/tower3.png'>  >20&quot; - >50%</span>": towers3
 };
 
-L.control.layers(baseMaps, overlayMaps).addTo(map);
+L.control.layers(baseMaps, overlayMaps, {
+	collapsed:false,
+	position:'bottomleft'
+}).addTo(map);
