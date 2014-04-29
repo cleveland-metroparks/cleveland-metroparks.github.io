@@ -271,11 +271,9 @@ html[xmlns] .slides { display: block; }
     display: block;
     position: absolute;
     content: '';
-    width: 9px;
-    height: 13px;
-    top: 11px;
-    left: 11px;
-    background: url(../img/bg_direction_nav.png) no-repeat;
+    width: 55px;
+    height: 30px;
+
 }
  
 .flex-direction-nav a:after {
@@ -292,6 +290,7 @@ html[xmlns] .slides { display: block; }
     -webkit-border-radius: 3px 0 0 3px;
     -moz-border-radius: 3px 0 0 3px;
     border-radius: 3px 0 0 3px;
+        background: url(../img/next_button.png) no-repeat;
 }
  
 .flex-direction-nav .flex-prev {
@@ -299,6 +298,7 @@ html[xmlns] .slides { display: block; }
     -webkit-border-radius: 0 3px 3px 0;
     -moz-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
+    background: url(../img/prev_button.png) no-repeat;
 }
  
 /*.flex-direction-nav .flex-next:before { background-position: -9px 0; left: 15px; }
