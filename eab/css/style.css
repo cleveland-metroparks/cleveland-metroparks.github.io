@@ -150,26 +150,24 @@ text-align: center;
 
 
 .popup_container {
-
-}
-
-.popup_container table {
-width:300px;
-border-collapse:collapse;
+max-width:auto;
+min-height:200px;
+max-height:250px;
 margin:0px;
 }
 
-.popup_container td {
-border:1px solid #c4c4c4;
-text-align:center;
+.popup_container h4{
+max-width:350px;
+margin:0px;
+padding:2px 0px 2px 0px;
 }
 
-.popup_container td p {
-width:140px;
-text-align:left;
-padding:5px;
-margin:0px -50px 0px 0px;
+.popup_container p{
+max-width:300px;
+margin:0px;
+padding:2px 0px 2px 0px;
 }
+
 
 
 
@@ -378,3 +376,40 @@ html[xmlns] .slides { display: block; }
 
  
 }
+
+
+
+/* Map 2 legend */
+
+	#legend-content {
+	position:absolute;
+	  height:75px;
+	  width:305px;
+	  left:55px;
+	  bottom:1500px;
+	  z-index:9999;
+	  background-color:white;
+	  padding:5px;
+	}
+
+    .my-legend .legend-title {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
+      font-size: 100%;
+      }
+
+    .my-legend .legend-source {
+      font-size: 70%;
+      color: #999;
+      clear: both;
+      }
+	  
+	  .my-legend .legend-scale table tr td{
+	  text-align:center;
+	  padding:0px 12px 0px 12px;
+	  }
+
+      
+    .my-legend .legend-scale table tr td img {
+      }
