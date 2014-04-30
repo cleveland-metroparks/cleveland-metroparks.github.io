@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/ranunculus.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Lesser Celandine (<i>Ranunculus ficaria</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/ranunculus_ficaria/ranunculus_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ranunculus_ficaria/ranunculus_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ranunculus_ficaria/ranunculus_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ranunculus_ficaria/ranunculus_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ranunculus_ficaria/ranunculus_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ranunculus_ficaria/ranunculus_3.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ranunculus_ficaria/ranunculus_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ranunculus_ficaria/ranunculus_4.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ranunculus_ficaria/ranunculus_5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ranunculus_ficaria/ranunculus_5.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Herbaceous perennial, typically under 1 foot tall, spring ephemeral; prefers floodplains, can colonize upland sites.</p>
+				<h3>Leaves:</h3>
+					<p>Basal rosette, 1 to 2 inches long, kidney- to heart-shaped, dark green, bluntly toothed.</p>
+				<h3>Flowers:</h3>
+					<p>March to April, up to 3 inches wide, 8 to 12 glossy, butter-yellow petals.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>April to May, propagates primarily by bulbils on above-ground stems.</p>
+				<h3>Roots:</h3>
+					<p>Finger-like tubers, easily pulled up.</p>
+				<h3>Similar Species:</h3>
+					<p>Marsh Marigold <i>(Caltha palustris)</i></p>
+				<h3>Tier 1 - Early Detection/Rapid Response</h3>
+					<p>These species are known to be highly invasive in natural areas, but are not yet widespread in Cleveland Metroparks. With Limited distrabution, immediate action will minimize management cost and long-term ecological impact of these aggressive species.</p>
+
+					<p>Action: A GPS point is taken and the Invasive Plant Coordinator should be notified, so the Invasive Plant Management Crew can respond accordingly.</p>
+				<!--<h3>Season Treated: Spring</h3>
+					<p>Foliar spray with a low concentrated herbicide.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1226, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41719686, "LONGITUDE": -81.86856591, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86856591, 41.41719686 ] } }
+,
+{ "type": "Feature", "id": 1227, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41750125, "LONGITUDE": -81.63905461, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.63905461, 41.41750125 ] } }
+,
+{ "type": "Feature", "id": 1228, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.38616485, "LONGITUDE": -81.86674395, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86674395, 41.38616485 ] } }
+,
+{ "type": "Feature", "id": 1229, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39320222, "LONGITUDE": -81.87987637, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87987637, 41.39320222 ] } }
+,
+{ "type": "Feature", "id": 1230, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39250795, "LONGITUDE": -81.8807919, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.8807919, 41.39250795 ] } }
+,
+{ "type": "Feature", "id": 1231, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.56680796, "LONGITUDE": -81.42118742, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.42118742, 41.56680796 ] } }
+,
+{ "type": "Feature", "id": 1232, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.296197, "LONGITUDE": -81.760354, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.760354, 41.296197 ] } }
+,
+{ "type": "Feature", "id": 1233, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.37906444, "LONGITUDE": -81.86614498, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86614498, 41.37906444 ] } }
+,
+{ "type": "Feature", "id": 1234, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45175098, "LONGITUDE": -81.83266316, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83266316, 41.45175098 ] } }
+,
+{ "type": "Feature", "id": 1235, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.33398858, "LONGITUDE": -81.83411471, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83411471, 41.33398858 ] } }
+,
+{ "type": "Feature", "id": 1236, "properties": { "RES": "Hinckley", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.20843747, "LONGITUDE": -81.70597312, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.70597312, 41.20843747 ] } }
+,
+{ "type": "Feature", "id": 1237, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41832451, "LONGITUDE": -81.86373102, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86373102, 41.41832451 ] } }
+,
+{ "type": "Feature", "id": 1238, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42209275, "LONGITUDE": -81.85705319, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.85705319, 41.42209275 ] } }
+,
+{ "type": "Feature", "id": 1239, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42199563, "LONGITUDE": -81.85281318, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.85281318, 41.42199563 ] } }
+,
+{ "type": "Feature", "id": 1240, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42312426, "LONGITUDE": -81.85827524, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.85827524, 41.42312426 ] } }
+,
+{ "type": "Feature", "id": 1241, "properties": { "RES": "Euclid Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.54248324, "LONGITUDE": -81.52625973, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.52625973, 41.54248324 ] } }
+,
+{ "type": "Feature", "id": 1242, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40775421, "LONGITUDE": -81.8862496, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.8862496, 41.40775421 ] } }
+,
+{ "type": "Feature", "id": 1243, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40601479, "LONGITUDE": -81.89422639, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.89422639, 41.40601479 ] } }
+,
+{ "type": "Feature", "id": 1244, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43597811, "LONGITUDE": -81.41011091, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41011091, 41.43597811 ] } }
+,
+{ "type": "Feature", "id": 1245, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43344438, "LONGITUDE": -81.84783885, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84783885, 41.43344438 ] } }
+,
+{ "type": "Feature", "id": 1246, "properties": { "RES": "Euclid Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.5667042, "LONGITUDE": -81.53416519, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.53416519, 41.5667042 ] } }
+,
+{ "type": "Feature", "id": 1247, "properties": { "RES": "Big Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.408975, "LONGITUDE": -81.75342801, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.75342801, 41.408975 ] } }
+,
+{ "type": "Feature", "id": 1248, "properties": { "RES": "Big Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41576282, "LONGITUDE": -81.7543589, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.7543589, 41.41576282 ] } }
+,
+{ "type": "Feature", "id": 1249, "properties": { "RES": "Big Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41158112, "LONGITUDE": -81.75474137, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.75474137, 41.41158112 ] } }
+,
+{ "type": "Feature", "id": 1250, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42139535, "LONGITUDE": -81.63934802, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.63934802, 41.42139535 ] } }
+,
+{ "type": "Feature", "id": 1251, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.56149272, "LONGITUDE": -81.43015287, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.43015287, 41.56149272 ] } }
+,
+{ "type": "Feature", "id": 1252, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4049997, "LONGITUDE": -81.88845141, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88845141, 41.4049997 ] } }
+,
+{ "type": "Feature", "id": 1253, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40540966, "LONGITUDE": -81.88955155, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88955155, 41.40540966 ] } }
+,
+{ "type": "Feature", "id": 1254, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.38615242, "LONGITUDE": -81.86314695, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86314695, 41.38615242 ] } }
+,
+{ "type": "Feature", "id": 1255, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.35651073, "LONGITUDE": -81.84944561, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84944561, 41.35651073 ] } }
+,
+{ "type": "Feature", "id": 1256, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.351155, "LONGITUDE": -81.846574, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.846574, 41.351155 ] } }
+,
+{ "type": "Feature", "id": 1257, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.32183217, "LONGITUDE": -81.81247257, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.81247257, 41.32183217 ] } }
+,
+{ "type": "Feature", "id": 1258, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43242014, "LONGITUDE": -81.41469121, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41469121, 41.43242014 ] } }
+,
+{ "type": "Feature", "id": 1259, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46439556, "LONGITUDE": -81.83035429, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83035429, 41.46439556 ] } }
+,
+{ "type": "Feature", "id": 1260, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46570645, "LONGITUDE": -81.82498271, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82498271, 41.46570645 ] } }
+,
+{ "type": "Feature", "id": 1261, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42775632, "LONGITUDE": -81.85512261, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.85512261, 41.42775632 ] } }
+,
+{ "type": "Feature", "id": 1262, "properties": { "RES": "Brookside", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45067422, "LONGITUDE": -81.72325447, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.72325447, 41.45067422 ] } }
+,
+{ "type": "Feature", "id": 1263, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39881329, "LONGITUDE": -81.88374749, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88374749, 41.39881329 ] } }
+,
+{ "type": "Feature", "id": 1264, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40236752, "LONGITUDE": -81.89091955, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.89091955, 41.40236752 ] } }
+,
+{ "type": "Feature", "id": 1265, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40347386, "LONGITUDE": -81.89300796, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.89300796, 41.40347386 ] } }
+,
+{ "type": "Feature", "id": 1266, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45035059, "LONGITUDE": -81.83035579, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83035579, 41.45035059 ] } }
+,
+{ "type": "Feature", "id": 1267, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45473557, "LONGITUDE": -81.82170683, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82170683, 41.45473557 ] } }
+,
+{ "type": "Feature", "id": 1268, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45291525, "LONGITUDE": -81.82670465, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82670465, 41.45291525 ] } }
+,
+{ "type": "Feature", "id": 1269, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40459385, "LONGITUDE": -81.88430807, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88430807, 41.40459385 ] } }
+,
+{ "type": "Feature", "id": 1270, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40384675, "LONGITUDE": -81.88104005, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88104005, 41.40384675 ] } }
+,
+{ "type": "Feature", "id": 1271, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43977159, "LONGITUDE": -81.83417336, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83417336, 41.43977159 ] } }
+,
+{ "type": "Feature", "id": 1272, "properties": { "RES": "Brookside", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.44676179, "LONGITUDE": -81.72429784, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.72429784, 41.44676179 ] } }
+,
+{ "type": "Feature", "id": 1273, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46732567, "LONGITUDE": -81.83539296, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83539296, 41.46732567 ] } }
+,
+{ "type": "Feature", "id": 1274, "properties": { "RES": "Big Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.445767, "LONGITUDE": -81.7543308, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.7543308, 41.445767 ] } }
+,
+{ "type": "Feature", "id": 1275, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4604581, "LONGITUDE": -81.8236737, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.8236737, 41.4604581 ] } }
+,
+{ "type": "Feature", "id": 1276, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.45809345, "LONGITUDE": -81.82108026, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82108026, 41.45809345 ] } }
+,
+{ "type": "Feature", "id": 1277, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41220569, "LONGITUDE": -81.87686088, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87686088, 41.41220569 ] } }
+,
+{ "type": "Feature", "id": 1278, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43536294, "LONGITUDE": -81.41354509, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41354509, 41.43536294 ] } }
+,
+{ "type": "Feature", "id": 1279, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.44170744, "LONGITUDE": -81.84654902, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84654902, 41.44170744 ] } }
+,
+{ "type": "Feature", "id": 1280, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.47555732, "LONGITUDE": -81.82291681, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82291681, 41.47555732 ] } }
+,
+{ "type": "Feature", "id": 1281, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.47504138, "LONGITUDE": -81.82413927, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82413927, 41.47504138 ] } }
+,
+{ "type": "Feature", "id": 1282, "properties": { "RES": "Euclid Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.55308687, "LONGITUDE": -81.53167475, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.53167475, 41.55308687 ] } }
+,
+{ "type": "Feature", "id": 1283, "properties": { "RES": "Garfield Park", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4310726, "LONGITUDE": -81.6050068, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.6050068, 41.4310726 ] } }
+,
+{ "type": "Feature", "id": 1284, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.44666199, "LONGITUDE": -81.40937045, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.40937045, 41.44666199 ] } }
+,
+{ "type": "Feature", "id": 1285, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40728507, "LONGITUDE": -81.88182522, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88182522, 41.40728507 ] } }
+,
+{ "type": "Feature", "id": 1286, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.57505439, "LONGITUDE": -81.4168393, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.4168393, 41.57505439 ] } }
+,
+{ "type": "Feature", "id": 1287, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43228999, "LONGITUDE": -81.84733153, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84733153, 41.43228999 ] } }
+,
+{ "type": "Feature", "id": 1288, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.31105866, "LONGITUDE": -81.78443353, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.78443353, 41.31105866 ] } }
+,
+{ "type": "Feature", "id": 1289, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43969006, "LONGITUDE": -81.40789872, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.40789872, 41.43969006 ] } }
+,
+{ "type": "Feature", "id": 1290, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43895214, "LONGITUDE": -81.66716147, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.66716147, 41.43895214 ] } }
+,
+{ "type": "Feature", "id": 1291, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46899955, "LONGITUDE": -81.83188299, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83188299, 41.46899955 ] } }
+,
+{ "type": "Feature", "id": 1292, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46860638, "LONGITUDE": -81.82761954, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82761954, 41.46860638 ] } }
+,
+{ "type": "Feature", "id": 1293, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4083457, "LONGITUDE": -81.89248342, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.89248342, 41.4083457 ] } }
+,
+{ "type": "Feature", "id": 1294, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4504363, "LONGITUDE": -81.83889083, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83889083, 41.4504363 ] } }
+,
+{ "type": "Feature", "id": 1295, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.44896508, "LONGITUDE": -81.83683001, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.83683001, 41.44896508 ] } }
+,
+{ "type": "Feature", "id": 1296, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41003037, "LONGITUDE": -81.88094025, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88094025, 41.41003037 ] } }
+,
+{ "type": "Feature", "id": 1297, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.47740799, "LONGITUDE": -81.82838291, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.82838291, 41.47740799 ] } }
+,
+{ "type": "Feature", "id": 1298, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41566266, "LONGITUDE": -81.87551952, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87551952, 41.41566266 ] } }
+,
+{ "type": "Feature", "id": 1299, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41156663, "LONGITUDE": -81.88022446, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88022446, 41.41156663 ] } }
+,
+{ "type": "Feature", "id": 1300, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41094909, "LONGITUDE": -81.87987952, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87987952, 41.41094909 ] } }
+,
+{ "type": "Feature", "id": 1301, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.4667666, "LONGITUDE": -81.81767898, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.81767898, 41.4667666 ] } }
+,
+{ "type": "Feature", "id": 1302, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42898245, "LONGITUDE": -81.85587667, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.85587667, 41.42898245 ] } }
+,
+{ "type": "Feature", "id": 1303, "properties": { "RES": "Big Creek", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40158748, "LONGITUDE": -81.75908461, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.75908461, 41.40158748 ] } }
+,
+{ "type": "Feature", "id": 1304, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43402259, "LONGITUDE": -81.84518338, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84518338, 41.43402259 ] } }
+,
+{ "type": "Feature", "id": 1305, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43499708, "LONGITUDE": -81.84664888, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84664888, 41.43499708 ] } }
+,
+{ "type": "Feature", "id": 1306, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39551021, "LONGITUDE": -81.88550966, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88550966, 41.39551021 ] } }
+,
+{ "type": "Feature", "id": 1307, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39536375, "LONGITUDE": -81.88344486, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88344486, 41.39536375 ] } }
+,
+{ "type": "Feature", "id": 1308, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39884355, "LONGITUDE": -81.88132325, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88132325, 41.39884355 ] } }
+,
+{ "type": "Feature", "id": 1309, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.3998913, "LONGITUDE": -81.88150909, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.88150909, 41.3998913 ] } }
+,
+{ "type": "Feature", "id": 1310, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.5594333, "LONGITUDE": -81.43702791, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.43702791, 41.5594333 ] } }
+,
+{ "type": "Feature", "id": 1311, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43311596, "LONGITUDE": -81.84262663, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84262663, 41.43311596 ] } }
+,
+{ "type": "Feature", "id": 1312, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43613492, "LONGITUDE": -81.84434524, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84434524, 41.43613492 ] } }
+,
+{ "type": "Feature", "id": 1313, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.57896494, "LONGITUDE": -81.42886594, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.42886594, 41.57896494 ] } }
+,
+{ "type": "Feature", "id": 1314, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.318651, "LONGITUDE": -81.808652, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.808652, 41.318651 ] } }
+,
+{ "type": "Feature", "id": 1315, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.41735555, "LONGITUDE": -81.43268464, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.43268464, 41.41735555 ] } }
+,
+{ "type": "Feature", "id": 1316, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.32145801, "LONGITUDE": -81.81649292, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.81649292, 41.32145801 ] } }
+,
+{ "type": "Feature", "id": 1317, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46413882, "LONGITUDE": -81.81764837, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.81764837, 41.46413882 ] } }
+,
+{ "type": "Feature", "id": 1318, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43690344, "LONGITUDE": -81.40806985, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.40806985, 41.43690344 ] } }
+,
+{ "type": "Feature", "id": 1319, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.42744568, "LONGITUDE": -81.41856331, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41856331, 41.42744568 ] } }
+,
+{ "type": "Feature", "id": 1320, "properties": { "RES": "South Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43148675, "LONGITUDE": -81.41676824, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41676824, 41.43148675 ] } }
+,
+{ "type": "Feature", "id": 1321, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39014449, "LONGITUDE": -81.87140659, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87140659, 41.39014449 ] } }
+,
+{ "type": "Feature", "id": 1322, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.3900939, "LONGITUDE": -81.87605687, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.87605687, 41.3900939 ] } }
+,
+{ "type": "Feature", "id": 1323, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.44785276, "LONGITUDE": -81.84087259, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.84087259, 41.44785276 ] } }
+,
+{ "type": "Feature", "id": 1324, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.39124895, "LONGITUDE": -81.86992829, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.86992829, 41.39124895 ] } }
+,
+{ "type": "Feature", "id": 1325, "properties": { "RES": "Bradley Woods", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.40844963, "LONGITUDE": -81.95123824, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.95123824, 41.40844963 ] } }
+,
+{ "type": "Feature", "id": 1326, "properties": { "RES": "Garfield Park", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.43168476, "LONGITUDE": -81.60491337, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.60491337, 41.43168476 ] } }
+,
+{ "type": "Feature", "id": 1327, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.58231241, "LONGITUDE": -81.41761181, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.41761181, 41.58231241 ] } }
+,
+{ "type": "Feature", "id": 1328, "properties": { "RES": "North Chagrin", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.57134639, "LONGITUDE": -81.43565572, "COM_NAME": "Lesser Celandine" }, "geometry": { "type": "Point", "coordinates": [ -81.43565572, 41.57134639 ] } }
+,
+{ "type": "Feature", "id": 1329, "properties": { "RES": "Acacia", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.50213664, "LONGITUDE": -81.49122963, "COM_NAME": "Lesser Celendine" }, "geometry": { "type": "Point", "coordinates": [ -81.49122963, 41.50213664 ] } }
+,
+{ "type": "Feature", "id": 1330, "properties": { "RES": "Rocky River", "INVPLANT": "Ranunculus ficaria", "LATITUDE": 41.46571323, "LONGITUDE": -81.83177438, "COM_NAME": "Lesser Celendine" }, "geometry": { "type": "Point", "coordinates": [ -81.83177438, 41.46571323 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

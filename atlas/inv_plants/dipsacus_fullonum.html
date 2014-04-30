@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/dipsacus_fullonum.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Common Teasel (<i>Dipsacus fullonum</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_3.jpg" /></a><h5>Steve Dewey, Utah State University, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/dipsacus_fullonum/dipsacus_fullonum_4.jpg" /></a><h5>Steve Dewey, Utah State University, Bugwood.org</h5></td>
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Herbaceous, monocarpic perennial. Grows as a basal rosette for at least one year. Forms a prickly, angled flowering stalk, 2-6' tall, typically in second or third year.</p>
+				<h3>Leaves:</h3>
+					<p>Opposite, large (up to 1.5' long), oblong, and prickly. Leaves of flowering plants join into cup around stem. Common teasel's leaves are not lobed. Leaves of cut-leaved teasel are broader and have deep, feathering lobes.</p>
+				<h3>Flowers:</h3>
+					<p>Hundreds of small flowers clustered in dense, egg-shaped heads. Stiff, spiny, leaf-like bracts curve up from base of flower head. Common teasel has purple flowers and bracts longer that flower head. Cut-leaved teasel has white flowers and bracts shorter than flower heads. Both species bloom in summer.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Each plant can produce as many as 2,000 seeds. Seeds remain viable in the soil for at least two years.</p>
+				<h3>Roots:</h3>
+					<p>Deep taproot, up to 2' long and 1" in diameter.</p>
+				<h3>Tier 4 - Widespread and Abundant</h3>
+					<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+					<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 441, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.33306965, "LONGITUDE": -81.82622831, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.82622831, 41.33306965 ] } }
+,
+{ "type": "Feature", "id": 442, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.43098783, "LONGITUDE": -81.66402597, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.66402597, 41.43098783 ] } }
+,
+{ "type": "Feature", "id": 443, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.33379742, "LONGITUDE": -81.83130598, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83130598, 41.33379742 ] } }
+,
+{ "type": "Feature", "id": 444, "properties": { "RES": "Brookside", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.44681492, "LONGITUDE": -81.72351609, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.72351609, 41.44681492 ] } }
+,
+{ "type": "Feature", "id": 445, "properties": { "RES": "Rocky River", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.47576343, "LONGITUDE": -81.82406903, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.82406903, 41.47576343 ] } }
+,
+{ "type": "Feature", "id": 446, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.35410786, "LONGITUDE": -81.5859627, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.5859627, 41.35410786 ] } }
+,
+{ "type": "Feature", "id": 447, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.261752, "LONGITUDE": -81.68872497, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.68872497, 41.261752 ] } }
+,
+{ "type": "Feature", "id": 448, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.44369523, "LONGITUDE": -81.71104246, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.71104246, 41.44369523 ] } }
+,
+{ "type": "Feature", "id": 449, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.38353578, "LONGITUDE": -81.51238533, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.51238533, 41.38353578 ] } }
+,
+{ "type": "Feature", "id": 450, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.31874278, "LONGITUDE": -81.80871051, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.80871051, 41.31874278 ] } }
+,
+{ "type": "Feature", "id": 451, "properties": { "RES": "Big Creek", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.37569199, "LONGITUDE": -81.8344357, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.8344357, 41.37569199 ] } }
+,
+{ "type": "Feature", "id": 452, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.31107488, "LONGITUDE": -81.78501872, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.78501872, 41.31107488 ] } }
+,
+{ "type": "Feature", "id": 453, "properties": { "RES": "Big Creek", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.37648282, "LONGITUDE": -81.83440142, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83440142, 41.37648282 ] } }
+,
+{ "type": "Feature", "id": 454, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.57731197, "LONGITUDE": -81.41732555, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41732555, 41.57731197 ] } }
+,
+{ "type": "Feature", "id": 455, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.56984329, "LONGITUDE": -81.41509052, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41509052, 41.56984329 ] } }
+,
+{ "type": "Feature", "id": 456, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.56902978, "LONGITUDE": -81.43902523, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.43902523, 41.56902978 ] } }
+,
+{ "type": "Feature", "id": 457, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.2153074, "LONGITUDE": -81.73398623, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.73398623, 41.2153074 ] } }
+,
+{ "type": "Feature", "id": 458, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.36206963, "LONGITUDE": -81.5601399, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.5601399, 41.36206963 ] } }
+,
+{ "type": "Feature", "id": 459, "properties": { "RES": "Euclid Creek", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.55890273, "LONGITUDE": -81.5345351, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.5345351, 41.55890273 ] } }
+,
+{ "type": "Feature", "id": 460, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.21574199, "LONGITUDE": -81.68575052, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.68575052, 41.21574199 ] } }
+,
+{ "type": "Feature", "id": 461, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.54360161, "LONGITUDE": -81.41567911, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41567911, 41.54360161 ] } }
+,
+{ "type": "Feature", "id": 462, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.37113737, "LONGITUDE": -81.56068197, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.56068197, 41.37113737 ] } }
+,
+{ "type": "Feature", "id": 463, "properties": { "RES": "South Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.41516536, "LONGITUDE": -81.45595244, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.45595244, 41.41516536 ] } }
+,
+{ "type": "Feature", "id": 464, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.55265144, "LONGITUDE": -81.41874898, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41874898, 41.55265144 ] } }
+,
+{ "type": "Feature", "id": 465, "properties": { "RES": "South Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.42286057, "LONGITUDE": -81.41893853, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41893853, 41.42286057 ] } }
+,
+{ "type": "Feature", "id": 466, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.21438931, "LONGITUDE": -81.7105411, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.7105411, 41.21438931 ] } }
+,
+{ "type": "Feature", "id": 467, "properties": { "RES": "Brecksville", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.30102405, "LONGITUDE": -81.73862483, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.73862483, 41.30102405 ] } }
+,
+{ "type": "Feature", "id": 468, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.33775502, "LONGITUDE": -81.82758721, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.82758721, 41.33775502 ] } }
+,
+{ "type": "Feature", "id": 469, "properties": { "RES": "South Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.41477764, "LONGITUDE": -81.47205723, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.47205723, 41.41477764 ] } }
+,
+{ "type": "Feature", "id": 470, "properties": { "RES": "Brecksville", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.32387311, "LONGITUDE": -81.61105996, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.61105996, 41.32387311 ] } }
+,
+{ "type": "Feature", "id": 471, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.35063639, "LONGITUDE": -81.59074165, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.59074165, 41.35063639 ] } }
+,
+{ "type": "Feature", "id": 472, "properties": { "RES": "Rocky River", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.48051292, "LONGITUDE": -81.83011626, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83011626, 41.48051292 ] } }
+,
+{ "type": "Feature", "id": 473, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.43864663, "LONGITUDE": -81.67071404, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.67071404, 41.43864663 ] } }
+,
+{ "type": "Feature", "id": 474, "properties": { "RES": "Rocky River", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.46546381, "LONGITUDE": -81.83089442, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83089442, 41.46546381 ] } }
+,
+{ "type": "Feature", "id": 475, "properties": { "RES": "Rocky River", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.4428923, "LONGITUDE": -81.84543204, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.84543204, 41.4428923 ] } }
+,
+{ "type": "Feature", "id": 476, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.43116158, "LONGITUDE": -81.66514256, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.66514256, 41.43116158 ] } }
+,
+{ "type": "Feature", "id": 477, "properties": { "RES": "Big Creek", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.3545998, "LONGITUDE": -81.83314468, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83314468, 41.3545998 ] } }
+,
+{ "type": "Feature", "id": 478, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.35494466, "LONGITUDE": -81.57052926, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.57052926, 41.35494466 ] } }
+,
+{ "type": "Feature", "id": 479, "properties": { "RES": "South Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.43506203, "LONGITUDE": -81.41680947, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41680947, 41.43506203 ] } }
+,
+{ "type": "Feature", "id": 480, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.35071103, "LONGITUDE": -81.83722036, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.83722036, 41.35071103 ] } }
+,
+{ "type": "Feature", "id": 481, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.21942656, "LONGITUDE": -81.72259573, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.72259573, 41.21942656 ] } }
+,
+{ "type": "Feature", "id": 482, "properties": { "RES": "Euclid Creek", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.55120787, "LONGITUDE": -81.52956667, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.52956667, 41.55120787 ] } }
+,
+{ "type": "Feature", "id": 483, "properties": { "RES": "Hinckley", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.20729604, "LONGITUDE": -81.68563083, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.68563083, 41.20729604 ] } }
+,
+{ "type": "Feature", "id": 484, "properties": { "RES": "Brecksville", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.31758243, "LONGITUDE": -81.59257793, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.59257793, 41.31758243 ] } }
+,
+{ "type": "Feature", "id": 485, "properties": { "RES": "Bedford", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.37313822, "LONGITUDE": -81.55486443, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.55486443, 41.37313822 ] } }
+,
+{ "type": "Feature", "id": 486, "properties": { "RES": "North Chagrin", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.57159924, "LONGITUDE": -81.41579955, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.41579955, 41.57159924 ] } }
+,
+{ "type": "Feature", "id": 487, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.32479516, "LONGITUDE": -81.81180254, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.81180254, 41.32479516 ] } }
+,
+{ "type": "Feature", "id": 488, "properties": { "RES": "Brecksville", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.30093709, "LONGITUDE": -81.69672597, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.69672597, 41.30093709 ] } }
+,
+{ "type": "Feature", "id": 489, "properties": { "RES": "Lakefront", "INVPLANT": "Dipsacus fullonum", "LATITUDE": 41.49233222, "LONGITUDE": -81.73663763, "COM_NAME": "Common Teasel" }, "geometry": { "type": "Point", "coordinates": [ -81.73663763, 41.49233222 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

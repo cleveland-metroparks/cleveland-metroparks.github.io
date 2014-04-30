@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/garlicmustard.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Garlic Mustard (<i>Alliaria petiolata</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table>
+			<tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/alliaria_petiolata/alliaria_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/alliaria_petiolata/alliaria_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/alliaria_petiolata/alliaria_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/alliaria_petiolata/alliaria_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/alliaria_petiolata/alliaria_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/alliaria_petiolata/alliaria_3.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/alliaria_petiolata/alliaria_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/alliaria_petiolata/alliaria_4.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/alliaria_petiolata/alliaria_5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/alliaria_petiolata/alliaria_5.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+			</tr>
+			</table>
+		</div>
+		
+		
+		<h3>Form:</h3>
+					<p>Herbaceous biennial with stems 2'-4' tall. First year plants form a basal rosette that remains green through the winter. Second-year plants produce one to several flowering stems.</p>
+				<h3>Leaves:</h3>
+					<p>Basal leaves are dark green, heart-shaped, with large teeth. Stem leaves on flowering plants are alternate, triangular, with large teeth, and up to 2-3" across. Leaves and stems smell like garlic when crushed.</p>
+				<h3>Flowers:</h3>
+					<p>Small, white, 4-petaled, and abundant. Bloom throughout the spring.</p>
+				<h3>Fruits and seeds:</h3>
+					<p>Up to 3,000 seeds produced per plant. Seeds are small, dark brown to black, with ridged coats, and arranged in a single row inside long, slender capsules called siliques. Seeds remain viable in the soil for at least seven years.</p>
+				<h3>Roots:</h3>
+					<p>White, slender taproot, "S"-shaped at the top. Will resprout from the root crown if only top of the plant is removed.</p>
+				<h3>Similar Species:</h3>
+					<p>Sweet Cicely <i>(Osmorhiza claytonii)</i></p>
+					<p>Early Saxifrage <i>(Saxifraga virginica)</i></p>
+				<h3>Tier 4 - Widespread and Abundant</h3>
+					<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+					<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Spring; second year plants are pulled before siliques mature.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 59, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42698004, "LONGITUDE": -81.66406987, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.66406987, 41.42698004 ] } }
+,
+{ "type": "Feature", "id": 60, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41762382, "LONGITUDE": -81.63928363, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.63928363, 41.41762382 ] } }
+,
+{ "type": "Feature", "id": 61, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41828283, "LONGITUDE": -81.63742715, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.63742715, 41.41828283 ] } }
+,
+{ "type": "Feature", "id": 62, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39384548, "LONGITUDE": -81.87990163, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.87990163, 41.39384548 ] } }
+,
+{ "type": "Feature", "id": 63, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39370559, "LONGITUDE": -81.8850339, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8850339, 41.39370559 ] } }
+,
+{ "type": "Feature", "id": 64, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44230674, "LONGITUDE": -81.7157487, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.7157487, 41.44230674 ] } }
+,
+{ "type": "Feature", "id": 65, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.37847268, "LONGITUDE": -81.86583045, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.86583045, 41.37847268 ] } }
+,
+{ "type": "Feature", "id": 66, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44336339, "LONGITUDE": -81.71113783, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.71113783, 41.44336339 ] } }
+,
+{ "type": "Feature", "id": 67, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.45175098, "LONGITUDE": -81.83266316, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83266316, 41.45175098 ] } }
+,
+{ "type": "Feature", "id": 68, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41301429, "LONGITUDE": -81.94614055, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.94614055, 41.41301429 ] } }
+,
+{ "type": "Feature", "id": 69, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41891549, "LONGITUDE": -81.95496207, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.95496207, 41.41891549 ] } }
+,
+{ "type": "Feature", "id": 70, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42267583, "LONGITUDE": -81.95190743, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.95190743, 41.42267583 ] } }
+,
+{ "type": "Feature", "id": 71, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31864547, "LONGITUDE": -81.61481729, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61481729, 41.31864547 ] } }
+,
+{ "type": "Feature", "id": 72, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31369568, "LONGITUDE": -81.60135068, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60135068, 41.31369568 ] } }
+,
+{ "type": "Feature", "id": 73, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.210227, "LONGITUDE": -81.710532, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.710532, 41.210227 ] } }
+,
+{ "type": "Feature", "id": 74, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.4190925, "LONGITUDE": -81.85970348, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.85970348, 41.4190925 ] } }
+,
+{ "type": "Feature", "id": 75, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41713769, "LONGITUDE": -81.94866845, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.94866845, 41.41713769 ] } }
+,
+{ "type": "Feature", "id": 76, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40819349, "LONGITUDE": -81.62816926, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.62816926, 41.40819349 ] } }
+,
+{ "type": "Feature", "id": 77, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31776276, "LONGITUDE": -81.60547717, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60547717, 41.31776276 ] } }
+,
+{ "type": "Feature", "id": 78, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43604785, "LONGITUDE": -81.40987784, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.40987784, 41.43604785 ] } }
+,
+{ "type": "Feature", "id": 79, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.34469575, "LONGITUDE": -81.83576493, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83576493, 41.34469575 ] } }
+,
+{ "type": "Feature", "id": 80, "properties": { "RES": "Other Residential", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.29415808, "LONGITUDE": -81.7588796, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.7588796, 41.29415808 ] } }
+,
+{ "type": "Feature", "id": 81, "properties": { "RES": "Euclid Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.56653607, "LONGITUDE": -81.53446334, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.53446334, 41.56653607 ] } }
+,
+{ "type": "Feature", "id": 82, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40892713, "LONGITUDE": -81.75362942, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.75362942, 41.40892713 ] } }
+,
+{ "type": "Feature", "id": 83, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.408975, "LONGITUDE": -81.75342801, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.75342801, 41.408975 ] } }
+,
+{ "type": "Feature", "id": 84, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40566582, "LONGITUDE": -81.88947186, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88947186, 41.40566582 ] } }
+,
+{ "type": "Feature", "id": 85, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38651673, "LONGITUDE": -81.8632608, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8632608, 41.38651673 ] } }
+,
+{ "type": "Feature", "id": 86, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.37513934, "LONGITUDE": -81.57354176, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.57354176, 41.37513934 ] } }
+,
+{ "type": "Feature", "id": 87, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.219791, "LONGITUDE": -81.731777, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.731777, 41.219791 ] } }
+,
+{ "type": "Feature", "id": 88, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.21878373, "LONGITUDE": -81.69139951, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.69139951, 41.21878373 ] } }
+,
+{ "type": "Feature", "id": 89, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43257043, "LONGITUDE": -81.41449491, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41449491, 41.43257043 ] } }
+,
+{ "type": "Feature", "id": 90, "properties": { "RES": "Garfield Park", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.4326997, "LONGITUDE": -81.60771126, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60771126, 41.4326997 ] } }
+,
+{ "type": "Feature", "id": 91, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39924021, "LONGITUDE": -81.88399511, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88399511, 41.39924021 ] } }
+,
+{ "type": "Feature", "id": 92, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.211768, "LONGITUDE": -81.717336, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.717336, 41.211768 ] } }
+,
+{ "type": "Feature", "id": 93, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40254208, "LONGITUDE": -81.89126109, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.89126109, 41.40254208 ] } }
+,
+{ "type": "Feature", "id": 94, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40362566, "LONGITUDE": -81.89267401, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.89267401, 41.40362566 ] } }
+,
+{ "type": "Feature", "id": 95, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42373377, "LONGITUDE": -81.42104854, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42104854, 41.42373377 ] } }
+,
+{ "type": "Feature", "id": 96, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.428997, "LONGITUDE": -81.667556, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.667556, 41.428997 ] } }
+,
+{ "type": "Feature", "id": 97, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.4448787, "LONGITUDE": -81.75536898, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.75536898, 41.4448787 ] } }
+,
+{ "type": "Feature", "id": 98, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22165444, "LONGITUDE": -81.70480678, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.70480678, 41.22165444 ] } }
+,
+{ "type": "Feature", "id": 99, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.45858385, "LONGITUDE": -81.82104498, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82104498, 41.45858385 ] } }
+,
+{ "type": "Feature", "id": 100, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41158981, "LONGITUDE": -81.88420062, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88420062, 41.41158981 ] } }
+,
+{ "type": "Feature", "id": 101, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.57742628, "LONGITUDE": -81.42491171, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42491171, 41.57742628 ] } }
+,
+{ "type": "Feature", "id": 102, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43557993, "LONGITUDE": -81.41332312, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41332312, 41.43557993 ] } }
+,
+{ "type": "Feature", "id": 103, "properties": { "RES": "Garfield Park", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43086198, "LONGITUDE": -81.60505234, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60505234, 41.43086198 ] } }
+,
+{ "type": "Feature", "id": 104, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44409526, "LONGITUDE": -81.40718898, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.40718898, 41.44409526 ] } }
+,
+{ "type": "Feature", "id": 105, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43210214, "LONGITUDE": -81.84821527, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84821527, 41.43210214 ] } }
+,
+{ "type": "Feature", "id": 106, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.37363079, "LONGITUDE": -81.56544561, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.56544561, 41.37363079 ] } }
+,
+{ "type": "Feature", "id": 107, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44238914, "LONGITUDE": -81.71225097, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.71225097, 41.44238914 ] } }
+,
+{ "type": "Feature", "id": 108, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.211902, "LONGITUDE": -81.724068, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.724068, 41.211902 ] } }
+,
+{ "type": "Feature", "id": 109, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.57591389, "LONGITUDE": -81.42095563, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42095563, 41.57591389 ] } }
+,
+{ "type": "Feature", "id": 110, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44397947, "LONGITUDE": -81.82995198, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82995198, 41.44397947 ] } }
+,
+{ "type": "Feature", "id": 111, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42000058, "LONGITUDE": -81.86065777, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.86065777, 41.42000058 ] } }
+,
+{ "type": "Feature", "id": 112, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.45076321, "LONGITUDE": -81.83677307, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83677307, 41.45076321 ] } }
+,
+{ "type": "Feature", "id": 113, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35205415, "LONGITUDE": -81.59043101, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.59043101, 41.35205415 ] } }
+,
+{ "type": "Feature", "id": 114, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.47747429, "LONGITUDE": -81.83111801, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83111801, 41.47747429 ] } }
+,
+{ "type": "Feature", "id": 115, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41566969, "LONGITUDE": -81.87541544, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.87541544, 41.41566969 ] } }
+,
+{ "type": "Feature", "id": 116, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40130666, "LONGITUDE": -81.75942615, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.75942615, 41.40130666 ] } }
+,
+{ "type": "Feature", "id": 117, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43515611, "LONGITUDE": -81.84628509, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84628509, 41.43515611 ] } }
+,
+{ "type": "Feature", "id": 118, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39565252, "LONGITUDE": -81.88524781, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88524781, 41.39565252 ] } }
+,
+{ "type": "Feature", "id": 119, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43678227, "LONGITUDE": -81.84463828, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84463828, 41.43678227 ] } }
+,
+{ "type": "Feature", "id": 120, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41772778, "LONGITUDE": -81.42976465, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42976465, 41.41772778 ] } }
+,
+{ "type": "Feature", "id": 121, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44310995, "LONGITUDE": -81.84371881, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84371881, 41.44310995 ] } }
+,
+{ "type": "Feature", "id": 122, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44062682, "LONGITUDE": -81.67495914, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.67495914, 41.44062682 ] } }
+,
+{ "type": "Feature", "id": 123, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38361168, "LONGITUDE": -81.5119603, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.5119603, 41.38361168 ] } }
+,
+{ "type": "Feature", "id": 124, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44257175, "LONGITUDE": -81.71688937, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.71688937, 41.44257175 ] } }
+,
+{ "type": "Feature", "id": 125, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.21889608, "LONGITUDE": -81.70061118, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.70061118, 41.21889608 ] } }
+,
+{ "type": "Feature", "id": 126, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43172962, "LONGITUDE": -81.41581698, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41581698, 41.43172962 ] } }
+,
+{ "type": "Feature", "id": 127, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39132227, "LONGITUDE": -81.8708163, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8708163, 41.39132227 ] } }
+,
+{ "type": "Feature", "id": 128, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.20453393, "LONGITUDE": -81.71636478, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.71636478, 41.20453393 ] } }
+,
+{ "type": "Feature", "id": 129, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39013906, "LONGITUDE": -81.87140103, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.87140103, 41.39013906 ] } }
+,
+{ "type": "Feature", "id": 130, "properties": { "RES": "Euclid Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.55179615, "LONGITUDE": -81.53033792, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.53033792, 41.55179615 ] } }
+,
+{ "type": "Feature", "id": 131, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38393424, "LONGITUDE": -81.53197126, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.53197126, 41.38393424 ] } }
+,
+{ "type": "Feature", "id": 132, "properties": { "RES": "Huntington", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.48578952, "LONGITUDE": -81.93206012, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.93206012, 41.48578952 ] } }
+,
+{ "type": "Feature", "id": 133, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43731023, "LONGITUDE": -81.65850223, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.65850223, 41.43731023 ] } }
+,
+{ "type": "Feature", "id": 134, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.55604375, "LONGITUDE": -81.41877808, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41877808, 41.55604375 ] } }
+,
+{ "type": "Feature", "id": 135, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.34639463, "LONGITUDE": -81.84847547, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84847547, 41.34639463 ] } }
+,
+{ "type": "Feature", "id": 136, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3508532, "LONGITUDE": -81.83664772, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83664772, 41.3508532 ] } }
+,
+{ "type": "Feature", "id": 137, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35013025, "LONGITUDE": -81.83619781, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83619781, 41.35013025 ] } }
+,
+{ "type": "Feature", "id": 138, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.314006, "LONGITUDE": -81.61976304, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61976304, 41.314006 ] } }
+,
+{ "type": "Feature", "id": 139, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31446261, "LONGITUDE": -81.61832845, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61832845, 41.31446261 ] } }
+,
+{ "type": "Feature", "id": 140, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.55998284, "LONGITUDE": -81.41588571, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41588571, 41.55998284 ] } }
+,
+{ "type": "Feature", "id": 141, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.28531067, "LONGITUDE": -81.58876074, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.58876074, 41.28531067 ] } }
+,
+{ "type": "Feature", "id": 142, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44929497, "LONGITUDE": -81.82846646, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82846646, 41.44929497 ] } }
+,
+{ "type": "Feature", "id": 143, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.36153106, "LONGITUDE": -81.56064626, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.56064626, 41.36153106 ] } }
+,
+{ "type": "Feature", "id": 144, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43797323, "LONGITUDE": -81.40189722, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.40189722, 41.43797323 ] } }
+,
+{ "type": "Feature", "id": 145, "properties": { "RES": "Euclid Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.55873775, "LONGITUDE": -81.5337706, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.5337706, 41.55873775 ] } }
+,
+{ "type": "Feature", "id": 146, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.2159237, "LONGITUDE": -81.68547185, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.68547185, 41.2159237 ] } }
+,
+{ "type": "Feature", "id": 147, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.36994918, "LONGITUDE": -81.61990198, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61990198, 41.36994918 ] } }
+,
+{ "type": "Feature", "id": 148, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.30219151, "LONGITUDE": -81.60950209, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60950209, 41.30219151 ] } }
+,
+{ "type": "Feature", "id": 149, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43007607, "LONGITUDE": -81.8530661, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8530661, 41.43007607 ] } }
+,
+{ "type": "Feature", "id": 150, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3809144, "LONGITUDE": -81.51504974, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.51504974, 41.3809144 ] } }
+,
+{ "type": "Feature", "id": 151, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.54415546, "LONGITUDE": -81.41547526, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41547526, 41.54415546 ] } }
+,
+{ "type": "Feature", "id": 152, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.29072993, "LONGITUDE": -81.59123658, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.59123658, 41.29072993 ] } }
+,
+{ "type": "Feature", "id": 153, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.37126143, "LONGITUDE": -81.56156684, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.56156684, 41.37126143 ] } }
+,
+{ "type": "Feature", "id": 154, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41773948, "LONGITUDE": -81.41637284, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41637284, 41.41773948 ] } }
+,
+{ "type": "Feature", "id": 155, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.40801001, "LONGITUDE": -81.95292973, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.95292973, 41.40801001 ] } }
+,
+{ "type": "Feature", "id": 156, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22607012, "LONGITUDE": -81.70982933, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.70982933, 41.22607012 ] } }
+,
+{ "type": "Feature", "id": 157, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42117718, "LONGITUDE": -81.85828619, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.85828619, 41.42117718 ] } }
+,
+{ "type": "Feature", "id": 158, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41535114, "LONGITUDE": -81.457114, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.457114, 41.41535114 ] } }
+,
+{ "type": "Feature", "id": 159, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.55270411, "LONGITUDE": -81.41902596, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41902596, 41.55270411 ] } }
+,
+{ "type": "Feature", "id": 160, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42266462, "LONGITUDE": -81.41941316, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41941316, 41.42266462 ] } }
+,
+{ "type": "Feature", "id": 161, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.30672355, "LONGITUDE": -81.59813782, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.59813782, 41.30672355 ] } }
+,
+{ "type": "Feature", "id": 162, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38576205, "LONGITUDE": -81.8660223, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8660223, 41.38576205 ] } }
+,
+{ "type": "Feature", "id": 163, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41478194, "LONGITUDE": -81.42398376, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42398376, 41.41478194 ] } }
+,
+{ "type": "Feature", "id": 164, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41741509, "LONGITUDE": -81.96597386, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.96597386, 41.41741509 ] } }
+,
+{ "type": "Feature", "id": 165, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.30554747, "LONGITUDE": -81.75833347, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.75833347, 41.30554747 ] } }
+,
+{ "type": "Feature", "id": 166, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41344729, "LONGITUDE": -81.88513668, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88513668, 41.41344729 ] } }
+,
+{ "type": "Feature", "id": 167, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.30259049, "LONGITUDE": -81.73751617, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.73751617, 41.30259049 ] } }
+,
+{ "type": "Feature", "id": 168, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.33831249, "LONGITUDE": -81.82798028, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82798028, 41.33831249 ] } }
+,
+{ "type": "Feature", "id": 169, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.42073083, "LONGITUDE": -81.41661948, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41661948, 41.42073083 ] } }
+,
+{ "type": "Feature", "id": 170, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35156679, "LONGITUDE": -81.84614771, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84614771, 41.35156679 ] } }
+,
+{ "type": "Feature", "id": 171, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.58675839, "LONGITUDE": -81.41963331, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41963331, 41.58675839 ] } }
+,
+{ "type": "Feature", "id": 172, "properties": { "RES": "Bradley Woods", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41835475, "LONGITUDE": -81.94433385, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.94433385, 41.41835475 ] } }
+,
+{ "type": "Feature", "id": 173, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.21680442, "LONGITUDE": -81.70259251, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.70259251, 41.21680442 ] } }
+,
+{ "type": "Feature", "id": 174, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41493269, "LONGITUDE": -81.47118419, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.47118419, 41.41493269 ] } }
+,
+{ "type": "Feature", "id": 175, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35013172, "LONGITUDE": -81.82431789, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82431789, 41.35013172 ] } }
+,
+{ "type": "Feature", "id": 176, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3514008, "LONGITUDE": -81.57607027, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.57607027, 41.3514008 ] } }
+,
+{ "type": "Feature", "id": 177, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3113186, "LONGITUDE": -81.59776676, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.59776676, 41.3113186 ] } }
+,
+{ "type": "Feature", "id": 178, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38801663, "LONGITUDE": -81.55359386, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.55359386, 41.38801663 ] } }
+,
+{ "type": "Feature", "id": 179, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41453294, "LONGITUDE": -81.43325426, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.43325426, 41.41453294 ] } }
+,
+{ "type": "Feature", "id": 180, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.21226567, "LONGITUDE": -81.70933286, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.70933286, 41.21226567 ] } }
+,
+{ "type": "Feature", "id": 181, "properties": { "RES": "Euclid Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.54720517, "LONGITUDE": -81.52703655, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.52703655, 41.54720517 ] } }
+,
+{ "type": "Feature", "id": 182, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22198152, "LONGITUDE": -81.72723553, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.72723553, 41.22198152 ] } }
+,
+{ "type": "Feature", "id": 183, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.29814557, "LONGITUDE": -81.76762749, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.76762749, 41.29814557 ] } }
+,
+{ "type": "Feature", "id": 184, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31298189, "LONGITUDE": -81.61448038, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61448038, 41.31298189 ] } }
+,
+{ "type": "Feature", "id": 185, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.38210608, "LONGITUDE": -81.50006953, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.50006953, 41.38210608 ] } }
+,
+{ "type": "Feature", "id": 186, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44029105, "LONGITUDE": -81.82685947, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82685947, 41.44029105 ] } }
+,
+{ "type": "Feature", "id": 187, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.58568586, "LONGITUDE": -81.42613155, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42613155, 41.58568586 ] } }
+,
+{ "type": "Feature", "id": 188, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.31753012, "LONGITUDE": -81.79993077, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.79993077, 41.31753012 ] } }
+,
+{ "type": "Feature", "id": 189, "properties": { "RES": "Garfield Park", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.424362, "LONGITUDE": -81.60062911, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60062911, 41.424362 ] } }
+,
+{ "type": "Feature", "id": 190, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22415132, "LONGITUDE": -81.71310251, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.71310251, 41.22415132 ] } }
+,
+{ "type": "Feature", "id": 191, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.39697747, "LONGITUDE": -81.47886189, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.47886189, 41.39697747 ] } }
+,
+{ "type": "Feature", "id": 192, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.54822729, "LONGITUDE": -81.42946234, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42946234, 41.54822729 ] } }
+,
+{ "type": "Feature", "id": 193, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.32407827, "LONGITUDE": -81.61168292, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61168292, 41.32407827 ] } }
+,
+{ "type": "Feature", "id": 194, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.34441495, "LONGITUDE": -81.59305332, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.59305332, 41.34441495 ] } }
+,
+{ "type": "Feature", "id": 195, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.33576235, "LONGITUDE": -81.82563767, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.82563767, 41.33576235 ] } }
+,
+{ "type": "Feature", "id": 196, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.32063827, "LONGITUDE": -81.61309707, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.61309707, 41.32063827 ] } }
+,
+{ "type": "Feature", "id": 197, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41882501, "LONGITUDE": -81.8682371, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8682371, 41.41882501 ] } }
+,
+{ "type": "Feature", "id": 198, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43485593, "LONGITUDE": -81.65948614, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.65948614, 41.43485593 ] } }
+,
+{ "type": "Feature", "id": 199, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43834462, "LONGITUDE": -81.67167751, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.67167751, 41.43834462 ] } }
+,
+{ "type": "Feature", "id": 200, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.21924921, "LONGITUDE": -81.69855146, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.69855146, 41.21924921 ] } }
+,
+{ "type": "Feature", "id": 201, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.46613444, "LONGITUDE": -81.83066559, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83066559, 41.46613444 ] } }
+,
+{ "type": "Feature", "id": 202, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.44247647, "LONGITUDE": -81.84535501, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84535501, 41.44247647 ] } }
+,
+{ "type": "Feature", "id": 203, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35296827, "LONGITUDE": -81.58001977, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.58001977, 41.35296827 ] } }
+,
+{ "type": "Feature", "id": 204, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.45251782, "LONGITUDE": -81.40689587, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.40689587, 41.45251782 ] } }
+,
+{ "type": "Feature", "id": 205, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.36946755, "LONGITUDE": -81.55333381, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.55333381, 41.36946755 ] } }
+,
+{ "type": "Feature", "id": 206, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43466654, "LONGITUDE": -81.41744112, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41744112, 41.43466654 ] } }
+,
+{ "type": "Feature", "id": 207, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.33554457, "LONGITUDE": -81.83704769, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.83704769, 41.33554457 ] } }
+,
+{ "type": "Feature", "id": 208, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22004685, "LONGITUDE": -81.72158709, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.72158709, 41.22004685 ] } }
+,
+{ "type": "Feature", "id": 209, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.37987703, "LONGITUDE": -81.57007095, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.57007095, 41.37987703 ] } }
+,
+{ "type": "Feature", "id": 210, "properties": { "RES": "Hinckley", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.22356588, "LONGITUDE": -81.69741233, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.69741233, 41.22356588 ] } }
+,
+{ "type": "Feature", "id": 211, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43112383, "LONGITUDE": -81.84185509, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84185509, 41.43112383 ] } }
+,
+{ "type": "Feature", "id": 212, "properties": { "RES": "Garfield Park", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.43259916, "LONGITUDE": -81.60598731, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.60598731, 41.43259916 ] } }
+,
+{ "type": "Feature", "id": 213, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41369822, "LONGITUDE": -81.87404272, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.87404272, 41.41369822 ] } }
+,
+{ "type": "Feature", "id": 214, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3551513, "LONGITUDE": -81.58615593, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.58615593, 41.3551513 ] } }
+,
+{ "type": "Feature", "id": 215, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3732793, "LONGITUDE": -81.55525796, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.55525796, 41.3732793 ] } }
+,
+{ "type": "Feature", "id": 216, "properties": { "RES": "South Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41718422, "LONGITUDE": -81.42756996, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.42756996, 41.41718422 ] } }
+,
+{ "type": "Feature", "id": 217, "properties": { "RES": "North Chagrin", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.5711058, "LONGITUDE": -81.41581956, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.41581956, 41.5711058 ] } }
+,
+{ "type": "Feature", "id": 218, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.32457387, "LONGITUDE": -81.81198184, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.81198184, 41.32457387 ] } }
+,
+{ "type": "Feature", "id": 219, "properties": { "RES": "Rocky River", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.41231848, "LONGITUDE": -81.88290487, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.88290487, 41.41231848 ] } }
+,
+{ "type": "Feature", "id": 220, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.35512231, "LONGITUDE": -81.8447435, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.8447435, 41.35512231 ] } }
+,
+{ "type": "Feature", "id": 221, "properties": { "RES": "Huntington", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.48772407, "LONGITUDE": -81.93632315, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.93632315, 41.48772407 ] } }
+,
+{ "type": "Feature", "id": 222, "properties": { "RES": "Bedford", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3825164, "LONGITUDE": -81.53675503, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.53675503, 41.3825164 ] } }
+,
+{ "type": "Feature", "id": 223, "properties": { "RES": "Brecksville", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.30117043, "LONGITUDE": -81.69766671, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.69766671, 41.30117043 ] } }
+,
+{ "type": "Feature", "id": 224, "properties": { "RES": "Big Creek", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.3764411, "LONGITUDE": -81.84017227, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.84017227, 41.3764411 ] } }
+,
+{ "type": "Feature", "id": 225, "properties": { "RES": "Lakefront", "INVPLANT": "Alliaria petiolata", "LATITUDE": 41.49231839, "LONGITUDE": -81.73654967, "COM_NAME": "Garlic Mustard" }, "geometry": { "type": "Point", "coordinates": [ -81.73654967, 41.49231839 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

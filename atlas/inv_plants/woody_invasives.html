@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/acer.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Woody Invasives</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/acer2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer2.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer3.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer4.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer5.jpg" /></a></td>
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Deciduous tree, 50+ feet tall, wide variety of moisture and light conditions.</p>
+				<h3>Leaves:</h3>
+					<p>Opposite, 4 to 6 inches across, 5-7 lobes, juice milky, few large teeth.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Late spring, green to tan, double samara with 2 widely spread "wings".</p>
+				<h3>Similar Species:</h3>
+					<p>Sugar Maple <i>(Acer saccharum)</i></p>
+				<h3>Tier: 2</h3>
+					<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+					<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1539, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.40672349, "LONGITUDE": -81.89181908, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.89181908, 41.40672349 ] } }
+,
+{ "type": "Feature", "id": 1540, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.33192939, "LONGITUDE": -81.82499169, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82499169, 41.33192939 ] } }
+,
+{ "type": "Feature", "id": 1541, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.35842415, "LONGITUDE": -81.56398036, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.56398036, 41.35842415 ] } }
+,
+{ "type": "Feature", "id": 1542, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "woody invasives", "LATITUDE": 41.43752411, "LONGITUDE": -81.65837322, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.65837322, 41.43752411 ] } }
+,
+{ "type": "Feature", "id": 1543, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "woody invasives", "LATITUDE": 41.42921246, "LONGITUDE": -81.66343159, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.66343159, 41.42921246 ] } }
+,
+{ "type": "Feature", "id": 1544, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.443256, "LONGITUDE": -81.840135, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.840135, 41.443256 ] } }
+,
+{ "type": "Feature", "id": 1545, "properties": { "RES": "Brookside", "INVPLANT": "woody invasives", "LATITUDE": 41.45013431, "LONGITUDE": -81.72857593, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.72857593, 41.45013431 ] } }
+,
+{ "type": "Feature", "id": 1546, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.42477331, "LONGITUDE": -81.60123584, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60123584, 41.42477331 ] } }
+,
+{ "type": "Feature", "id": 1547, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37429277, "LONGITUDE": -81.56130109, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.56130109, 41.37429277 ] } }
+,
+{ "type": "Feature", "id": 1548, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.57922677, "LONGITUDE": -81.43196246, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43196246, 41.57922677 ] } }
+,
+{ "type": "Feature", "id": 1549, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.40605194, "LONGITUDE": -81.75755566, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75755566, 41.40605194 ] } }
+,
+{ "type": "Feature", "id": 1550, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.57412942, "LONGITUDE": -81.43561051, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43561051, 41.57412942 ] } }
+,
+{ "type": "Feature", "id": 1551, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41570057, "LONGITUDE": -81.42300482, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42300482, 41.41570057 ] } }
+,
+{ "type": "Feature", "id": 1552, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.38090114, "LONGITUDE": -81.86766981, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.86766981, 41.38090114 ] } }
+,
+{ "type": "Feature", "id": 1553, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.49077192, "LONGITUDE": -81.93437531, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93437531, 41.49077192 ] } }
+,
+{ "type": "Feature", "id": 1554, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37620173, "LONGITUDE": -81.57505157, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.57505157, 41.37620173 ] } }
+,
+{ "type": "Feature", "id": 1555, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22790938, "LONGITUDE": -81.70892519, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70892519, 41.22790938 ] } }
+,
+{ "type": "Feature", "id": 1556, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.4562541, "LONGITUDE": -81.40496244, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.40496244, 41.4562541 ] } }
+,
+{ "type": "Feature", "id": 1557, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.36558879, "LONGITUDE": -81.81420653, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.81420653, 41.36558879 ] } }
+,
+{ "type": "Feature", "id": 1558, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.411854, "LONGITUDE": -81.752841, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.752841, 41.411854 ] } }
+,
+{ "type": "Feature", "id": 1559, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.40695157, "LONGITUDE": -81.75615292, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75615292, 41.40695157 ] } }
+,
+{ "type": "Feature", "id": 1560, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.36156747, "LONGITUDE": -81.82204481, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82204481, 41.36156747 ] } }
+,
+{ "type": "Feature", "id": 1561, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.3339709, "LONGITUDE": -81.83177352, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.83177352, 41.3339709 ] } }
+,
+{ "type": "Feature", "id": 1562, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.3104551, "LONGITUDE": -81.62140604, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.62140604, 41.3104551 ] } }
+,
+{ "type": "Feature", "id": 1563, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41471869, "LONGITUDE": -81.42156895, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42156895, 41.41471869 ] } }
+,
+{ "type": "Feature", "id": 1564, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41732736, "LONGITUDE": -81.41409213, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41409213, 41.41732736 ] } }
+,
+{ "type": "Feature", "id": 1565, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.43074508, "LONGITUDE": -81.60488099, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60488099, 41.43074508 ] } }
+,
+{ "type": "Feature", "id": 1566, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.44064529, "LONGITUDE": -81.61762051, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.61762051, 41.44064529 ] } }
+,
+{ "type": "Feature", "id": 1567, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.2107036, "LONGITUDE": -81.70866182, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70866182, 41.2107036 ] } }
+,
+{ "type": "Feature", "id": 1568, "properties": { "RES": "Bradley Woods", "INVPLANT": "woody invasives", "LATITUDE": 41.41816425, "LONGITUDE": -81.95031099, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.95031099, 41.41816425 ] } }
+,
+{ "type": "Feature", "id": 1569, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.5746704, "LONGITUDE": -81.43176445, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43176445, 41.5746704 ] } }
+,
+{ "type": "Feature", "id": 1570, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56403628, "LONGITUDE": -81.43372007, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43372007, 41.56403628 ] } }
+,
+{ "type": "Feature", "id": 1571, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37482731, "LONGITUDE": -81.57718203, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.57718203, 41.37482731 ] } }
+,
+{ "type": "Feature", "id": 1572, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.31670355, "LONGITUDE": -81.80119252, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.80119252, 41.31670355 ] } }
+,
+{ "type": "Feature", "id": 1573, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.40896907, "LONGITUDE": -81.41894191, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41894191, 41.40896907 ] } }
+,
+{ "type": "Feature", "id": 1574, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.42985088, "LONGITUDE": -81.41774813, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41774813, 41.42985088 ] } }
+,
+{ "type": "Feature", "id": 1575, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41906632, "LONGITUDE": -81.41320682, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41320682, 41.41906632 ] } }
+,
+{ "type": "Feature", "id": 1576, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.54184029, "LONGITUDE": -81.41573123, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41573123, 41.54184029 ] } }
+,
+{ "type": "Feature", "id": 1577, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56372858, "LONGITUDE": -81.41659169, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41659169, 41.56372858 ] } }
+,
+{ "type": "Feature", "id": 1578, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.32025105, "LONGITUDE": -81.60984568, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60984568, 41.32025105 ] } }
+,
+{ "type": "Feature", "id": 1579, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.31958387, "LONGITUDE": -81.59099876, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.59099876, 41.31958387 ] } }
+,
+{ "type": "Feature", "id": 1580, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22494345, "LONGITUDE": -81.70951109, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70951109, 41.22494345 ] } }
+,
+{ "type": "Feature", "id": 1581, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.36156436, "LONGITUDE": -81.5658599, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.5658599, 41.36156436 ] } }
+,
+{ "type": "Feature", "id": 1582, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22380495, "LONGITUDE": -81.7129027, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.7129027, 41.22380495 ] } }
+,
+{ "type": "Feature", "id": 1583, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.33913127, "LONGITUDE": -81.84425967, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.84425967, 41.33913127 ] } }
+,
+{ "type": "Feature", "id": 1584, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.42816449, "LONGITUDE": -81.60704348, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60704348, 41.42816449 ] } }
+,
+{ "type": "Feature", "id": 1585, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.30484504, "LONGITUDE": -81.77408227, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.77408227, 41.30484504 ] } }
+,
+{ "type": "Feature", "id": 1586, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.36595019, "LONGITUDE": -81.56596618, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.56596618, 41.36595019 ] } }
+,
+{ "type": "Feature", "id": 1587, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56200063, "LONGITUDE": -81.43068399, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43068399, 41.56200063 ] } }
+,
+{ "type": "Feature", "id": 1588, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.40564516, "LONGITUDE": -81.89062872, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.89062872, 41.40564516 ] } }
+,
+{ "type": "Feature", "id": 1589, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.44203246, "LONGITUDE": -81.62157951, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.62157951, 41.44203246 ] } }
+,
+{ "type": "Feature", "id": 1590, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41333449, "LONGITUDE": -81.4610112, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.4610112, 41.41333449 ] } }
+,
+{ "type": "Feature", "id": 1591, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38393385, "LONGITUDE": -81.52806977, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.52806977, 41.38393385 ] } }
+,
+{ "type": "Feature", "id": 1592, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38400643, "LONGITUDE": -81.52837716, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.52837716, 41.38400643 ] } }
+,
+{ "type": "Feature", "id": 1593, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37723705, "LONGITUDE": -81.54797226, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.54797226, 41.37723705 ] } }
+,
+{ "type": "Feature", "id": 1594, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.38270485, "LONGITUDE": -81.48192276, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.48192276, 41.38270485 ] } }
+,
+{ "type": "Feature", "id": 1595, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41540461, "LONGITUDE": -81.42572439, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42572439, 41.41540461 ] } }
+,
+{ "type": "Feature", "id": 1596, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.39074106, "LONGITUDE": -81.47626494, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.47626494, 41.39074106 ] } }
+,
+{ "type": "Feature", "id": 1597, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.3846121, "LONGITUDE": -81.52306291, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.52306291, 41.3846121 ] } }
+,
+{ "type": "Feature", "id": 1598, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22181496, "LONGITUDE": -81.7314439, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.7314439, 41.22181496 ] } }
+,
+{ "type": "Feature", "id": 1599, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21765277, "LONGITUDE": -81.71708215, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71708215, 41.21765277 ] } }
+,
+{ "type": "Feature", "id": 1600, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.49009341, "LONGITUDE": -81.93189877, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93189877, 41.49009341 ] } }
+,
+{ "type": "Feature", "id": 1601, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38971042, "LONGITUDE": -81.55075527, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.55075527, 41.38971042 ] } }
+,
+{ "type": "Feature", "id": 1602, "properties": { "RES": "Brookside", "INVPLANT": "woody invasives", "LATITUDE": 41.45067422, "LONGITUDE": -81.72325447, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.72325447, 41.45067422 ] } }
+,
+{ "type": "Feature", "id": 1603, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21732047, "LONGITUDE": -81.71503429, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71503429, 41.21732047 ] } }
+,
+{ "type": "Feature", "id": 1604, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.20240099, "LONGITUDE": -81.70029438, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70029438, 41.20240099 ] } }
+,
+{ "type": "Feature", "id": 1605, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.20423594, "LONGITUDE": -81.70303557, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70303557, 41.20423594 ] } }
+,
+{ "type": "Feature", "id": 1606, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21530086, "LONGITUDE": -81.73397565, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.73397565, 41.21530086 ] } }
+,
+{ "type": "Feature", "id": 1607, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.35776552, "LONGITUDE": -81.82430754, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82430754, 41.35776552 ] } }
+,
+{ "type": "Feature", "id": 1608, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.35639314, "LONGITUDE": -81.82688913, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82688913, 41.35639314 ] } }
+,
+{ "type": "Feature", "id": 1609, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.3698682, "LONGITUDE": -81.82957525, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82957525, 41.3698682 ] } }
+,
+{ "type": "Feature", "id": 1610, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.40268629, "LONGITUDE": -81.8910334, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.8910334, 41.40268629 ] } }
+,
+{ "type": "Feature", "id": 1611, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.42356679, "LONGITUDE": -81.42116239, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42116239, 41.42356679 ] } }
+,
+{ "type": "Feature", "id": 1612, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37784005, "LONGITUDE": -81.55078649, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.55078649, 41.37784005 ] } }
+,
+{ "type": "Feature", "id": 1613, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.34989764, "LONGITUDE": -81.82594881, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82594881, 41.34989764 ] } }
+,
+{ "type": "Feature", "id": 1614, "properties": { "RES": "Brookside", "INVPLANT": "woody invasives", "LATITUDE": 41.44575955, "LONGITUDE": -81.72653379, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.72653379, 41.44575955 ] } }
+,
+{ "type": "Feature", "id": 1615, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.31456573, "LONGITUDE": -81.62062923, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.62062923, 41.31456573 ] } }
+,
+{ "type": "Feature", "id": 1616, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.29924755, "LONGITUDE": -81.60601944, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60601944, 41.29924755 ] } }
+,
+{ "type": "Feature", "id": 1617, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.44394935, "LONGITUDE": -81.75517992, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75517992, 41.44394935 ] } }
+,
+{ "type": "Feature", "id": 1618, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.4249326, "LONGITUDE": -81.42369186, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42369186, 41.4249326 ] } }
+,
+{ "type": "Feature", "id": 1619, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.4302293, "LONGITUDE": -81.60239621, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60239621, 41.4302293 ] } }
+,
+{ "type": "Feature", "id": 1620, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.43722452, "LONGITUDE": -81.61457015, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.61457015, 41.43722452 ] } }
+,
+{ "type": "Feature", "id": 1621, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "woody invasives", "LATITUDE": 41.43451279, "LONGITUDE": -81.65840688, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.65840688, 41.43451279 ] } }
+,
+{ "type": "Feature", "id": 1622, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "woody invasives", "LATITUDE": 41.43113029, "LONGITUDE": -81.661767, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.661767, 41.43113029 ] } }
+,
+{ "type": "Feature", "id": 1623, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.49099585, "LONGITUDE": -81.93770501, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93770501, 41.49099585 ] } }
+,
+{ "type": "Feature", "id": 1624, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37300084, "LONGITUDE": -81.56548356, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.56548356, 41.37300084 ] } }
+,
+{ "type": "Feature", "id": 1625, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56468209, "LONGITUDE": -81.42077131, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42077131, 41.56468209 ] } }
+,
+{ "type": "Feature", "id": 1626, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.3108479, "LONGITUDE": -81.78414909, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.78414909, 41.3108479 ] } }
+,
+{ "type": "Feature", "id": 1627, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.48787628, "LONGITUDE": -81.93665389, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93665389, 41.48787628 ] } }
+,
+{ "type": "Feature", "id": 1628, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22869565, "LONGITUDE": -81.72054001, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.72054001, 41.22869565 ] } }
+,
+{ "type": "Feature", "id": 1629, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.42923358, "LONGITUDE": -81.60105126, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60105126, 41.42923358 ] } }
+,
+{ "type": "Feature", "id": 1630, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22018704, "LONGITUDE": -81.72144192, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.72144192, 41.22018704 ] } }
+,
+{ "type": "Feature", "id": 1631, "properties": { "RES": "West Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.39142784, "LONGITUDE": -81.68963265, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.68963265, 41.39142784 ] } }
+,
+{ "type": "Feature", "id": 1632, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.31022694, "LONGITUDE": -81.58964114, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.58964114, 41.31022694 ] } }
+,
+{ "type": "Feature", "id": 1633, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.30246176, "LONGITUDE": -81.80439702, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.80439702, 41.30246176 ] } }
+,
+{ "type": "Feature", "id": 1634, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.35156666, "LONGITUDE": -81.5907674, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.5907674, 41.35156666 ] } }
+,
+{ "type": "Feature", "id": 1635, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.41144292, "LONGITUDE": -81.88452389, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.88452389, 41.41144292 ] } }
+,
+{ "type": "Feature", "id": 1636, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.40312697, "LONGITUDE": -81.75744553, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75744553, 41.40312697 ] } }
+,
+{ "type": "Feature", "id": 1637, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.40184121, "LONGITUDE": -81.75433791, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75433791, 41.40184121 ] } }
+,
+{ "type": "Feature", "id": 1638, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.39771957, "LONGITUDE": -81.76091443, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.76091443, 41.39771957 ] } }
+,
+{ "type": "Feature", "id": 1639, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41090247, "LONGITUDE": -81.41309003, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41309003, 41.41090247 ] } }
+,
+{ "type": "Feature", "id": 1640, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41050549, "LONGITUDE": -81.42183226, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42183226, 41.41050549 ] } }
+,
+{ "type": "Feature", "id": 1641, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56790914, "LONGITUDE": -81.43777643, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43777643, 41.56790914 ] } }
+,
+{ "type": "Feature", "id": 1642, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.35361283, "LONGITUDE": -81.85041422, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.85041422, 41.35361283 ] } }
+,
+{ "type": "Feature", "id": 1643, "properties": { "RES": "Big Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.34302359, "LONGITUDE": -81.83039477, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.83039477, 41.34302359 ] } }
+,
+{ "type": "Feature", "id": 1644, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.2156307, "LONGITUDE": -81.70621434, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70621434, 41.2156307 ] } }
+,
+{ "type": "Feature", "id": 1645, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.58072648, "LONGITUDE": -81.43434779, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43434779, 41.58072648 ] } }
+,
+{ "type": "Feature", "id": 1646, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.58014178, "LONGITUDE": -81.43038775, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43038775, 41.58014178 ] } }
+,
+{ "type": "Feature", "id": 1647, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.42195689, "LONGITUDE": -81.42167957, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42167957, 41.42195689 ] } }
+,
+{ "type": "Feature", "id": 1648, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56923395, "LONGITUDE": -81.43695255, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43695255, 41.56923395 ] } }
+,
+{ "type": "Feature", "id": 1649, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21002383, "LONGITUDE": -81.68732397, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.68732397, 41.21002383 ] } }
+,
+{ "type": "Feature", "id": 1650, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.4192121, "LONGITUDE": -81.41741183, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41741183, 41.4192121 ] } }
+,
+{ "type": "Feature", "id": 1651, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22053074, "LONGITUDE": -81.69779574, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.69779574, 41.22053074 ] } }
+,
+{ "type": "Feature", "id": 1652, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.36880982, "LONGITUDE": -81.85609285, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.85609285, 41.36880982 ] } }
+,
+{ "type": "Feature", "id": 1653, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30063961, "LONGITUDE": -81.6963138, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.6963138, 41.30063961 ] } }
+,
+{ "type": "Feature", "id": 1654, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30147909, "LONGITUDE": -81.6350174, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.6350174, 41.30147909 ] } }
+,
+{ "type": "Feature", "id": 1655, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30771306, "LONGITUDE": -81.60484345, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60484345, 41.30771306 ] } }
+,
+{ "type": "Feature", "id": 1656, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30584859, "LONGITUDE": -81.60861001, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60861001, 41.30584859 ] } }
+,
+{ "type": "Feature", "id": 1657, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30157521, "LONGITUDE": -81.62509736, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.62509736, 41.30157521 ] } }
+,
+{ "type": "Feature", "id": 1658, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.44904709, "LONGITUDE": -81.83687157, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.83687157, 41.44904709 ] } }
+,
+{ "type": "Feature", "id": 1659, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38419838, "LONGITUDE": -81.5327285, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.5327285, 41.38419838 ] } }
+,
+{ "type": "Feature", "id": 1660, "properties": { "RES": "West Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.38423809, "LONGITUDE": -81.69462451, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.69462451, 41.38423809 ] } }
+,
+{ "type": "Feature", "id": 1661, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21666076, "LONGITUDE": -81.71726861, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71726861, 41.21666076 ] } }
+,
+{ "type": "Feature", "id": 1662, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21652621, "LONGITUDE": -81.71106809, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71106809, 41.21652621 ] } }
+,
+{ "type": "Feature", "id": 1663, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.2193802, "LONGITUDE": -81.70414082, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.70414082, 41.2193802 ] } }
+,
+{ "type": "Feature", "id": 1664, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "woody invasives", "LATITUDE": 41.43769501, "LONGITUDE": -81.65710705, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.65710705, 41.43769501 ] } }
+,
+{ "type": "Feature", "id": 1665, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38652682, "LONGITUDE": -81.53765645, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.53765645, 41.38652682 ] } }
+,
+{ "type": "Feature", "id": 1666, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.54930173, "LONGITUDE": -81.41844353, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41844353, 41.54930173 ] } }
+,
+{ "type": "Feature", "id": 1667, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.43288505, "LONGITUDE": -81.60927659, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60927659, 41.43288505 ] } }
+,
+{ "type": "Feature", "id": 1668, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.43296317, "LONGITUDE": -81.60734873, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.60734873, 41.43296317 ] } }
+,
+{ "type": "Feature", "id": 1669, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.48533867, "LONGITUDE": -81.93525421, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93525421, 41.48533867 ] } }
+,
+{ "type": "Feature", "id": 1670, "properties": { "RES": "Huntington", "INVPLANT": "woody invasives", "LATITUDE": 41.48578952, "LONGITUDE": -81.93206012, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.93206012, 41.48578952 ] } }
+,
+{ "type": "Feature", "id": 1671, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.20402787, "LONGITUDE": -81.71826935, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71826935, 41.20402787 ] } }
+,
+{ "type": "Feature", "id": 1672, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.31000907, "LONGITUDE": -81.78264836, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.78264836, 41.31000907 ] } }
+,
+{ "type": "Feature", "id": 1673, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.40536623, "LONGITUDE": -81.88858517, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.88858517, 41.40536623 ] } }
+,
+{ "type": "Feature", "id": 1674, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.33320025, "LONGITUDE": -81.82642014, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82642014, 41.33320025 ] } }
+,
+{ "type": "Feature", "id": 1675, "properties": { "RES": "West Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.38956658, "LONGITUDE": -81.68513636, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.68513636, 41.38956658 ] } }
+,
+{ "type": "Feature", "id": 1676, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.4091523, "LONGITUDE": -81.39731424, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.39731424, 41.4091523 ] } }
+,
+{ "type": "Feature", "id": 1677, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.28527286, "LONGITUDE": -81.58925935, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.58925935, 41.28527286 ] } }
+,
+{ "type": "Feature", "id": 1678, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.44891996, "LONGITUDE": -81.82858125, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82858125, 41.44891996 ] } }
+,
+{ "type": "Feature", "id": 1679, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.43738123, "LONGITUDE": -81.40109723, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.40109723, 41.43738123 ] } }
+,
+{ "type": "Feature", "id": 1680, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.57995544, "LONGITUDE": -81.4255089, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.4255089, 41.57995544 ] } }
+,
+{ "type": "Feature", "id": 1681, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.20597691, "LONGITUDE": -81.71237814, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71237814, 41.20597691 ] } }
+,
+{ "type": "Feature", "id": 1682, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.32310582, "LONGITUDE": -81.81894972, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.81894972, 41.32310582 ] } }
+,
+{ "type": "Feature", "id": 1683, "properties": { "RES": "Euclid Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.55970382, "LONGITUDE": -81.53348959, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.53348959, 41.55970382 ] } }
+,
+{ "type": "Feature", "id": 1684, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21569774, "LONGITUDE": -81.68658032, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.68658032, 41.21569774 ] } }
+,
+{ "type": "Feature", "id": 1685, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.37004901, "LONGITUDE": -81.61985631, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.61985631, 41.37004901 ] } }
+,
+{ "type": "Feature", "id": 1686, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.43019158, "LONGITUDE": -81.85431843, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.85431843, 41.43019158 ] } }
+,
+{ "type": "Feature", "id": 1687, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.54398654, "LONGITUDE": -81.41526692, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41526692, 41.54398654 ] } }
+,
+{ "type": "Feature", "id": 1688, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.39298943, "LONGITUDE": -81.88463111, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.88463111, 41.39298943 ] } }
+,
+{ "type": "Feature", "id": 1689, "properties": { "RES": "Bradley Woods", "INVPLANT": "woody invasives", "LATITUDE": 41.40780424, "LONGITUDE": -81.95355242, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.95355242, 41.40780424 ] } }
+,
+{ "type": "Feature", "id": 1690, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.42141522, "LONGITUDE": -81.85755185, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.85755185, 41.42141522 ] } }
+,
+{ "type": "Feature", "id": 1691, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.55235466, "LONGITUDE": -81.41915398, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41915398, 41.55235466 ] } }
+,
+{ "type": "Feature", "id": 1692, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.31913676, "LONGITUDE": -81.61202068, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.61202068, 41.31913676 ] } }
+,
+{ "type": "Feature", "id": 1693, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.42311023, "LONGITUDE": -81.41930045, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41930045, 41.42311023 ] } }
+,
+{ "type": "Feature", "id": 1694, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30659364, "LONGITUDE": -81.59807317, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.59807317, 41.30659364 ] } }
+,
+{ "type": "Feature", "id": 1695, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41472995, "LONGITUDE": -81.42377944, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42377944, 41.41472995 ] } }
+,
+{ "type": "Feature", "id": 1696, "properties": { "RES": "Bradley Woods", "INVPLANT": "woody invasives", "LATITUDE": 41.41736618, "LONGITUDE": -81.96622934, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.96622934, 41.41736618 ] } }
+,
+{ "type": "Feature", "id": 1697, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30605572, "LONGITUDE": -81.75882598, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.75882598, 41.30605572 ] } }
+,
+{ "type": "Feature", "id": 1698, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.21418672, "LONGITUDE": -81.71021736, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71021736, 41.21418672 ] } }
+,
+{ "type": "Feature", "id": 1699, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.41336384, "LONGITUDE": -81.885143, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.885143, 41.41336384 ] } }
+,
+{ "type": "Feature", "id": 1700, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.56454843, "LONGITUDE": -81.43030928, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43030928, 41.56454843 ] } }
+,
+{ "type": "Feature", "id": 1701, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.30161671, "LONGITUDE": -81.73797584, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.73797584, 41.30161671 ] } }
+,
+{ "type": "Feature", "id": 1702, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.33781517, "LONGITUDE": -81.82860015, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82860015, 41.33781517 ] } }
+,
+{ "type": "Feature", "id": 1703, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.20747056, "LONGITUDE": -81.73076331, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.73076331, 41.20747056 ] } }
+,
+{ "type": "Feature", "id": 1704, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.35166345, "LONGITUDE": -81.84626308, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.84626308, 41.35166345 ] } }
+,
+{ "type": "Feature", "id": 1705, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37781742, "LONGITUDE": -81.55629462, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.55629462, 41.37781742 ] } }
+,
+{ "type": "Feature", "id": 1706, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.58684743, "LONGITUDE": -81.41978196, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.41978196, 41.58684743 ] } }
+,
+{ "type": "Feature", "id": 1707, "properties": { "RES": "Bradley Woods", "INVPLANT": "woody invasives", "LATITUDE": 41.41864962, "LONGITUDE": -81.94489143, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.94489143, 41.41864962 ] } }
+,
+{ "type": "Feature", "id": 1708, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.31612509, "LONGITUDE": -81.80930924, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.80930924, 41.31612509 ] } }
+,
+{ "type": "Feature", "id": 1709, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.35147306, "LONGITUDE": -81.5767562, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.5767562, 41.35147306 ] } }
+,
+{ "type": "Feature", "id": 1710, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.38779701, "LONGITUDE": -81.55328108, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.55328108, 41.38779701 ] } }
+,
+{ "type": "Feature", "id": 1711, "properties": { "RES": "Euclid Creek", "INVPLANT": "woody invasives", "LATITUDE": 41.54673245, "LONGITUDE": -81.5264157, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.5264157, 41.54673245 ] } }
+,
+{ "type": "Feature", "id": 1712, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.29840162, "LONGITUDE": -81.76785159, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.76785159, 41.29840162 ] } }
+,
+{ "type": "Feature", "id": 1713, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.44105394, "LONGITUDE": -81.82669077, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.82669077, 41.44105394 ] } }
+,
+{ "type": "Feature", "id": 1714, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.31796734, "LONGITUDE": -81.79906236, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.79906236, 41.31796734 ] } }
+,
+{ "type": "Feature", "id": 1715, "properties": { "RES": "Garfield Park", "INVPLANT": "woody invasives", "LATITUDE": 41.42454698, "LONGITUDE": -81.6007985, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.6007985, 41.42454698 ] } }
+,
+{ "type": "Feature", "id": 1716, "properties": { "RES": "Hinckley", "INVPLANT": "woody invasives", "LATITUDE": 41.22400237, "LONGITUDE": -81.71329781, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.71329781, 41.22400237 ] } }
+,
+{ "type": "Feature", "id": 1717, "properties": { "RES": "Brecksville", "INVPLANT": "woody invasives", "LATITUDE": 41.34473087, "LONGITUDE": -81.59288278, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.59288278, 41.34473087 ] } }
+,
+{ "type": "Feature", "id": 1718, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.31851025, "LONGITUDE": -81.7979659, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.7979659, 41.31851025 ] } }
+,
+{ "type": "Feature", "id": 1719, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.33604741, "LONGITUDE": -81.8258452, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.8258452, 41.33604741 ] } }
+,
+{ "type": "Feature", "id": 1720, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.41027114, "LONGITUDE": -81.42840906, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.42840906, 41.41027114 ] } }
+,
+{ "type": "Feature", "id": 1721, "properties": { "RES": "Bedford", "INVPLANT": "woody invasives", "LATITUDE": 41.37845977, "LONGITUDE": -81.50003045, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.50003045, 41.37845977 ] } }
+,
+{ "type": "Feature", "id": 1722, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.45698911, "LONGITUDE": -81.81999446, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.81999446, 41.45698911 ] } }
+,
+{ "type": "Feature", "id": 1723, "properties": { "RES": "Mill Stream Run", "INVPLANT": "woody invasives", "LATITUDE": 41.29551481, "LONGITUDE": -81.78213829, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.78213829, 41.29551481 ] } }
+,
+{ "type": "Feature", "id": 1724, "properties": { "RES": "South Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.45253542, "LONGITUDE": -81.40660326, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.40660326, 41.45253542 ] } }
+,
+{ "type": "Feature", "id": 1725, "properties": { "RES": "Rocky River", "INVPLANT": "woody invasives", "LATITUDE": 41.3908674, "LONGITUDE": -81.87171939, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.87171939, 41.3908674 ] } }
+,
+{ "type": "Feature", "id": 1726, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.57993261, "LONGITUDE": -81.43493499, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43493499, 41.57993261 ] } }
+,
+{ "type": "Feature", "id": 1727, "properties": { "RES": "Bradley Woods", "INVPLANT": "woody invasives", "LATITUDE": 41.43785323, "LONGITUDE": -81.96940025, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.96940025, 41.43785323 ] } }
+,
+{ "type": "Feature", "id": 1728, "properties": { "RES": "North Chagrin", "INVPLANT": "woody invasives", "LATITUDE": 41.57684863, "LONGITUDE": -81.43240733, "COM_NAME": "Invasive Shrubs" }, "geometry": { "type": "Point", "coordinates": [ -81.43240733, 41.57684863 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

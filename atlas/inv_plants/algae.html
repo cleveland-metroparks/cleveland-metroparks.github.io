@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | IP Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<ul class="nav">
+			<li><a href="../index.html">home</a></li>
+		</ul>
+		
+		<div id="cmlogo"><img src="../images/cm_white.png" /></div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/algae.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+		
+
+		<h1 class="invplantlabel">Algae (<i>filamentous algae</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/acer2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer2.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer3.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer4.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer5.jpg" /></a></td>
+			</tr></table>
+		</div>
+		
+		
+		<h3>Form:</h3>
+					<p>Deciduous tree, 50+ feet tall, wide variety of moisture and light conditions.</p>
+				<h3>Leaves:</h3>
+					<p>Opposite, 4 to 6 inches across, 5-7 lobes, juice milky, few large teeth.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Late spring, green to tan, double samara with 2 widely spread "wings".</p>
+				<h3>Native Look alikes:</h3>
+					<p>Sugar Maple <i>(Acer saccharum)</i></p>
+				<h3>Tier: 2</h3>
+					<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+					<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+				<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 <a href="http://www.clevelandmetroparks.com/Main/Home.aspx" target="_blank">Cleveland Metroparks</a></p></div>
+      </div>
+   </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 535, "properties": { "RES": "Bradley Woods", "INVPLANT": "filamentous algae", "LATITUDE": 41.41651293, "LONGITUDE": -81.95088501, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.95088501, 41.41651293 ] } }
+,
+{ "type": "Feature", "id": 536, "properties": { "RES": "Mill Stream Run", "INVPLANT": "filamentous algae", "LATITUDE": 41.31597432, "LONGITUDE": -81.79962862, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.79962862, 41.31597432 ] } }
+,
+{ "type": "Feature", "id": 537, "properties": { "RES": "Hinckley", "INVPLANT": "filamentous algae", "LATITUDE": 41.20314959, "LONGITUDE": -81.70000801, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.70000801, 41.20314959 ] } }
+,
+{ "type": "Feature", "id": 538, "properties": { "RES": "Hinckley", "INVPLANT": "filamentous algae", "LATITUDE": 41.2034569, "LONGITUDE": -81.72560629, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.72560629, 41.2034569 ] } }
+,
+{ "type": "Feature", "id": 539, "properties": { "RES": "Rocky River", "INVPLANT": "filamentous algae", "LATITUDE": 41.40293003, "LONGITUDE": -81.88424333, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.88424333, 41.40293003 ] } }
+,
+{ "type": "Feature", "id": 540, "properties": { "RES": "North Chagrin", "INVPLANT": "filamentous algae", "LATITUDE": 41.5797325, "LONGITUDE": -81.43101708, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.43101708, 41.5797325 ] } }
+,
+{ "type": "Feature", "id": 541, "properties": { "RES": "North Chagrin", "INVPLANT": "filamentous algae", "LATITUDE": 41.56145311, "LONGITUDE": -81.43605017, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.43605017, 41.56145311 ] } }
+,
+{ "type": "Feature", "id": 542, "properties": { "RES": "Mill Stream Run", "INVPLANT": "filamentous algae", "LATITUDE": 41.35809264, "LONGITUDE": -81.85790721, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.85790721, 41.35809264 ] } }
+,
+{ "type": "Feature", "id": 543, "properties": { "RES": "Mill Stream Run", "INVPLANT": "filamentous algae", "LATITUDE": 41.36048242, "LONGITUDE": -81.85931736, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.85931736, 41.36048242 ] } }
+,
+{ "type": "Feature", "id": 544, "properties": { "RES": "South Chagrin", "INVPLANT": "filamentous algae", "LATITUDE": 41.38146622, "LONGITUDE": -81.48169511, "COM_NAME": "Algae" }, "geometry": { "type": "Point", "coordinates": [ -81.48169511, 41.38146622 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		var base = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			attribution: ' &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>'
+		}).addTo(map);
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": base,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+
