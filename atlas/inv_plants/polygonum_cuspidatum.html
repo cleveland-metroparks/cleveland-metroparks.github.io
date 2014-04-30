@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/polygonum.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Japanese Knotweed (<i>Polygonum cuspidatum</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/polygonum_cuspidatum/polygonum_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/polygonum_cuspidatum/polygonum_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/polygonum_cuspidatum/polygonum_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/polygonum_cuspidatum/polygonum_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/polygonum_cuspidatum/polygonum_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/polygonum_cuspidatum/polygonum_3.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/polygonum_cuspidatum/polygonum_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/polygonum_cuspidatum/polygonum_4.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/polygonum_cuspidatum/polygonum_5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/polygonum_cuspidatum/polygonum_5.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Arching herbaceous perennial, up to 10' tall. Hollow, reddish, bamboo-like stems are smooth and stout, often persisting after plant dies back to the ground each year. The base of the stem above each joint is swollen and surrounded by a membranous sheath.</p>
+				<h3>Leaves:</h3>
+					<p>Alternate, egg-shaped to almost triangular, 4-6" long, 3-4" wide. Dark green on upper surface, and pale green on lower surface.</p>
+				<h3>Flowers:</h3>
+					<p>Branched inflorescences of tiny, creamy white or greenish flowers emerge from leaf axils, near the end of stems. Bloom in late summer.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Small, winged, triangular fruits carry very small, shiny seeds.</p>
+				<h3>Roots:</h3>
+					<p>Grow up to 6' deep. Spreads rapidly via long, stout rhizomes, which can reach 65' or more from parent plant.</p>
+				<h3>Similar Species:</h3>
+					<p>Giant knotweed (<i>P. sachalinense</i>) non-native</p>
+				<h3>Tier 4 - Widespread and Abundant</h3>
+					<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+					<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1128, "properties": { "RES": "Bedford", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.37189659, "LONGITUDE": -81.56032974, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.56032974, 41.37189659 ] } }
+,
+{ "type": "Feature", "id": 1129, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.41755901, "LONGITUDE": -81.63922962, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.63922962, 41.41755901 ] } }
+,
+{ "type": "Feature", "id": 1130, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.39284482, "LONGITUDE": -81.8838041, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.8838041, 41.39284482 ] } }
+,
+{ "type": "Feature", "id": 1131, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.38602262, "LONGITUDE": -81.8670032, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.8670032, 41.38602262 ] } }
+,
+{ "type": "Feature", "id": 1132, "properties": { "RES": "Huntington", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.49084472, "LONGITUDE": -81.93476807, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.93476807, 41.49084472 ] } }
+,
+{ "type": "Feature", "id": 1133, "properties": { "RES": "North Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.55060577, "LONGITUDE": -81.41882527, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41882527, 41.55060577 ] } }
+,
+{ "type": "Feature", "id": 1134, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44221806, "LONGITUDE": -81.71621407, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.71621407, 41.44221806 ] } }
+,
+{ "type": "Feature", "id": 1135, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4433637, "LONGITUDE": -81.71074106, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.71074106, 41.4433637 ] } }
+,
+{ "type": "Feature", "id": 1136, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.541349, "LONGITUDE": -81.525277, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.525277, 41.541349 ] } }
+,
+{ "type": "Feature", "id": 1137, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4058499, "LONGITUDE": -81.8855588, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.8855588, 41.4058499 ] } }
+,
+{ "type": "Feature", "id": 1138, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.31696622, "LONGITUDE": -81.60031752, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.60031752, 41.31696622 ] } }
+,
+{ "type": "Feature", "id": 1139, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.31747609, "LONGITUDE": -81.59274816, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.59274816, 41.31747609 ] } }
+,
+{ "type": "Feature", "id": 1140, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43624851, "LONGITUDE": -81.4099248, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.4099248, 41.43624851 ] } }
+,
+{ "type": "Feature", "id": 1141, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.56656643, "LONGITUDE": -81.53425841, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.53425841, 41.56656643 ] } }
+,
+{ "type": "Feature", "id": 1142, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.55688437, "LONGITUDE": -81.53422863, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.53422863, 41.55688437 ] } }
+,
+{ "type": "Feature", "id": 1143, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.537851, "LONGITUDE": -81.523122, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.523122, 41.537851 ] } }
+,
+{ "type": "Feature", "id": 1144, "properties": { "RES": "Big Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.408975, "LONGITUDE": -81.75342801, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.75342801, 41.408975 ] } }
+,
+{ "type": "Feature", "id": 1145, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.40536623, "LONGITUDE": -81.88858517, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.88858517, 41.40536623 ] } }
+,
+{ "type": "Feature", "id": 1146, "properties": { "RES": "Brookside", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44832571, "LONGITUDE": -81.72116087, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.72116087, 41.44832571 ] } }
+,
+{ "type": "Feature", "id": 1147, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43933534, "LONGITUDE": -81.67202964, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.67202964, 41.43933534 ] } }
+,
+{ "type": "Feature", "id": 1148, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43249281, "LONGITUDE": -81.41451175, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41451175, 41.43249281 ] } }
+,
+{ "type": "Feature", "id": 1149, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46441726, "LONGITUDE": -81.83004207, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83004207, 41.46441726 ] } }
+,
+{ "type": "Feature", "id": 1150, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46519024, "LONGITUDE": -81.83186069, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83186069, 41.46519024 ] } }
+,
+{ "type": "Feature", "id": 1151, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.31903078, "LONGITUDE": -81.59859401, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.59859401, 41.31903078 ] } }
+,
+{ "type": "Feature", "id": 1152, "properties": { "RES": "Huntington", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.49028983, "LONGITUDE": -81.93139748, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.93139748, 41.49028983 ] } }
+,
+{ "type": "Feature", "id": 1153, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.47249748, "LONGITUDE": -81.82373921, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82373921, 41.47249748 ] } }
+,
+{ "type": "Feature", "id": 1154, "properties": { "RES": "Brookside", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44984566, "LONGITUDE": -81.72952451, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.72952451, 41.44984566 ] } }
+,
+{ "type": "Feature", "id": 1155, "properties": { "RES": "North Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.56626596, "LONGITUDE": -81.43897331, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.43897331, 41.56626596 ] } }
+,
+{ "type": "Feature", "id": 1156, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.29349805, "LONGITUDE": -81.57150504, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.57150504, 41.29349805 ] } }
+,
+{ "type": "Feature", "id": 1157, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44236209, "LONGITUDE": -81.40443253, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.40443253, 41.44236209 ] } }
+,
+{ "type": "Feature", "id": 1158, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44929644, "LONGITUDE": -81.83049404, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83049404, 41.44929644 ] } }
+,
+{ "type": "Feature", "id": 1159, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.45495599, "LONGITUDE": -81.821764, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.821764, 41.45495599 ] } }
+,
+{ "type": "Feature", "id": 1160, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.429595, "LONGITUDE": -81.668973, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.668973, 41.429595 ] } }
+,
+{ "type": "Feature", "id": 1161, "properties": { "RES": "Brookside", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44579671, "LONGITUDE": -81.72616284, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.72616284, 41.44579671 ] } }
+,
+{ "type": "Feature", "id": 1162, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46966516, "LONGITUDE": -81.83517437, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83517437, 41.46966516 ] } }
+,
+{ "type": "Feature", "id": 1163, "properties": { "RES": "Big Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44564205, "LONGITUDE": -81.75415296, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.75415296, 41.44564205 ] } }
+,
+{ "type": "Feature", "id": 1164, "properties": { "RES": "Garfield Park", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44487682, "LONGITUDE": -81.62702017, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.62702017, 41.44487682 ] } }
+,
+{ "type": "Feature", "id": 1165, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.45815123, "LONGITUDE": -81.82072621, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82072621, 41.45815123 ] } }
+,
+{ "type": "Feature", "id": 1166, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4214518, "LONGITUDE": -81.65315996, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.65315996, 41.4214518 ] } }
+,
+{ "type": "Feature", "id": 1167, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.47230468, "LONGITUDE": -81.82456844, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82456844, 41.47230468 ] } }
+,
+{ "type": "Feature", "id": 1168, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.55196692, "LONGITUDE": -81.53088012, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.53088012, 41.55196692 ] } }
+,
+{ "type": "Feature", "id": 1169, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43534124, "LONGITUDE": -81.65817977, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.65817977, 41.43534124 ] } }
+,
+{ "type": "Feature", "id": 1170, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4443258, "LONGITUDE": -81.40723167, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.40723167, 41.4443258 ] } }
+,
+{ "type": "Feature", "id": 1171, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44389487, "LONGITUDE": -81.40682312, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.40682312, 41.44389487 ] } }
+,
+{ "type": "Feature", "id": 1172, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44229197, "LONGITUDE": -81.71218991, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.71218991, 41.44229197 ] } }
+,
+{ "type": "Feature", "id": 1173, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.45784695, "LONGITUDE": -81.40585122, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.40585122, 41.45784695 ] } }
+,
+{ "type": "Feature", "id": 1174, "properties": { "RES": "Huntington", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.48993764, "LONGITUDE": -81.93098684, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.93098684, 41.48993764 ] } }
+,
+{ "type": "Feature", "id": 1175, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43840147, "LONGITUDE": -81.66871576, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.66871576, 41.43840147 ] } }
+,
+{ "type": "Feature", "id": 1176, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.53949718, "LONGITUDE": -81.52286501, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.52286501, 41.53949718 ] } }
+,
+{ "type": "Feature", "id": 1177, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46911426, "LONGITUDE": -81.83189415, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83189415, 41.46911426 ] } }
+,
+{ "type": "Feature", "id": 1178, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.47061756, "LONGITUDE": -81.82416676, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82416676, 41.47061756 ] } }
+,
+{ "type": "Feature", "id": 1179, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44439501, "LONGITUDE": -81.83030491, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83030491, 41.44439501 ] } }
+,
+{ "type": "Feature", "id": 1180, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.40764, "LONGITUDE": -81.88284063, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.88284063, 41.40764 ] } }
+,
+{ "type": "Feature", "id": 1181, "properties": { "RES": "Bedford", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.35191252, "LONGITUDE": -81.59055012, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.59055012, 41.35191252 ] } }
+,
+{ "type": "Feature", "id": 1182, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.47749274, "LONGITUDE": -81.83112162, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83112162, 41.47749274 ] } }
+,
+{ "type": "Feature", "id": 1183, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.47730266, "LONGITUDE": -81.82898578, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82898578, 41.47730266 ] } }
+,
+{ "type": "Feature", "id": 1184, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.41089038, "LONGITUDE": -81.88998718, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.88998718, 41.41089038 ] } }
+,
+{ "type": "Feature", "id": 1185, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.41582916, "LONGITUDE": -81.87533167, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.87533167, 41.41582916 ] } }
+,
+{ "type": "Feature", "id": 1186, "properties": { "RES": "North Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.53731581, "LONGITUDE": -81.41337649, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41337649, 41.53731581 ] } }
+,
+{ "type": "Feature", "id": 1187, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46684645, "LONGITUDE": -81.81890597, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.81890597, 41.46684645 ] } }
+,
+{ "type": "Feature", "id": 1188, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.28351899, "LONGITUDE": -81.56704539, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.56704539, 41.28351899 ] } }
+,
+{ "type": "Feature", "id": 1189, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43383943, "LONGITUDE": -81.41412813, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41412813, 41.43383943 ] } }
+,
+{ "type": "Feature", "id": 1190, "properties": { "RES": "North Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.52662177, "LONGITUDE": -81.41184043, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41184043, 41.52662177 ] } }
+,
+{ "type": "Feature", "id": 1191, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.39608514, "LONGITUDE": -81.88453058, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.88453058, 41.39608514 ] } }
+,
+{ "type": "Feature", "id": 1192, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43265398, "LONGITUDE": -81.84285332, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.84285332, 41.43265398 ] } }
+,
+{ "type": "Feature", "id": 1193, "properties": { "RES": "Bedford", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.37395682, "LONGITUDE": -81.57909391, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.57909391, 41.37395682 ] } }
+,
+{ "type": "Feature", "id": 1194, "properties": { "RES": "Garfield Park", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43792866, "LONGITUDE": -81.61601557, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.61601557, 41.43792866 ] } }
+,
+{ "type": "Feature", "id": 1195, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.46420619, "LONGITUDE": -81.81913905, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.81913905, 41.46420619 ] } }
+,
+{ "type": "Feature", "id": 1196, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4240747, "LONGITUDE": -81.41770127, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41770127, 41.4240747 ] } }
+,
+{ "type": "Feature", "id": 1197, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.54857896, "LONGITUDE": -81.52975146, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.52975146, 41.54857896 ] } }
+,
+{ "type": "Feature", "id": 1198, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43876909, "LONGITUDE": -81.67024239, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.67024239, 41.43876909 ] } }
+,
+{ "type": "Feature", "id": 1199, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.33602904, "LONGITUDE": -81.83425782, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83425782, 41.33602904 ] } }
+,
+{ "type": "Feature", "id": 1200, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43112091, "LONGITUDE": -81.41673411, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.41673411, 41.43112091 ] } }
+,
+{ "type": "Feature", "id": 1201, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.4199424, "LONGITUDE": -81.6452646, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.6452646, 41.4199424 ] } }
+,
+{ "type": "Feature", "id": 1202, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.42321712, "LONGITUDE": -81.66172093, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.66172093, 41.42321712 ] } }
+,
+{ "type": "Feature", "id": 1203, "properties": { "RES": "Brookside", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.45067422, "LONGITUDE": -81.72325447, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.72325447, 41.45067422 ] } }
+,
+{ "type": "Feature", "id": 1204, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.45473557, "LONGITUDE": -81.82170683, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82170683, 41.45473557 ] } }
+,
+{ "type": "Feature", "id": 1205, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.43376093, "LONGITUDE": -81.66365652, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.66365652, 41.43376093 ] } }
+,
+{ "type": "Feature", "id": 1206, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.31954778, "LONGITUDE": -81.58910435, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.58910435, 41.31954778 ] } }
+,
+{ "type": "Feature", "id": 1207, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.30473928, "LONGITUDE": -81.5850791, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.5850791, 41.30473928 ] } }
+,
+{ "type": "Feature", "id": 1208, "properties": { "RES": "Hinckley", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.21619576, "LONGITUDE": -81.68498199, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.68498199, 41.21619576 ] } }
+,
+{ "type": "Feature", "id": 1209, "properties": { "RES": "South Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.41529302, "LONGITUDE": -81.45529606, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.45529606, 41.41529302 ] } }
+,
+{ "type": "Feature", "id": 1210, "properties": { "RES": "Bedford", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.3779962, "LONGITUDE": -81.55518363, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.55518363, 41.3779962 ] } }
+,
+{ "type": "Feature", "id": 1211, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.54662094, "LONGITUDE": -81.52705634, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.52705634, 41.54662094 ] } }
+,
+{ "type": "Feature", "id": 1212, "properties": { "RES": "North Chagrin", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.54776673, "LONGITUDE": -81.42884332, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.42884332, 41.54776673 ] } }
+,
+{ "type": "Feature", "id": 1213, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.33532895, "LONGITUDE": -81.82504364, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.82504364, 41.33532895 ] } }
+,
+{ "type": "Feature", "id": 1214, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.32163258, "LONGITUDE": -81.61265728, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.61265728, 41.32163258 ] } }
+,
+{ "type": "Feature", "id": 1215, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.32057655, "LONGITUDE": -81.61321418, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.61321418, 41.32057655 ] } }
+,
+{ "type": "Feature", "id": 1216, "properties": { "RES": "Bradley Woods", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.41397951, "LONGITUDE": -81.94681126, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.94681126, 41.41397951 ] } }
+,
+{ "type": "Feature", "id": 1217, "properties": { "RES": "Big Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.35455982, "LONGITUDE": -81.83161054, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83161054, 41.35455982 ] } }
+,
+{ "type": "Feature", "id": 1218, "properties": { "RES": "Brecksville", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.30443761, "LONGITUDE": -81.60257188, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.60257188, 41.30443761 ] } }
+,
+{ "type": "Feature", "id": 1219, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.44689132, "LONGITUDE": -81.83786657, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.83786657, 41.44689132 ] } }
+,
+{ "type": "Feature", "id": 1220, "properties": { "RES": "Rocky River", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.42128983, "LONGITUDE": -81.85404571, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.85404571, 41.42128983 ] } }
+,
+{ "type": "Feature", "id": 1221, "properties": { "RES": "Lakefront", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.48737861, "LONGITUDE": -81.74506583, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.74506583, 41.48737861 ] } }
+,
+{ "type": "Feature", "id": 1222, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.58559966, "LONGITUDE": -81.56116831, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.56116831, 41.58559966 ] } }
+,
+{ "type": "Feature", "id": 1223, "properties": { "RES": "Euclid Creek", "INVPLANT": "Polygonum cuspidatum", "LATITUDE": 41.58485003, "LONGITUDE": -81.56113838, "COM_NAME": "Japanese Knotweed" }, "geometry": { "type": "Point", "coordinates": [ -81.56113838, 41.58485003 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		/**/
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

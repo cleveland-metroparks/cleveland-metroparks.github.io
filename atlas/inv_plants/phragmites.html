@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/phragmites.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Phragmites (<i>Phragmites australis ssp. australis</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/phragmites_australis/phragmites_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/phragmites_australis/phragmites_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/phragmites_australis/phragmites_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/phragmites_australis/phragmites_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/phragmites_australis/phragmites_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/phragmites_australis/phragmites_3.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/phragmites_australis/phragmites_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/phragmites_australis/phragmites_4.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Perennial grass 3-20' tall with cane-like stems, up to 1" in diameter.</p>
+				<h3>Leaves:</h3>
+					<p>Long and tapering, 1-1.5" wide at the base, 10-20" long, and smooth on the blade but rough on the margins. Usually blue-green, as opposed to the yellow-green leaves of native varieties, but may be yellow-green in brackish habitats.</p>
+				<h3>Flowers:</h3>
+					<p>Large, feathery panicles (loose branching inflorescences), 5-16" long, purple-brown, turning golden brown with age. Bloom in late summer.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>May produce thousands of  seeds annually, but viability is typically low.</p>
+				<h3>Roots:</h3>
+					<p>Dense network of roots and rhizomes, up to 6' deep. Rhizomes can grow over 10' a year.</p>
+				<h3>Similar Species:</h3>
+					<p>In North America, both native and introduced subspecies of <i>Phragmites australis</i> are found.</p>
+				<h3>Tier 4 - Widespread and Abundant</h3>
+					<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+					<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1028, "properties": { "RES": "Hinckley", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.21336454, "LONGITUDE": -81.70582999, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.70582999, 41.21336454 ] } }
+,
+{ "type": "Feature", "id": 1029, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.41071862, "LONGITUDE": -81.62917171, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.62917171, 41.41071862 ] } }
+,
+{ "type": "Feature", "id": 1030, "properties": { "RES": "South Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43679809, "LONGITUDE": -81.41543603, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.41543603, 41.43679809 ] } }
+,
+{ "type": "Feature", "id": 1031, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.42725079, "LONGITUDE": -81.66423857, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66423857, 41.42725079 ] } }
+,
+{ "type": "Feature", "id": 1032, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.41799174, "LONGITUDE": -81.64127587, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.64127587, 41.41799174 ] } }
+,
+{ "type": "Feature", "id": 1033, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.41756066, "LONGITUDE": -81.639015, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.639015, 41.41756066 ] } }
+,
+{ "type": "Feature", "id": 1034, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.35954907, "LONGITUDE": -81.85722184, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.85722184, 41.35954907 ] } }
+,
+{ "type": "Feature", "id": 1035, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.35654399, "LONGITUDE": -81.85541803, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.85541803, 41.35654399 ] } }
+,
+{ "type": "Feature", "id": 1036, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.388355, "LONGITUDE": -81.865449, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.865449, 41.388355 ] } }
+,
+{ "type": "Feature", "id": 1037, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44220834, "LONGITUDE": -81.7145843, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.7145843, 41.44220834 ] } }
+,
+{ "type": "Feature", "id": 1038, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.34263361, "LONGITUDE": -81.83638775, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83638775, 41.34263361 ] } }
+,
+{ "type": "Feature", "id": 1039, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.303562, "LONGITUDE": -81.743252, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.743252, 41.303562 ] } }
+,
+{ "type": "Feature", "id": 1040, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44864516, "LONGITUDE": -81.8341866, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.8341866, 41.44864516 ] } }
+,
+{ "type": "Feature", "id": 1041, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43109014, "LONGITUDE": -81.66402597, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66402597, 41.43109014 ] } }
+,
+{ "type": "Feature", "id": 1042, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31103023, "LONGITUDE": -81.62180987, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.62180987, 41.31103023 ] } }
+,
+{ "type": "Feature", "id": 1043, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43559817, "LONGITUDE": -81.66026654, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66026654, 41.43559817 ] } }
+,
+{ "type": "Feature", "id": 1044, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31643004, "LONGITUDE": -81.598924, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.598924, 41.31643004 ] } }
+,
+{ "type": "Feature", "id": 1045, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38173124, "LONGITUDE": -81.56681756, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.56681756, 41.38173124 ] } }
+,
+{ "type": "Feature", "id": 1046, "properties": { "RES": "South Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43796442, "LONGITUDE": -81.41156962, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.41156962, 41.43796442 ] } }
+,
+{ "type": "Feature", "id": 1047, "properties": { "RES": "Other Residential", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.2964196, "LONGITUDE": -81.75762447, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.75762447, 41.2964196 ] } }
+,
+{ "type": "Feature", "id": 1048, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.5588762, "LONGITUDE": -81.41889486, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.41889486, 41.5588762 ] } }
+,
+{ "type": "Feature", "id": 1049, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.29727391, "LONGITUDE": -81.78352842, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.78352842, 41.29727391 ] } }
+,
+{ "type": "Feature", "id": 1050, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.36701104, "LONGITUDE": -81.83122586, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83122586, 41.36701104 ] } }
+,
+{ "type": "Feature", "id": 1051, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.363764, "LONGITUDE": -81.829275, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.829275, 41.363764 ] } }
+,
+{ "type": "Feature", "id": 1052, "properties": { "RES": "Brookside", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44814417, "LONGITUDE": -81.72069721, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.72069721, 41.44814417 ] } }
+,
+{ "type": "Feature", "id": 1053, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.32378703, "LONGITUDE": -81.8086022, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.8086022, 41.32378703 ] } }
+,
+{ "type": "Feature", "id": 1054, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30358662, "LONGITUDE": -81.58733675, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.58733675, 41.30358662 ] } }
+,
+{ "type": "Feature", "id": 1055, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.46715521, "LONGITUDE": -81.82085713, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.82085713, 41.46715521 ] } }
+,
+{ "type": "Feature", "id": 1056, "properties": { "RES": "Brookside", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44984566, "LONGITUDE": -81.72952451, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.72952451, 41.44984566 ] } }
+,
+{ "type": "Feature", "id": 1057, "properties": { "RES": "Hinckley", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.20382786, "LONGITUDE": -81.70065502, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.70065502, 41.20382786 ] } }
+,
+{ "type": "Feature", "id": 1058, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.45155084, "LONGITUDE": -81.83074629, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83074629, 41.45155084 ] } }
+,
+{ "type": "Feature", "id": 1059, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38001202, "LONGITUDE": -81.84050239, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.84050239, 41.38001202 ] } }
+,
+{ "type": "Feature", "id": 1060, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38027303, "LONGITUDE": -81.83934089, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83934089, 41.38027303 ] } }
+,
+{ "type": "Feature", "id": 1061, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.37932386, "LONGITUDE": -81.8345012, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.8345012, 41.37932386 ] } }
+,
+{ "type": "Feature", "id": 1062, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30237288, "LONGITUDE": -81.58996121, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.58996121, 41.30237288 ] } }
+,
+{ "type": "Feature", "id": 1063, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.34016881, "LONGITUDE": -81.84283983, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.84283983, 41.34016881 ] } }
+,
+{ "type": "Feature", "id": 1064, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.29269791, "LONGITUDE": -81.5751188, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.5751188, 41.29269791 ] } }
+,
+{ "type": "Feature", "id": 1065, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.29301589, "LONGITUDE": -81.57344452, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.57344452, 41.29301589 ] } }
+,
+{ "type": "Feature", "id": 1066, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.47592851, "LONGITUDE": -81.82402349, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.82402349, 41.47592851 ] } }
+,
+{ "type": "Feature", "id": 1067, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43567519, "LONGITUDE": -81.65829362, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.65829362, 41.43567519 ] } }
+,
+{ "type": "Feature", "id": 1068, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.57575872, "LONGITUDE": -81.41948874, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.41948874, 41.57575872 ] } }
+,
+{ "type": "Feature", "id": 1069, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.35410217, "LONGITUDE": -81.58580901, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.58580901, 41.35410217 ] } }
+,
+{ "type": "Feature", "id": 1070, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30843753, "LONGITUDE": -81.60473315, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.60473315, 41.30843753 ] } }
+,
+{ "type": "Feature", "id": 1071, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31155482, "LONGITUDE": -81.78480384, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.78480384, 41.31155482 ] } }
+,
+{ "type": "Feature", "id": 1072, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31244573, "LONGITUDE": -81.58833016, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.58833016, 41.31244573 ] } }
+,
+{ "type": "Feature", "id": 1073, "properties": { "RES": "South Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.4581088, "LONGITUDE": -81.40603907, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.40603907, 41.4581088 ] } }
+,
+{ "type": "Feature", "id": 1074, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.33804642, "LONGITUDE": -81.83003103, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83003103, 41.33804642 ] } }
+,
+{ "type": "Feature", "id": 1075, "properties": { "RES": "Hinckley", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.26145414, "LONGITUDE": -81.68872497, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.68872497, 41.26145414 ] } }
+,
+{ "type": "Feature", "id": 1076, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.57503944, "LONGITUDE": -81.42100006, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.42100006, 41.57503944 ] } }
+,
+{ "type": "Feature", "id": 1077, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.28580064, "LONGITUDE": -81.57350416, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.57350416, 41.28580064 ] } }
+,
+{ "type": "Feature", "id": 1078, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.32454687, "LONGITUDE": -81.60979907, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.60979907, 41.32454687 ] } }
+,
+{ "type": "Feature", "id": 1079, "properties": { "RES": "West Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38829425, "LONGITUDE": -81.69655134, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.69655134, 41.38829425 ] } }
+,
+{ "type": "Feature", "id": 1080, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.47961786, "LONGITUDE": -81.83258248, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.83258248, 41.47961786 ] } }
+,
+{ "type": "Feature", "id": 1081, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.37533861, "LONGITUDE": -81.54205816, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.54205816, 41.37533861 ] } }
+,
+{ "type": "Feature", "id": 1082, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.37966416, "LONGITUDE": -81.54709285, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.54709285, 41.37966416 ] } }
+,
+{ "type": "Feature", "id": 1083, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38165333, "LONGITUDE": -81.53401235, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.53401235, 41.38165333 ] } }
+,
+{ "type": "Feature", "id": 1084, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30316233, "LONGITUDE": -81.62621392, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.62621392, 41.30316233 ] } }
+,
+{ "type": "Feature", "id": 1085, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.28488996, "LONGITUDE": -81.57747866, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.57747866, 41.28488996 ] } }
+,
+{ "type": "Feature", "id": 1086, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.28212543, "LONGITUDE": -81.56716673, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.56716673, 41.28212543 ] } }
+,
+{ "type": "Feature", "id": 1087, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.27986984, "LONGITUDE": -81.5691086, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.5691086, 41.27986984 ] } }
+,
+{ "type": "Feature", "id": 1088, "properties": { "RES": "Hinckley", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.21828853, "LONGITUDE": -81.71746239, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.71746239, 41.21828853 ] } }
+,
+{ "type": "Feature", "id": 1089, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.39614206, "LONGITUDE": -81.88546412, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.88546412, 41.39614206 ] } }
+,
+{ "type": "Feature", "id": 1090, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31745598, "LONGITUDE": -81.81039265, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.81039265, 41.31745598 ] } }
+,
+{ "type": "Feature", "id": 1091, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.28780818, "LONGITUDE": -81.57638124, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.57638124, 41.28780818 ] } }
+,
+{ "type": "Feature", "id": 1092, "properties": { "RES": "West Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38950492, "LONGITUDE": -81.6969012, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.6969012, 41.38950492 ] } }
+,
+{ "type": "Feature", "id": 1093, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44505299, "LONGITUDE": -81.70970064, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.70970064, 41.44505299 ] } }
+,
+{ "type": "Feature", "id": 1094, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.38398183, "LONGITUDE": -81.51259344, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.51259344, 41.38398183 ] } }
+,
+{ "type": "Feature", "id": 1095, "properties": { "RES": "Rocky River", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43123778, "LONGITUDE": -81.85227243, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.85227243, 41.43123778 ] } }
+,
+{ "type": "Feature", "id": 1096, "properties": { "RES": "Washington", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.45830434, "LONGITUDE": -81.66360288, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66360288, 41.45830434 ] } }
+,
+{ "type": "Feature", "id": 1097, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.32276907, "LONGITUDE": -81.60967654, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.60967654, 41.32276907 ] } }
+,
+{ "type": "Feature", "id": 1098, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.34310341, "LONGITUDE": -81.84260972, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.84260972, 41.34310341 ] } }
+,
+{ "type": "Feature", "id": 1099, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.42552321, "LONGITUDE": -81.66282744, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66282744, 41.42552321 ] } }
+,
+{ "type": "Feature", "id": 1100, "properties": { "RES": "South Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44432225, "LONGITUDE": -81.40799289, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.40799289, 41.44432225 ] } }
+,
+{ "type": "Feature", "id": 1101, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.42982313, "LONGITUDE": -81.66181427, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66181427, 41.42982313 ] } }
+,
+{ "type": "Feature", "id": 1102, "properties": { "RES": "Big Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.35789198, "LONGITUDE": -81.82447155, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.82447155, 41.35789198 ] } }
+,
+{ "type": "Feature", "id": 1103, "properties": { "RES": "Brookside", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.45078216, "LONGITUDE": -81.72264729, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.72264729, 41.45078216 ] } }
+,
+{ "type": "Feature", "id": 1104, "properties": { "RES": "Euclid Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.56059457, "LONGITUDE": -81.53423126, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.53423126, 41.56059457 ] } }
+,
+{ "type": "Feature", "id": 1105, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.29548417, "LONGITUDE": -81.77574242, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.77574242, 41.29548417 ] } }
+,
+{ "type": "Feature", "id": 1106, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44519286, "LONGITUDE": -81.67904794, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.67904794, 41.44519286 ] } }
+,
+{ "type": "Feature", "id": 1107, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43404746, "LONGITUDE": -81.6636108, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.6636108, 41.43404746 ] } }
+,
+{ "type": "Feature", "id": 1108, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.44097727, "LONGITUDE": -81.67018514, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.67018514, 41.44097727 ] } }
+,
+{ "type": "Feature", "id": 1109, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.42059006, "LONGITUDE": -81.64586167, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.64586167, 41.42059006 ] } }
+,
+{ "type": "Feature", "id": 1110, "properties": { "RES": "West Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.383189, "LONGITUDE": -81.697031, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.697031, 41.383189 ] } }
+,
+{ "type": "Feature", "id": 1111, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.55492995, "LONGITUDE": -81.41785734, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.41785734, 41.55492995 ] } }
+,
+{ "type": "Feature", "id": 1112, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.56680796, "LONGITUDE": -81.42118742, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.42118742, 41.56680796 ] } }
+,
+{ "type": "Feature", "id": 1113, "properties": { "RES": "North Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.55193839, "LONGITUDE": -81.42249364, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.42249364, 41.55193839 ] } }
+,
+{ "type": "Feature", "id": 1114, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.31809899, "LONGITUDE": -81.62357575, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.62357575, 41.31809899 ] } }
+,
+{ "type": "Feature", "id": 1115, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30564839, "LONGITUDE": -81.60786285, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.60786285, 41.30564839 ] } }
+,
+{ "type": "Feature", "id": 1116, "properties": { "RES": "Bradley Woods", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.4126718, "LONGITUDE": -81.94578635, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.94578635, 41.4126718 ] } }
+,
+{ "type": "Feature", "id": 1117, "properties": { "RES": "West Creek", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.39167623, "LONGITUDE": -81.68828658, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.68828658, 41.39167623 ] } }
+,
+{ "type": "Feature", "id": 1118, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.37569412, "LONGITUDE": -81.4897481, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.4897481, 41.37569412 ] } }
+,
+{ "type": "Feature", "id": 1119, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.32034274, "LONGITUDE": -81.59161728, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.59161728, 41.32034274 ] } }
+,
+{ "type": "Feature", "id": 1120, "properties": { "RES": "South Chagrin", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.40929313, "LONGITUDE": -81.40832101, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.40832101, 41.40929313 ] } }
+,
+{ "type": "Feature", "id": 1121, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.30625539, "LONGITUDE": -81.7580653, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.7580653, 41.30625539 ] } }
+,
+{ "type": "Feature", "id": 1122, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.32380509, "LONGITUDE": -81.61144296, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.61144296, 41.32380509 ] } }
+,
+{ "type": "Feature", "id": 1123, "properties": { "RES": "Brecksville", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.34408819, "LONGITUDE": -81.59194203, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.59194203, 41.34408819 ] } }
+,
+{ "type": "Feature", "id": 1124, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.3501903, "LONGITUDE": -81.5908143, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.5908143, 41.3501903 ] } }
+,
+{ "type": "Feature", "id": 1125, "properties": { "RES": "Bedford", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.36906647, "LONGITUDE": -81.55323333, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.55323333, 41.36906647 ] } }
+,
+{ "type": "Feature", "id": 1126, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.43163344, "LONGITUDE": -81.66520747, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.66520747, 41.43163344 ] } }
+,
+{ "type": "Feature", "id": 1127, "properties": { "RES": "Lakefront", "INVPLANT": "Phragmites australis ssp. australis", "LATITUDE": 41.48776368, "LONGITUDE": -81.73910506, "COM_NAME": "Phragmites" }, "geometry": { "type": "Point", "coordinates": [ -81.73910506, 41.48776368 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

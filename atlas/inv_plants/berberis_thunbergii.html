@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/barberry.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h6>
+		
+
+		<h1 class="invplantlabel">Barberry (<i>Berberis thunbergii</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/berberis_thunbergii/berberis_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/berberis_thunbergii/berberis_1.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/berberis_thunbergii/berberis_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/berberis_thunbergii/berberis_2.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/berberis_thunbergii/berberis_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/berberis_thunbergii/berberis_3.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/berberis_thunbergii/berberis_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/berberis_thunbergii/berberis_4.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/berberis_thunbergii/berberis_5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/berberis_thunbergii/berberis_5.jpg" /></a><h5>Leslie J. Mehrhoff, University of Connecticut, Bugwood.org</h5></td>
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Small, round, dense, spiny shrub, typically 2-3' tall, though it may grow up to 6' tall and 6' wide. The branches are reddish-brown, deeply grooved, somewhat zig-zag in form, and bear a single sharp spine at each node.</p>
+				
+				<h3>Leaves:</h3>
+					<p>Small, alternate, entire, and oval to spatulate. May be green, bluish-green, or dark reddish-purple, depending on the cultivar. Arranged in clusters above single spines.</p>
+				<h3>Flowers:</h3>
+					<p>Small, yellow, umbrella-shaped, with 6 petals. Single or in clusters of 2-4. Bloom in mid-spring.</p>
+				<h3>Fruits and Seeds:</h3>
+					<p>Small, bright red, oblong berries. Single or in clusters on narrow stalks. Mature in mid-summer and persist on shrub into winter. Dispersed by birds.</p>
+				<h3>Roots:</h3>
+					<p>Spreads vegetatively through horizontal lower branches that root freely when they touch the ground. Roots are yellow inside.</p>
+
+				<h3>Similar Species:</h3>
+					<p>American Barberry <i>(Berberis canadensis)</i> native</p>
+					<p>European Barberry <i>(Berberis vulgaris)</i> non-native</p>
+				<h3>Tier 2 - Assess As Needed</h3>
+					<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+					<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Spring/Summer; small plants can be sprayed with an herbicide solution.</p>
+					<p>Any; large plants are cut down.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 246, "properties": { "RES": "South Chagrin", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.43704987, "LONGITUDE": -81.41525252, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.41525252, 41.43704987 ] } }
+,
+{ "type": "Feature", "id": 247, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.39367353, "LONGITUDE": -81.87957294, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.87957294, 41.39367353 ] } }
+,
+{ "type": "Feature", "id": 248, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.44223845, "LONGITUDE": -81.71580344, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.71580344, 41.44223845 ] } }
+,
+{ "type": "Feature", "id": 249, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.37936747, "LONGITUDE": -81.86590003, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.86590003, 41.37936747 ] } }
+,
+{ "type": "Feature", "id": 250, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.31866682, "LONGITUDE": -81.61428362, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.61428362, 41.31866682 ] } }
+,
+{ "type": "Feature", "id": 251, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.31753952, "LONGITUDE": -81.59225824, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.59225824, 41.31753952 ] } }
+,
+{ "type": "Feature", "id": 252, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.31860733, "LONGITUDE": -81.60677178, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.60677178, 41.31860733 ] } }
+,
+{ "type": "Feature", "id": 253, "properties": { "RES": "Big Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.40908714, "LONGITUDE": -81.75365404, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.75365404, 41.40908714 ] } }
+,
+{ "type": "Feature", "id": 254, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.30304774, "LONGITUDE": -81.58776937, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.58776937, 41.30304774 ] } }
+,
+{ "type": "Feature", "id": 255, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.40353458, "LONGITUDE": -81.8932736, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.8932736, 41.40353458 ] } }
+,
+{ "type": "Feature", "id": 256, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.43193137, "LONGITUDE": -81.84751938, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.84751938, 41.43193137 ] } }
+,
+{ "type": "Feature", "id": 257, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.37322853, "LONGITUDE": -81.56554428, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.56554428, 41.37322853 ] } }
+,
+{ "type": "Feature", "id": 258, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.44283396, "LONGITUDE": -81.71294664, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.71294664, 41.44283396 ] } }
+,
+{ "type": "Feature", "id": 259, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.301819, "LONGITUDE": -81.608517, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.608517, 41.301819 ] } }
+,
+{ "type": "Feature", "id": 260, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.45117251, "LONGITUDE": -81.83758538, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.83758538, 41.45117251 ] } }
+,
+{ "type": "Feature", "id": 261, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.351872, "LONGITUDE": -81.59069285, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.59069285, 41.351872 ] } }
+,
+{ "type": "Feature", "id": 262, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.4155175, "LONGITUDE": -81.87557075, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.87557075, 41.4155175 ] } }
+,
+{ "type": "Feature", "id": 263, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.374304, "LONGITUDE": -81.578417, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.578417, 41.374304 ] } }
+,
+{ "type": "Feature", "id": 264, "properties": { "RES": "Brecksville", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.32261824, "LONGITUDE": -81.60965092, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.60965092, 41.32261824 ] } }
+,
+{ "type": "Feature", "id": 265, "properties": { "RES": "Rocky River", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.39168194, "LONGITUDE": -81.8719602, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.8719602, 41.39168194 ] } }
+,
+{ "type": "Feature", "id": 266, "properties": { "RES": "Euclid Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.55176627, "LONGITUDE": -81.53010738, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.53010738, 41.55176627 ] } }
+,
+{ "type": "Feature", "id": 267, "properties": { "RES": "Euclid Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.56653607, "LONGITUDE": -81.53446334, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.53446334, 41.56653607 ] } }
+,
+{ "type": "Feature", "id": 268, "properties": { "RES": "Huntington", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.48999456, "LONGITUDE": -81.93078761, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.93078761, 41.48999456 ] } }
+,
+{ "type": "Feature", "id": 269, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.38393489, "LONGITUDE": -81.53241905, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.53241905, 41.38393489 ] } }
+,
+{ "type": "Feature", "id": 270, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.37126025, "LONGITUDE": -81.55631205, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.55631205, 41.37126025 ] } }
+,
+{ "type": "Feature", "id": 271, "properties": { "RES": "South Chagrin", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.43072878, "LONGITUDE": -81.41752082, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.41752082, 41.43072878 ] } }
+,
+{ "type": "Feature", "id": 272, "properties": { "RES": "South Chagrin", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.41582174, "LONGITUDE": -81.42063793, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.42063793, 41.41582174 ] } }
+,
+{ "type": "Feature", "id": 273, "properties": { "RES": "West Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.38368824, "LONGITUDE": -81.69681511, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.69681511, 41.38368824 ] } }
+,
+{ "type": "Feature", "id": 274, "properties": { "RES": "Bedford", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.37146481, "LONGITUDE": -81.5609774, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.5609774, 41.37146481 ] } }
+,
+{ "type": "Feature", "id": 275, "properties": { "RES": "West Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.38933851, "LONGITUDE": -81.68503658, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.68503658, 41.38933851 ] } }
+,
+{ "type": "Feature", "id": 276, "properties": { "RES": "West Creek", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.39171043, "LONGITUDE": -81.69085472, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.69085472, 41.39171043 ] } }
+,
+{ "type": "Feature", "id": 277, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.34919225, "LONGITUDE": -81.83647745, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.83647745, 41.34919225 ] } }
+,
+{ "type": "Feature", "id": 278, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Berberis thunbergii", "LATITUDE": 41.30280986, "LONGITUDE": -81.80238889, "COM_NAME": "Japanese Barberry" }, "geometry": { "type": "Point", "coordinates": [ -81.80238889, 41.30280986 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

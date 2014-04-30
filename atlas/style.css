@@ -1,0 +1,381 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font: 12px Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #061C37;
+	background: #EEEFE4;
+	background-image:url(images/background1.png);
+	background-repeat:repeat-x; 
+}
+
+
+ #cm_logo {
+ position:relative;
+ margin:10px 0 0 20px;
+ z-index:1000;
+ width:500px;
+ }
+ 
+
+ #mipnlogo {
+ position:absolute;
+ right:30px;
+ top:55px;
+ z-index:1000;
+ }
+ 
+ #mipnlogo img {
+ height:50px;
+ width:auto;
+ }
+ 
+ .nav {
+ width:880px;
+ margin:0 auto;
+ text-decoration:none;
+ }
+ 
+ .nav li {
+ text-align:right;
+ color:white;
+ list-style:none;
+ }
+ 
+ .nav li a{
+ color:white;
+ text-decoration:none;
+ }
+ 
+ /*.nav li a:hover {
+ color:orange;
+ }*/
+ 
+#container {
+  display: block; 
+  height:auto;
+  position: relative; 
+  width: 940px;
+  margin:0 auto;
+  margin-bottom:20px;
+}
+
+#slideshow_container {
+    width: 900px;
+    height: 350px;
+	margin:0 auto;
+}
+
+#page_title{
+position:absolute;
+width:940px;
+height:auto;
+color:white;
+border:none;
+text-align:center;
+font-size:34px;
+margin-top:8px;
+}
+
+#iptable_header {
+padding-top:20px;
+text-align:center;
+border:none;
+}
+
+h1{font-weight: bold; font-size: 24px; letter-spacing: -1px; color: #333; line-height: 33px; text-align: center; border-bottom: 1px solid #cfcfcf; padding-bottom: 5px;}
+h3{font-weight: bold; font-size: 14px; color: #333; text-transform: uppercase; margin: 0 auto; border-bottom: 1px solid #cfcfcf; padding: 3px 0px 3px 5px;}
+h4{margin-left:10px;}
+h5{text-align:center; margin:0px; padding-top:5px;}
+h6{margin:0px; text-align:right; width:900px;}
+p{width:880px; margin: 8px 0 20px 10px; line-height: 18px;}
+
+
+table{margin-bottom:20px;}
+
+
+#menu {
+background-image:url(images/menu.png);
+background-repeat:no-repeat;
+width:940px;
+height:69px;
+float:left;
+clear:both;
+}
+
+
+
+#iptable{
+border-collapse:collapse;
+border:1px solid black;
+background-color:white;
+width:880px;
+margin-left:10px;
+}
+
+th {
+background-color: #244C2A;
+color: white;
+font-size:14px;
+text-align:center;
+height:20px;
+}
+
+#iptable tr:hover {
+background-color:rgb(220,220,220);
+border:1px solid rgb(180,180,180);
+}
+
+td {
+padding:5px;
+width:40px;
+text-align:center;
+border:1px solid rgb(220,220,220);
+}
+
+
+#content
+{
+width:900px;
+height:auto;
+background-color:#FFF;
+margin:0 auto;
+-webkit-box-shadow: 0px 5px 24px rgba(50, 50, 50, 0.5);
+-moz-box-shadow:    0px 5px 24px rgba(50, 50, 50, 0.5);
+box-shadow:         0px 5px 24px rgba(50, 50, 50, 0.5);
+}
+
+#content p a:link {color:#0000EE;}
+
+#content p a:visited {color:#0000EE;}
+
+#content p a:hover {color:#FF0000;}
+
+#content a:link {color:#000000;}
+
+#content a:visited {color:#000000;}
+
+#content a:hover {color:#244C2A;}
+
+#footer
+{
+background-color:#244C2A;
+width:inherit;
+height:50px;
+text-align:center;
+color:#white;
+}
+
+#footer p
+{
+color:white;
+display:inline;
+text-align:center;
+font-size:12px;
+text-decoration:none;
+line-height:50px;
+}
+
+
+#menu ul {
+	list-style: none;
+	padding: 0px;
+	margin-left:auto;
+	width:900px;
+}
+
+#menu li {
+	list-style: none;
+	padding: 5px;	
+	display: inline; 
+	
+}
+
+
+
+
+.map{
+position:relative;
+background-color:#eee;
+margin:10px 10px 40px 10px;
+left: 0;
+width: 880px;
+height:500px;
+}
+
+
+.header_img {
+    width: 900px;
+    height: 350px;
+	margin:0 auto;
+	margin-top:0px;
+}
+
+.invplantlabel {
+	margin:0px;
+	padding:10px;
+}
+
+.invplantpics {
+	display:inline-block;
+	height:150px;
+	width:150px;
+}
+
+.invplantpics img {
+	height:150px;
+	width:150px;
+}
+
+.invplantpics p{
+	text-align:center;
+}
+
+#invplantpiccontainer {
+width:100%;
+height:250px;
+margin:15px 0px 0px 0px;
+}
+
+#invplantpiccontainer table {
+width:100%;
+margin:0 auto;
+}
+
+
+
+#invplantpiccontainer td {
+padding: 3px;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+#invplantpiccontainer td:hover {
+text-decoration:underline;
+
+}
+
+#other_logos {
+list-style-type:none;
+width:1115px;
+padding:0px;
+margin:0 auto;
+background-color:#EEEFE4;
+border:none;
+}
+
+#other_logos li {
+display:inline-block;
+width:275px;
+}
+
+#other_logos li a {
+text-decoration:none;
+color:#EEEFE4;
+}
+
+#other_logos li a img{
+display:block;
+margin:0 auto;
+}
+
+
+
+
+/* MENU STYLES */
+
+#cssmenu {
+  position:relative;
+  width:900px;
+  border: none;
+  border: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+#cssmenu ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li {
+  float: left;
+  padding: 0px;
+}
+#cssmenu li a {
+  background: #333333 url('images/seperator.png') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  color: #cccccc;
+}
+#cssmenu ul ul a {
+  color: #cccccc;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #ffa600 url('images/hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: #333333;
+  display: none;
+  height: 230px;
+  overflow:auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 375px;
+  z-index: 200;
+  /*top:1em;
+	/*left:0;*/
+
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  background: url('images/sub_sep.png') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #ffa600 url('images/hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu p {
+  clear: left;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/typha.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Narrow-leaf Cattail (<i>Typha angustifolia</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/typha_angustifolia/typha_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/typha_angustifolia/typha_1.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/typha_angustifolia/typha_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/typha_angustifolia/typha_2.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/typha_angustifolia/typha_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/typha_angustifolia/typha_3.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/typha_angustifolia/typha_4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/typha_angustifolia/typha_4.jpg" /></a><h5>Cleveland Metroparks</h5></td>
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Perennial, grass-like, wetland plant with submersed stalks. Hybrid cattail is a hybrid of common and narrow-leaved cattails.</p>
+				<h3>Leaves:</h3>
+					<p>Erect, linear, flat, very narrow (0.25-0.5" wide), and 3-6' long. 12-16 leaves arise from the base of each shoot.</p>
+				<h3>Flowers:</h3>
+					<p>Dense cylindrical spike at end of stem. Inflorescence divided into upper section of yellow, male flowers and lower brown, cigar-shaped section of female flowers. Gap between male and female flowers is 0.4-0.5".</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Cigar-shaped, 2-6" long, with soft, downy seeds. Produces up to 250,000 seeds per year. Seeds remain viable in the soil for up to one-hundred years.</p>
+				<h3>Roots:</h3>
+					<p>Starchy rhizomes grow rapidly and may form a dense mat.</p>
+				<h3>Similar Species:</h3>
+					<p>Common cattail (<i>Typha latifolia</i>) native</p>
+				<h3>Tier 4 - Widespread and Abundant</h3>
+					<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+					<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1418, "properties": { "RES": "South Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.436819, "LONGITUDE": -81.414941, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.414941, 41.436819 ] } }
+,
+{ "type": "Feature", "id": 1419, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.43100151, "LONGITUDE": -81.66380845, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.66380845, 41.43100151 ] } }
+,
+{ "type": "Feature", "id": 1420, "properties": { "RES": "Big Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.37882313, "LONGITUDE": -81.83845784, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.83845784, 41.37882313 ] } }
+,
+{ "type": "Feature", "id": 1421, "properties": { "RES": "Big Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.37989494, "LONGITUDE": -81.83743825, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.83743825, 41.37989494 ] } }
+,
+{ "type": "Feature", "id": 1422, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.46728677, "LONGITUDE": -81.8203815, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.8203815, 41.46728677 ] } }
+,
+{ "type": "Feature", "id": 1423, "properties": { "RES": "Brecksville", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.31949023, "LONGITUDE": -81.59555081, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.59555081, 41.31949023 ] } }
+,
+{ "type": "Feature", "id": 1424, "properties": { "RES": "Hinckley", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.26172089, "LONGITUDE": -81.69198968, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.69198968, 41.26172089 ] } }
+,
+{ "type": "Feature", "id": 1425, "properties": { "RES": "Big Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.37888365, "LONGITUDE": -81.83431145, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.83431145, 41.37888365 ] } }
+,
+{ "type": "Feature", "id": 1426, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.47560405, "LONGITUDE": -81.82414872, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.82414872, 41.47560405 ] } }
+,
+{ "type": "Feature", "id": 1427, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.43528811, "LONGITUDE": -81.65794449, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.65794449, 41.43528811 ] } }
+,
+{ "type": "Feature", "id": 1428, "properties": { "RES": "North Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.5624072, "LONGITUDE": -81.43532618, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.43532618, 41.5624072 ] } }
+,
+{ "type": "Feature", "id": 1429, "properties": { "RES": "Brecksville", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.28509017, "LONGITUDE": -81.57787886, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.57787886, 41.28509017 ] } }
+,
+{ "type": "Feature", "id": 1430, "properties": { "RES": "West Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.38886139, "LONGITUDE": -81.69640088, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.69640088, 41.38886139 ] } }
+,
+{ "type": "Feature", "id": 1431, "properties": { "RES": "Bedford", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.3837483, "LONGITUDE": -81.51243846, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.51243846, 41.3837483 ] } }
+,
+{ "type": "Feature", "id": 1432, "properties": { "RES": "Washington", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.45849329, "LONGITUDE": -81.6634344, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.6634344, 41.45849329 ] } }
+,
+{ "type": "Feature", "id": 1433, "properties": { "RES": "West Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.39152782, "LONGITUDE": -81.69576749, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.69576749, 41.39152782 ] } }
+,
+{ "type": "Feature", "id": 1434, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.451845, "LONGITUDE": -81.83221135, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.83221135, 41.451845 ] } }
+,
+{ "type": "Feature", "id": 1435, "properties": { "RES": "Big Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.35798073, "LONGITUDE": -81.8246658, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.8246658, 41.35798073 ] } }
+,
+{ "type": "Feature", "id": 1436, "properties": { "RES": "Brecksville", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.32441025, "LONGITUDE": -81.60967384, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.60967384, 41.32441025 ] } }
+,
+{ "type": "Feature", "id": 1437, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.29538972, "LONGITUDE": -81.77641707, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.77641707, 41.29538972 ] } }
+,
+{ "type": "Feature", "id": 1438, "properties": { "RES": "North Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.58013582, "LONGITUDE": -81.41748351, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.41748351, 41.58013582 ] } }
+,
+{ "type": "Feature", "id": 1439, "properties": { "RES": "North Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.57077121, "LONGITUDE": -81.4376858, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.4376858, 41.57077121 ] } }
+,
+{ "type": "Feature", "id": 1440, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.43367556, "LONGITUDE": -81.66381572, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.66381572, 41.43367556 ] } }
+,
+{ "type": "Feature", "id": 1441, "properties": { "RES": "Ohio & Erie Canal", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.44115183, "LONGITUDE": -81.67010165, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.67010165, 41.44115183 ] } }
+,
+{ "type": "Feature", "id": 1442, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.45155084, "LONGITUDE": -81.83074629, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.83074629, 41.45155084 ] } }
+,
+{ "type": "Feature", "id": 1443, "properties": { "RES": "North Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.55213572, "LONGITUDE": -81.42195477, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.42195477, 41.55213572 ] } }
+,
+{ "type": "Feature", "id": 1444, "properties": { "RES": "West Creek", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.39170474, "LONGITUDE": -81.68854316, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.68854316, 41.39170474 ] } }
+,
+{ "type": "Feature", "id": 1445, "properties": { "RES": "North Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.55927447, "LONGITUDE": -81.4160197, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.4160197, 41.55927447 ] } }
+,
+{ "type": "Feature", "id": 1446, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.4305122, "LONGITUDE": -81.85342786, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.85342786, 41.4305122 ] } }
+,
+{ "type": "Feature", "id": 1447, "properties": { "RES": "Bedford", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.38138439, "LONGITUDE": -81.517304, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.517304, 41.38138439 ] } }
+,
+{ "type": "Feature", "id": 1448, "properties": { "RES": "South Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.41433513, "LONGITUDE": -81.45739631, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.45739631, 41.41433513 ] } }
+,
+{ "type": "Feature", "id": 1449, "properties": { "RES": "Brecksville", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.34175995, "LONGITUDE": -81.59496661, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.59496661, 41.34175995 ] } }
+,
+{ "type": "Feature", "id": 1450, "properties": { "RES": "Rocky River", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.41259818, "LONGITUDE": -81.88638113, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.88638113, 41.41259818 ] } }
+,
+{ "type": "Feature", "id": 1451, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.3381298, "LONGITUDE": -81.82958834, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.82958834, 41.3381298 ] } }
+,
+{ "type": "Feature", "id": 1452, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.31649352, "LONGITUDE": -81.81019125, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.81019125, 41.31649352 ] } }
+,
+{ "type": "Feature", "id": 1453, "properties": { "RES": "South Chagrin", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.41456295, "LONGITUDE": -81.47185542, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.47185542, 41.41456295 ] } }
+,
+{ "type": "Feature", "id": 1454, "properties": { "RES": "Brecksville", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.32388256, "LONGITUDE": -81.61174648, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.61174648, 41.32388256 ] } }
+,
+{ "type": "Feature", "id": 1455, "properties": { "RES": "Bedford", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.37345868, "LONGITUDE": -81.55489524, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.55489524, 41.37345868 ] } }
+,
+{ "type": "Feature", "id": 1456, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Typha angustifolia", "LATITUDE": 41.35510809, "LONGITUDE": -81.84555591, "COM_NAME": "Cattail" }, "geometry": { "type": "Point", "coordinates": [ -81.84555591, 41.35510809 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

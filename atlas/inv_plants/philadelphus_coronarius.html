@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | IP Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<ul class="nav">
+			<li><a href="../index.html">home</a></li>
+		</ul>
+		
+		<div id="cmlogo"><img src="../images/cm_white.png" /></div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/philadelphus_coronarius.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: Cleveland Metroparks</h6>
+		
+
+		<h1 class="invplantlabel">Sweet Mock-orange (<i>Philadelphus coronarius</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/acer2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer2.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer3.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer4.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer4.jpg" /></a></td>
+				<td class="invplantpics"><a href="../images/plants/other/acer5.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/thumbs/acer5.jpg" /></a></td>
+			</tr></table>
+		</div>
+		
+		
+		<h3>Form:</h3>
+					<p>Deciduous tree, 50+ feet tall, wide variety of moisture and light conditions.</p>
+				<h3>Leaves:</h3>
+					<p>Opposite, 4 to 6 inches across, 5-7 lobes, juice milky, few large teeth.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Late spring, green to tan, double samara with 2 widely spread "wings".</p>
+				<h3>Native Look alikes:</h3>
+					<p>Sugar Maple <i>(Acer saccharum)</i></p>
+				<h3>Tier: 2</h3>
+					<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+					<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+				<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 <a href="http://www.clevelandmetroparks.com/Main/Home.aspx" target="_blank">Cleveland Metroparks</a></p></div>
+      </div>
+   </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 1026, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Philadelphus coronarius", "LATITUDE": 41.44549557, "LONGITUDE": -81.70960128, "COM_NAME": "Sweet Mock-orange" }, "geometry": { "type": "Point", "coordinates": [ -81.70960128, 41.44549557 ] } }
+,
+{ "type": "Feature", "id": 1027, "properties": { "RES": "Euclid Creek", "INVPLANT": "Philadelphus coronarius", "LATITUDE": 41.55131843, "LONGITUDE": -81.52896119, "COM_NAME": "Sweet Mock-orange" }, "geometry": { "type": "Point", "coordinates": [ -81.52896119, 41.55131843 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		var base = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			attribution: ' &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors</a>'
+		}).addTo(map);
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": base,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+

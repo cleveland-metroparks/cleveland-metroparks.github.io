@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="../js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="../js/jquery-1.10.2.min.js"></script>
+	<script src="../js/lightbox-2.6.min.js"></script>
+	<link href="../css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="../slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../slideshow1/css/easySlides.default.min.css" />
+	<link href='../style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="../leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="../marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="../marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+
+		<div id="cm_logo"><img src="../images/cm_logo_horz.png"></div>
+
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='../index.html'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='../inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='../inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='../inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='../inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='../inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='../inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='../inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='../inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='../inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='../inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='../inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='../inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='../inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='../inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='../inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='../inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='../inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='../inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='../inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='../inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='../inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='../inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='../inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='../inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='../inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='../inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='../inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='../inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='../inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='../inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='../inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='../inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='../inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='../inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='../inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='../inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='../inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='../inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='../inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='../inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='../inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='../inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='../inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='../inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='../inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='../inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='../inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='../inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/torilis_spp.html'><span><i>Torilis spp.</i> - Hedgeparsley</span></a></li>
+				 <li><a href='../inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='../inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='../inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='../inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='../contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+
+
+		<div class="header_img">
+			<img src="../images/plants/header/ligustrum.jpg">
+		</div>   
+        
+	
+        
+				
+		<div id="content">
+			<h6>photo: The Dow Gardens Archive, Dow Gardens, Bugwood.org</h6>
+		
+
+		<h1 class="invplantlabel">Common Privet (<i>Ligustrum vulgare</i>)</h1>
+		
+		<div id="invplantpiccontainer">
+			<table><tr>
+
+				<td class="invplantpics"><a href="../images/plants/other/ligustrum_vulgare/ligustrum_1.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ligustrum_vulgare/ligustrum_1.jpg" /></a><h5>Robert Vidéki, Doronicum Kft., Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ligustrum_vulgare/ligustrum_2.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ligustrum_vulgare/ligustrum_2.jpg" /></a><h5>Nava Tabak, Invasive Plant Atlas of New England, Bugwood.org</h5></td>
+				<td class="invplantpics"><a href="../images/plants/other/ligustrum_vulgare/ligustrum_3.jpg" data-lightbox="acer" class="thumbs"><img src="../images/plants/other/ligustrum_vulgare/ligustrum_3.jpg" /></a><h5>Nava Tabak, Invasive Plant Atlas of New England, Bugwood.org</h5></td>
+
+
+			</tr></table>
+		</div>
+		
+		
+				<h3>Form:</h3>
+					<p>Perennial shrub or small tree with spreading branches, growing 12-15' tall, though it may reach up to 30'. Frequently as wide as it is tall. Trunks usually occur as multiple stems with many long, leafy branches attached at near-right angles. Several species occur, but they are difficult to distinguish.</p>
+				<h3>Leaves:</h3>
+					<p>Opposite, elliptic to ovate, with entire margins, leathery, tough, and 1-2" long.</p>
+				<h3>Flowers:</h3>
+					<p>White, with 4 petals fused into a tube, occurring in dense terminal inflorescences. Very abundant and strongly scented. Bloom in early summer.</p>
+				<h3>Fruits & Seeds:</h3>
+					<p>Abundant, ovoid, containing 1-4 seeds. Ripen in late summer to a dark purple-black and persist into winter. Fruits are poisonous to humans but are food for many birds, which distribute seeds. Mature plants can produce hundreds of fruits.</p>
+				<h3>Similar Species:</h3>
+					<p>Chinese privet (<i>L. sinense</i>) non-native</p>
+					<p>Japanese privet (<i>L. japonicum</i>) non-native</p>
+				<h3>Tier 2 - Assess As Needed</h3>
+					<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+					<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+				<!--<h3>Season Treated:</h3>
+					<p>Any; Mature trees are cut down, while smaller trees are girdled or cut-stumped and treated with a highly concentrated herbicide solution.</p>-->
+		
+			
+			<h1>Distribution Map</h1>
+			<div class="map" id="map"></div>
+
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  </div>
+	  <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="../images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="../images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="../images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="../images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+
+
+<script>
+var geoJsonData = {
+type: "FeatureCollection",
+                                                                                
+features: [
+{ "type": "Feature", "id": 676, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.33179208, "LONGITUDE": -81.82506492, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.82506492, 41.33179208 ] } }
+,
+{ "type": "Feature", "id": 677, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.44335273, "LONGITUDE": -81.84022035, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.84022035, 41.44335273 ] } }
+,
+{ "type": "Feature", "id": 678, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.38677315, "LONGITUDE": -81.86506998, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.86506998, 41.38677315 ] } }
+,
+{ "type": "Feature", "id": 679, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.44303839, "LONGITUDE": -81.71001668, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.71001668, 41.44303839 ] } }
+,
+{ "type": "Feature", "id": 680, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.31745934, "LONGITUDE": -81.61543857, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.61543857, 41.31745934 ] } }
+,
+{ "type": "Feature", "id": 681, "properties": { "RES": "Huntington", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.48784062, "LONGITUDE": -81.93617369, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.93617369, 41.48784062 ] } }
+,
+{ "type": "Feature", "id": 682, "properties": { "RES": "West Creek", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.3890625, "LONGITUDE": -81.68514011, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.68514011, 41.3890625 ] } }
+,
+{ "type": "Feature", "id": 683, "properties": { "RES": "North Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.53772292, "LONGITUDE": -81.41450104, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.41450104, 41.53772292 ] } }
+,
+{ "type": "Feature", "id": 684, "properties": { "RES": "North Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.56354287, "LONGITUDE": -81.41630554, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.41630554, 41.56354287 ] } }
+,
+{ "type": "Feature", "id": 685, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.3176986, "LONGITUDE": -81.59436705, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.59436705, 41.3176986 ] } }
+,
+{ "type": "Feature", "id": 686, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.31728789, "LONGITUDE": -81.60389971, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.60389971, 41.31728789 ] } }
+,
+{ "type": "Feature", "id": 687, "properties": { "RES": "South Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.43642395, "LONGITUDE": -81.4101856, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.4101856, 41.43642395 ] } }
+,
+{ "type": "Feature", "id": 688, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.34816172, "LONGITUDE": -81.84299752, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.84299752, 41.34816172 ] } }
+,
+{ "type": "Feature", "id": 689, "properties": { "RES": "Big Creek", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.40914008, "LONGITUDE": -81.7532857, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.7532857, 41.40914008 ] } }
+,
+{ "type": "Feature", "id": 690, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.40528084, "LONGITUDE": -81.8908678, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.8908678, 41.40528084 ] } }
+,
+{ "type": "Feature", "id": 691, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.32008054, "LONGITUDE": -81.59517071, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.59517071, 41.32008054 ] } }
+,
+{ "type": "Feature", "id": 692, "properties": { "RES": "Brookside", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.44722477, "LONGITUDE": -81.72332635, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.72332635, 41.44722477 ] } }
+,
+{ "type": "Feature", "id": 693, "properties": { "RES": "Bedford", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.37300084, "LONGITUDE": -81.56548356, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.56548356, 41.37300084 ] } }
+,
+{ "type": "Feature", "id": 694, "properties": { "RES": "North Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.56852154, "LONGITUDE": -81.41977585, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.41977585, 41.56852154 ] } }
+,
+{ "type": "Feature", "id": 695, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.44230072, "LONGITUDE": -81.71026515, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.71026515, 41.44230072 ] } }
+,
+{ "type": "Feature", "id": 696, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.46900179, "LONGITUDE": -81.83204685, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.83204685, 41.46900179 ] } }
+,
+{ "type": "Feature", "id": 697, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.4508082, "LONGITUDE": -81.83793451, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.83793451, 41.4508082 ] } }
+,
+{ "type": "Feature", "id": 698, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.44904709, "LONGITUDE": -81.83687157, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.83687157, 41.44904709 ] } }
+,
+{ "type": "Feature", "id": 699, "properties": { "RES": "Big Creek", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.4021318, "LONGITUDE": -81.75501074, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.75501074, 41.4021318 ] } }
+,
+{ "type": "Feature", "id": 700, "properties": { "RES": "Big Creek", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.39762992, "LONGITUDE": -81.76083758, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.76083758, 41.39762992 ] } }
+,
+{ "type": "Feature", "id": 701, "properties": { "RES": "Rocky River", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.39542271, "LONGITUDE": -81.88386442, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.88386442, 41.39542271 ] } }
+,
+{ "type": "Feature", "id": 702, "properties": { "RES": "Bedford", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.375148, "LONGITUDE": -81.57561, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.57561, 41.375148 ] } }
+,
+{ "type": "Feature", "id": 703, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.32267352, "LONGITUDE": -81.60937082, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.60937082, 41.32267352 ] } }
+,
+{ "type": "Feature", "id": 704, "properties": { "RES": "Cleveland Metroparks Zoo", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.4426179, "LONGITUDE": -81.71665824, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.71665824, 41.4426179 ] } }
+,
+{ "type": "Feature", "id": 705, "properties": { "RES": "South Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.43072878, "LONGITUDE": -81.41752082, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.41752082, 41.43072878 ] } }
+,
+{ "type": "Feature", "id": 706, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.30979715, "LONGITUDE": -81.78268368, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.78268368, 41.30979715 ] } }
+,
+{ "type": "Feature", "id": 707, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.31018884, "LONGITUDE": -81.78312875, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.78312875, 41.31018884 ] } }
+,
+{ "type": "Feature", "id": 708, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.34808708, "LONGITUDE": -81.84262877, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.84262877, 41.34808708 ] } }
+,
+{ "type": "Feature", "id": 709, "properties": { "RES": "Huntington", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.48983518, "LONGITUDE": -81.93130561, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.93130561, 41.48983518 ] } }
+,
+{ "type": "Feature", "id": 710, "properties": { "RES": "Bedford", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.38386658, "LONGITUDE": -81.532161, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.532161, 41.38386658 ] } }
+,
+{ "type": "Feature", "id": 711, "properties": { "RES": "South Chagrin", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.41488061, "LONGITUDE": -81.42178146, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.42178146, 41.41488061 ] } }
+,
+{ "type": "Feature", "id": 712, "properties": { "RES": "Bedford", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.37189659, "LONGITUDE": -81.56032974, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.56032974, 41.37189659 ] } }
+,
+{ "type": "Feature", "id": 713, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.31826144, "LONGITUDE": -81.62289116, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.62289116, 41.31826144 ] } }
+,
+{ "type": "Feature", "id": 714, "properties": { "RES": "West Creek", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.39157645, "LONGITUDE": -81.68946969, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.68946969, 41.39157645 ] } }
+,
+{ "type": "Feature", "id": 715, "properties": { "RES": "Mill Stream Run", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.29280374, "LONGITUDE": -81.80307003, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.80307003, 41.29280374 ] } }
+,
+{ "type": "Feature", "id": 716, "properties": { "RES": "Brecksville", "INVPLANT": "Ligustrum vulgare", "LATITUDE": 41.28517268, "LONGITUDE": -81.58926073, "COM_NAME": "Common Privet" }, "geometry": { "type": "Point", "coordinates": [ -81.58926073, 41.28517268 ] } }
+
+]
+};
+
+		var cloudmade = L.tileLayer('http://maps1.clemetparks.com/tilestache/tilestache.cgi/basemap/{z}/{x}/{y}.jpg', {
+			maxZoom: 18,
+			minZoom: 10,
+			attribution: 'Cleveland Metroparks &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		});
+
+		var map = L.map('map')
+				.addLayer(cloudmade);
+
+		var markers = L.markerClusterGroup();
+
+		var geoJsonLayer = L.geoJson(geoJsonData, {
+			onEachFeature: function (feature, layer) {
+				layer.bindPopup('<div id="popupcontent">' + '<div id="popup-title"><h2 class="popup">' + feature.properties.INVPLANT + '</h2></div>' + '<div id="popuptext">' + '<h4>' + '<span>' + "Common Name: " + '</span>' + feature.properties.COM_NAME + '</h4>' + '<h4>' + '<span>' + "Reservation: " + '</span>' + feature.properties.RES + '</h4>' + '</div>' + '</div>');
+			}
+		});
+		markers.addLayer(geoJsonLayer);
+
+		map.addLayer(markers);
+		map.fitBounds(markers.getBounds());
+
+
+		// Layers
+		
+		
+		
+		var aerial = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.map-7cfqm6fy/{z}/{x}/{y}.jpg', {
+			attribution: 'Imagery &copy <a href="http://Mapbox.com" target="_blank">MapBox</a>'
+		});
+		
+		var coreareas = L.tileLayer('http://a.tiles.mapbox.com/v3/cminvasiveplants.core_areas/{z}/{x}/{y}.jpg');
+		
+		// Layer Controller
+
+		var baseLayers = {
+			"Cleveland Metroparks": cloudmade,
+			"Aerial Imagery": aerial
+		};
+
+		var overlays = {
+			"Invasive Plants": markers,
+			"Core Areas": coreareas
+		};
+
+		L.control.layers(baseLayers, overlays).addTo(map);
+		
+		map.setView([41.3974, -81.671], 10);
+</script>
+   
+</body>
+</html>
+
