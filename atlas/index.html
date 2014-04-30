@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>CM | Invasive Plant Atlas</title>
+
+<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/tabbed.layout.js"></script>
+<!--Download page-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<!-- Map Links -->
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet' />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
+	<script type="text/Javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script type="text/Javascript" src="slideshow1/js/jquery.easyslides.min.v1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="slideshow1/css/easySlides.default.min.css" />
+	<link href='style_nav.css' rel='stylesheet' />
+	<link rel="stylesheet" href="leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+	<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+	<!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+	<![endif]-->
+	<link rel="stylesheet" href="marker_cluster/dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="marker_cluster/dist/MarkerCluster.Default.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="/mapbox.js/assets/MarkerCluster.Default.ie.css" />
+	<![endif]-->
+	<script src="marker_cluster/dist/leaflet.markercluster.js"></script>
+	<script src="marker_cluster/dist/leaflet.markercluster-src.js"></script>
+
+</head>
+<body style="overflow:auto">
+
+
+
+
+<div id="container">
+		
+		<div id="cm_logo"><img src="images/cm_logo_horz.png"></div>
+		
+		<div id='cssmenu'>
+		<ul>
+		   <li class='active'><a href='#'><span>Home</span></a></li>
+		   <li class='has-sub'><a href='#'><span>Plants</span></a>
+			  <ul>
+				 <li><a href='inv_plants/acer_platanoides.html'><span><i>Acer platanoides</i> - Norway Maple</span></a></li>
+				 <li><a href='inv_plants/aegopodium_podagraria.html'><span><i>Aegopodium podagraria</i> - Bishop's Goutweed</span></a></li>
+				 <li><a href='inv_plants/ailanthus_altissima.html'><span><i>Ailanthus altissima</i> - Tree of Heaven</span></a></li>
+				 <li><a href='inv_plants/alliaria_petiolata.html'><span><i>Alliaria petiolata</i> - Garlic Mustard</span></a></li>
+				 <li><a href='inv_plants/alnus_glutinosa.html'><span><i>Alnus glutinosa</i> - European Alder</span></a></li>
+				 <li><a href='inv_plants/ampelopsis.html'><span><i>Ampelopsis brevipedunculata</i> - Porcelain Berry</span></a></li>
+				 <li><a href='inv_plants/aralia_spinosa.html'><span><i>Aralia spinosa</i> - Devil's Walkingstick</span></a></li>
+				 <li><a href='inv_plants/artemisia_vulgaris.html'><span><i>Artemisia vulgaris</i> - Mugwort</span></a></li>
+				 <li><a href='inv_plants/berberis_thunbergii.html'><span><i>Berberis thunbergii</i> - Japanese Barberry</span></a></li>
+				 <li><a href='inv_plants/butomus_umbellatus.html'><span><i>Butomus umbellatus</i> - Flowering Rush</span></a></li>
+				 <li><a href='inv_plants/celastrus_orbiculatus.html'><span><i>Celastrus orbiculatus</i> - Oriental Bittersweet</span></a></li>
+				 <li><a href='inv_plants/centaurea_jacea.html'><span><i>Centaurea jacea</i> - Brown Knapweed</span></a></li>
+				 <li><a href='inv_plants/cirsium_arvense.html'><span><i>Cirsium arvense</i> - Canadian Thistle</span></a></li>
+				 <li><a href='inv_plants/cirsium_vulgare.html'><span><i>Cirsium vulgare</i> - Bull Thistle</span></a></li>
+				 <li><a href='inv_plants/conium_maculatum.html'><span><i>Conium maculatum</i> - Poison Hemlock</span></a></li>
+				 <li><a href='inv_plants/convallaria_majalis.html'><span><i>Convallaria majalis</i> - Lilly of the Valley</span></a></li>
+				 <li><a href='inv_plants/coronilla_varia.html'><span><i>Coronilla varia</i> - Crown Vetch</span></a></li>
+				 <li><a href='inv_plants/cynanchum_louiseae.html'><span><i>Cynanchum louiseae</i> - Black Swallow-wort</span></a></li>
+				 <li><a href='inv_plants/dipsacus_fullonum.html'><span><i>Dipsacus fullonum</i> - Common Teasel</span></a></li>
+				 <li><a href='inv_plants/dipsacus_laciniatus.html'><span><i>Dipsacus laciniatus</i> - Cut-Leaf Teasel</span></a></li>
+				 <li><a href='inv_plants/elaeagnus_umbellata.html'><span><i>Elaeagnus umbellata</i> - Autumn Olive</span></a></li>
+				 <li><a href='inv_plants/euonymus_alatus.html'><span><i>Euonymus alatus</i> - Burning Bush</span></a></li>
+				 <li><a href='inv_plants/euonymus_fortunei.html'><span><i>Euonymus fortunei</i> - Wintercreeper</span></a></li>
+				 <li><a href='inv_plants/frangula_alnus.html'><span><i>Frangula alnus</i> - Glossy Buckthorn</span></a></li>
+				 <li><a href='inv_plants/hedera_helix.html'><span><i>Hedera helix</i> - English Ivy</span></a></li>
+				 <li><a href='inv_plants/hesperis_matronalis.html'><span><i>Hesperis matronalis</i> - Dame's Rocket</span></a></li>
+				 <li><a href='inv_plants/humulus_japonicus.html'><span><i>Humulus japonicus</i> - Japanese Hops</span></a></li>
+				 <li><a href='inv_plants/hydrilla.html'><span><i>Hydrilla verticillata</i> - Hydrilla</span></a></li>
+				 <li><a href='inv_plants/iris_pseudacorus.html'><span><i>Iris pseudacorus</i> - Yellow Flag Iris</span></a></li>
+				 <li><a href='inv_plants/ligustrum_vulgare.html'><span><i>Ligustrum vulgare</i> - Common Privet</span></a></li>
+				 <li><a href='inv_plants/lonicera_japonica.html'><span><i>Lonicera japonica</i> - Japanese Honeysuckle</span></a></li>
+				 <li><a href='inv_plants/lonicera_maackii.html'><span><i>Lonicera maackii</i> - Amur Honeysuckle</span></a></li>
+				 <li><a href='inv_plants/lonicera_morrowii.html'><span><i>Lonicera morrowii</i> - Bush Honeysuckle</span></a></li>
+				 <li><a href='inv_plants/lythrum_salicaria.html'><span><i>Lythrum salicaria</i> - Purple Loosestrife</span></a></li>
+				 <li><a href='inv_plants/microstegium_vimineum.html'><span><i>Microstegium vimineum</i> - Japanese Stiltgrass</span></a></li>
+				 <li><a href='inv_plants/miscanthus_sinensus.html'><span><i>Miscanthus sinensis</i> - Chinese Silvergrass</span></a></li>
+				 <li><a href='inv_plants/myriophyllum_spicatum.html'><span><i>Myriophyllum spicatum</i> - Eurasian Watermilfoil</span></a></li>
+				 <li><a href='inv_plants/najas_minor.html'><span><i>Najas minor</i> - Brittle Najas</span></a></li>
+				 <li><a href='inv_plants/nymphoides_peltata.html'><span><i>Nymphoides peltata</i> - Yellow Floating Heart</span></a></li>
+				 <li><a href='inv_plants/ornithogalum_umbellatum.html'><span><i>Ornithogalum umbellatum</i> - Star of Bethlahem</span></a></li>
+				 <li><a href='inv_plants/pachysandra_terminalis.html'><span><i>Pachysandra terminalis</i> - Japanese Pachysandra</span></a></li>
+				 <li><a href='inv_plants/petasites_hybridus.html'><span><i>Petasites hybridus</i> - Common Butterbur</span></a></li>
+				 <li><a href='inv_plants/phalaris_arundinacea.html'><span><i>Phalaris arundinacea</i> - Reed Canary Grass</span></a></li>
+				 <li><a href='inv_plants/phragmites.html'><span><i>Phragmites australis ssp. australis</i> - Phragmites</span></a></li>
+				 <li><a href='inv_plants/polygonum_cuspidatum.html'><span><i>Polygonum cuspidatum</i> - Japanese Knotweed</span></a></li>
+				 <li><a href='inv_plants/pulmonaria_officinalis.html'><span><i>Pulmonaria officinalis</i> - Lungwort</span></a></li>
+				 <li><a href='inv_plants/ranunculus_ficaria.html'><span><i>Ranunculus ficaria</i> - Lesser Celendine</span></a></li>
+				 <li><a href='inv_plants/robinia_pseudoacacia.html'><span><i>Robinia pseudoacacia</i> - Black Locust</span></a></li>
+				 <li><a href='inv_plants/rosa_multiflora.html'><span><i>Rosa multiflora</i> - Multiflora Rose</span></a></li>
+				 <li><a href='inv_plants/rubus_phoenicolasius.html'><span><i>Rubus phoenicolasius</i> - Wineberry</span></a></li>
+				 <li><a href='inv_plants/torilis_japonica.html'><span><i>Torilis japonica</i> - Japanese Hedgeparsley</span></a></li>
+				 <li><a href='inv_plants/typha_angustifolia.html'><span><i>Typha angustifolia</i> - Narrow-leaf Cattail</span></a></li>
+				 <li><a href='inv_plants/viburnum_opulus.html'><span><i>Viburnum opulus var. opulus</i> - European Cranberry Bush</span></a></li>
+				 <li><a href='inv_plants/viburnum_plicatum.html'><span><i>Viburnum plicatum</i> - Japanese Snowball</span></a></li>
+				 <li><a href='inv_plants/vinca_minor.html'><span><i>Vinca minor</i> - Periwinkle</span></a></li>
+			  </ul>
+		   </li>
+		   <li class='last'><a href='contact/contact.html'><span>Contact</span></a></li>
+		</ul>
+		</div>
+
+		<div id="slideshow_container">
+			<div id="example_1_container" class="easy_slides_container"></div>
+		</div>   
+		
+		
+        
+        <div id="menu">
+        	<h1 id="page_title">Cleveland Metroparks Invasive Plant Atlas</h1>
+        </div>
+		
+    		
+		<div id="content">
+
+
+		<h3>This is the list of all positively identified invasive plant species throughout Cleveland Metroparks. New species will be added once found and identified.</h3>
+		
+		<h1 id="iptable_header">Invasive Plant List</h1>
+		
+
+		<table id="iptable">
+			<thead><tr><th>Scientific Name</th><th>Common Name</th><th>Tier</th></tr></thead>
+			<tr><td><a href="inv_plants/acer_platanoides.html"><i>Acer platanoides</i></a></td><td>Norway Maple</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/aegopodium_podagraria.html"><i>Aegopodium podagraria</i></a></td><td>Bishop's Goutweed</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/ailanthus_altissima.html"><i>Ailanthus altissima</i></a></td><td>Tree of Heaven</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/alliaria_petiolata.html"><i>Alliaria petiolata</i></a></td><td>Garlic Mustard</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/alnus_glutinosa.html"><i>Alnus glutinosa</i></a></td><td>European Alder</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/ampelopsis.html"><i>Ampelopsis brevipedunculata</i></a></td><td>Porcelain Berry</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/aralia_spinosa.html"><i>Aralia spinosa</i></a></td><td>Devil's Walkingstick</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/artemisia_vulgaris.html"><i>Artemisia vulgaris</i></a></td><td>Mugwort</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/berberis_thunbergii.html"><i>Berberis thunbergii</i></a></td><td>Japanese Barberry</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/butomus_umbellatus.html"><i>Butomus umbellatus</i></a></td><td>Flowering Rush</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/celastrus_orbiculatus.html"><i>Celastrus orbiculatus</i></a></td><td>Oriental Bittersweet</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/centaurea_jacea.html"><i>Centaurea jacea</i></a></td><td>Brown Knapweed</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/cirsium_arvense.html"><i>Cirsium arvense</i></a></td><td>Canadian Thistle</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/cirsium_vulgare.html"><i>Cirsium vulgare</i></a></td><td>Bull Thistle</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/conium_maculatum.html"><i>Conium maculatum</i></a></td><td>Poison Hemlock</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/convallaria_majalis.html"><i>Convallaria majalis</i></a></td><td>Lilly of the Valley</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/coronilla_varia.html"><i>Coronilla varia</i></a></td><td>Crown Vetch</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/cynanchum_louiseae.html"><i>Cynanchum louiseae</i></a></td><td>Black Swallow-wort</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/dipsacus_fullonum.html"><i>Dipsacus fullonum</i></a></td><td>Common Teasel</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/dipsacus_laciniatus.html"><i>Dipsacus laciniatus</i></a></td><td>Cut-Leaf Teasel</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/elaeagnus_umbellata.html"><i>Elaeagnus umbellata</i></a></td><td>Autumn Olive</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<!--<tr><td><a href="inv_plants/eleuthrococcus_sieboldianus.html"><i>Eleutherococcus sieboldianus</i></a></td><td>Five-Leaf Aralia</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>-->
+			<tr><td><a href="inv_plants/euonymus_alatus.html"><i>Euonymus alatus</i></a></td><td>Burning Bush</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/euonymus_fortunei.html"><i>Euonymus fortunei</i></a></td><td>Wintercreeper</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<!--<tr><td><a href="inv_plants/algae.html"><i>filamentous algae</i></a></td><td>Algae</td><td>Tier 3</td></tr>-->
+			<tr><td><a href="inv_plants/frangula_alnus.html"><i>Frangula alnus</i></a></td><td>Glossy Buckthorn</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/hedera_helix.html"><i>Hedera helix</i></a></td><td>English Ivy</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/hesperis_matronalis.html"><i>Hesperis matronalis</i></a></td><td>Dame's Rocket</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/humulus_japonicus.html"><i>Humulus japonicus</i></a></td><td>Japanese Hops</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/hydrilla.html"><i>Hydrilla verticillata</i></a></td><td>Hydrilla</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/iris_pseudacorus.html"><i>Iris pseudacorus</i></a></td><td>Yellow Flag Iris</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/ligustrum_vulgare.html"><i>Ligustrum vulgare</i></a></td><td>Common Privet</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/lonicera_japonica.html"><i>Lonicera japonica</i></a></td><td>Japanese Honeysuckle</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/lonicera_maackii.html"><i>Lonicera maackii</i></a></td><td>Amur Honeysuckle</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/lonicera_morrowii.html"><i>Lonicera morrowii</i></a></td><td>Bush Honeysuckle</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/lythrum_salicaria.html"><i>Lythrum salicaria</i></a></td><td>Purple Loosestrife</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/microstegium_vimineum.html"><i>Microstegium vimineum</i></a></td><td>Japanese Stiltgrass</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/miscanthus_sinensus.html"><i>Miscanthus sinensis</i></a></td><td>Chinese Silvergrass</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/myriophyllum_spicatum.html"><i>Myriophyllum spicatum</i></a></td><td>Eurasian Watermilfoil</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/najas_minor.html"><i>Najas minor</i></a></td><td>Brittle Najas</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/nymphoides_peltata.html"><i>Nymphoides peltata</i></a></td><td>Yellow Floating Heart</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<tr><td><a href="inv_plants/ornithogalum_umbellatum.html"><i>Ornithogalum umbellatum</i></a></td><td>Star of Bethlahem</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/pachysandra_terminalis.html"><i>Pachysandra terminalis</i></a></td><td>Japanese Pachysandra</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/petasites_hybridus.html"><i>Petasites hybridus</i></a></td><td>Common Butterbur</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/phalaris_arundinacea.html"><i>Phalaris arundinacea</i></a></td><td>Reed Canary Grass</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<!--<tr><td><a href="inv_plants/philadelphus_coronarius.html"><i>Philadelphus coronarius</i></a></td><td>Sweet Mock-orange</td><td>Tier 3</td></tr>-->
+			<tr><td><a href="inv_plants/phragmites.html"><i>Phragmites australis ssp. australis</i></a></td><td>Phragmites</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/polygonum_cuspidatum.html"><i>Polygonum cuspidatum</i></a></td><td>Japanese Knotweed</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/pulmonaria_officinalis.html"><i>Pulmonaria officinalis</i></a></td><td>Lungwort</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/ranunculus_ficaria.html"><i>Ranunculus ficaria</i></a></td><td>Lesser Celendine</td><td><a href="index.html#tiers_info">Tier 1</a></td></tr>
+			<tr><td><a href="inv_plants/robinia_pseudoacacia.html"><i>Robinia pseudoacacia</i></a></td><td>Black Locust</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/rosa_multiflora.html"><i>Rosa multiflora</i></a></td><td>Multiflora Rose</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/rubus_phoenicolasius.html"><i>Rubus phoenicolasius</i></a></td><td>Wineberry</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/torilis_japonica.html"><i>Torilis japonica</i></a></td><td>Japanese Hedgeparsley</td><td><a href="index.html#tiers_info">Tier 2</a></td></tr>
+			<!--<tr><td><a href="inv_plants/torilis_spp.html"><i>Torilis spp.</i></a></td><td>Hedgeparsley</td><td><a href="index.html#tiers_info">Tier 2</td></tr>-->
+			<tr><td><a href="inv_plants/typha_angustifolia.html"><i>Typha angustifolia</i></a></td><td>Narrow-leaf Cattail</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<tr><td><a href="inv_plants/viburnum_opulus.html"><i>Viburnum opulus var. opulus</i></a></td><td>European Cranberry Bush</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/viburnum_plicatum.html"><i>Viburnum plicatum</i></a></td><td>Japanese Snowball</td><td><a href="index.html#tiers_info">Tier 3</a></td></tr>
+			<tr><td><a href="inv_plants/vinca_minor.html"><i>Vinca minor</i></a></td><td>Periwinkle</td><td><a href="index.html#tiers_info">Tier 4</a></td></tr>
+			<!--<tr><td><a href="inv_plants/woody_invasives.html">Woody Invasives</a></td><td>Woody Invasive</td><td>Tier 4</td></tr>-->
+		</table>
+		
+			
+			<h1>Invasive Plant Map</h1>
+			<div class="map" id="map"></div>
+			
+		
+		<h1 id="tiers_info">Invasive Plant Tiers</h1>
+		
+		<h3>Tier 1 - Early Detection/Rapid Response</h3>
+		
+			<p>These species are known to be highly invasive in natural areas, but are not yet widespread in Cleveland Metroparks. With Limited distrabution, immediate action will minimize management cost and long-term ecological impact of these aggressive species.</p>
+
+			<p>Action: A GPS point is taken and the Invasive Plant Coordinator should be notified, so the Invasive Plant Management Crew can respond accordingly.</p>
+			
+		<h3>Tier 2 - Assess as Needed</h3>
+		
+			<p>The size and extent of these species populations are currently being inventoried with limited geographic information available. This survey will assist with identifying future control targets as populations are defined.</p>
+		
+			<p>Action: The inventory of these plants is ongoing. The approximate number of plants should be recorded keeping in mind population sizes may be highly variable.</p>
+		
+		<h3>Tier 3 - Presence is of Interest</h3>
+		
+			<p>The species that occur in this tier are likely ornamental escapes. It is not known whether they are established and/or spreading within Cleveland Metroparks. The ecological impact is poorly known for these species.</p>
+		
+			<p>Action: The presence of these plants should be recorded by approximating the number of plants. Initial population numbers are likely small.</p>
+		
+		<h3>Tier 4 - Widespread and Abundant</h3>
+		
+			<p>These are known problem species throughout Cleveland Metroparks and are currently under active management. Management plans are set using population extent and site-specific information.</p>
+
+			<p>Action: These plants should be recored as present or absent. These species are known to be widespread and abundant throughout Cleveland Metroparks.</p>
+
+		<h1>Core Areas</h1>
+		<p>Designated sensitive, contiguous natural resource areas for priority conservation attention based on <a href="http://www.clevelandmetroparks.com/Main/MasterPlanning.aspx" target="_blank">CLEVELAND METROPARKS 2020: THE EMERALD NECKLACE CENTENNIAL PLAN.</a> These areas are considered biologically important to our parks and therefore are a priority for invasive plant removal. For more information on how invasive plants are handled throughout Cleveland Metroparks <a href="http://www.clevelandmetroparks.com/Main/Invasive-Plant-Management.aspx" target="_blank">click here</a>.</p>
+            
+            <div id="footer"><p>2013 Cleveland Metroparks</p></div>
+      </div>
+	  
+    
+   </div>
+   
+   <div>
+		<ul id="other_logos">
+			<li><a href="http://mipn.org/" target="_blank"><img src="images/MIPN-logo.jpg" /></a></li>
+			<li><a href="http://www.invasive.org/index.cfm" target="_blank"><img src="images/invasive_org_logo.jpg" /></a></li>
+			<li><a href="http://ohiodnr.com/forestry/ForestryHome/tabid/4803/Default.aspx" target="_blank"><img src="images/ODNR_forestry_logo.gif" /></a></li>
+			<li><a href="http://www.eddmaps.org/ipane/" target="_blank"><img src="images/IPANE_logo.jpg" /></a></li>
+		</ul>
+	  </div>
+   
+<!--Website interactivity scripts-->
+
+<script>
+
+// Set up our options for the slideshow...
+var myOptions = {
+    noImages: 5, // Number of images
+    path: "images/", // Relative path with trailing slash.
+    captions: { // HTML can be included in the captions.
+        1: '',
+        2: '',
+        3: '',
+        4: '',
+		5: ''
+    },
+    links: { // Should the images link anywhere? if no links are required at all then this option can be omitted.
+        1:"",
+        2:"",
+        3:"",
+        4:"",
+		5:""
+    },
+    linksOpen:'newWindow', // How to open links? sameWindow or newWindow.
+    timerInterval: 15000, // 10000 = 10 seconds
+    randomise: false // Start with random image? true=yes/false=no
+};
+
+// Initiate the Easy Slides plugin, assigning it to your contaner DIV...
+$('#slideshow_container').easySlides(myOptions);
+
+</script>
+
+<!--MAP functionality scripts-->   
+
+<script src="js/ip_data.js"></script>
+ 
+</body>
+</html>
+
