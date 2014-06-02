@@ -145,17 +145,17 @@ margin:0 auto;
 box-shadow:         0px 5px 24px rgba(50, 50, 50, 0.5);
 }
 
-#content p a:link {color:#0000EE;}
+#content p a:link {color:#395DB2;}
 
 #content p a:visited {color:#0000EE;}
 
-#content p a:hover {color:#FF0000;}
+#content p a:hover {color:#FFA600;}
 
-#content a:link {color:#000000;}
+#content a:link {color:#395DB2;}
 
 #content a:visited {color:#000000;}
 
-#content a:hover {color:#244C2A;}
+#content a:hover {color:#FFA600;}
 
 #footer
 {
