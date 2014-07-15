@@ -55,9 +55,9 @@ color:#3A6028;
 width:940px;
 background-color:#FFF;
 font-family: 'Roboto Condensed', sans-serif;
-font-size: 16px;
+font-size: 18px;
 font-weight:300;
-color:#a5a5a5;
+color:#818181;
 padding-left:10px;
 padding-right:10px;
 padding-bottom:5px;
@@ -377,6 +377,18 @@ html[xmlns] .slides { display: block; }
  
 }
 
+/* Map 1 Legend */
+	#legend-content-map1 {
+	  height:75px;
+	  width:235px;
+	  z-index:9999;
+	  background-color:white;
+	  padding:5px;
+	  margin-left:0px;
+	  font-size:12px;
+	}
+
+
 
 
 /* Map 2 legend */
@@ -384,12 +396,13 @@ html[xmlns] .slides { display: block; }
 	#legend-content {
 	position:absolute;
 	  height:75px;
-	  width:305px;
+	  width:235px;
 	  left:55px;
-	  bottom:1500px;
+	  bottom:1682px;
 	  z-index:9999;
 	  background-color:white;
 	  padding:5px;
+	  font-size:12px;
 	}
 
     .my-legend .legend-title {
@@ -400,7 +413,6 @@ html[xmlns] .slides { display: block; }
       }
 
     .my-legend .legend-source {
-      font-size: 70%;
       color: #999;
       clear: both;
       }
