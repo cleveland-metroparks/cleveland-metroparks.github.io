@@ -899,10 +899,7 @@ myLayer.on('layeradd', function(e) {
 
 
     // Create custom popup content
-    var popupContent =  '<div class="popup_container">' + '<table>' + '<tr>' + '<td>' + '<p>' + "Trap" + '</p>' + '</td>' + '<td>' + feature.properties.trap + '</td>' + '</tr>' + 
-																	  '<tr>' + '<td>' + '<p>' + "Reservation" + '</p>' + '</td>' + '<td>' + feature.properties.res + '</td>' + '</tr>' +
-																	  '<tr>' + '<td>' + '<p>' + "Num EAB Trapped" + '</p>' + '</td>' + '<td>' + feature.properties.count + '</td>' + '</tr>' + 
-														  '</table>' + '</div>'
+    var popupContent ='<div class="popup_container">' + '<h3>' + feature.properties.res + '</h3>' + '<h4>' + 'Trap:' + '</h4>' + '<p>' + feature.properties.trap + '</p>' + '<h4>' + 'Number of EAB Trapped:' + '</h4>' + '<p>' + feature.properties.count + '</p>' + '</div>'
 
 
     // http://leafletjs.com/reference.html#popup
