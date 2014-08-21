@@ -11,51 +11,14 @@
   <!--[if lte IE 8]>
     <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
   <![endif]-->
-  
-  
 </head>
 
 
 <body>
 
-<div class="tabs">
-    <ul class="tab-links">
-        <li class="active"><a href="#tab1">2014</a></li>
-        <li><a href="#tab2">2013</a></li>
-    </ul>
-	
-    <div class="tab-content">
-        <div id="tab2" class="tab active">
-
-		<h1>Something goes here</h1>
-		
-<div id='map2'></div>
-		
-<div id='legend-content'>
-  <div class='my-legend'>
-  <div class='legend-scale'>
-    <ul class='legend-labels'>
-      <li><center><img class="legend_img" src="images/legend_extreme.png" /></center><span style="background-color:#5D150F;"></span>Extreme</li>
-      <li><center><img class="legend_img" src="images/legend_veryhigh.png" /></center><span style="background-color:#FE0000;"></span>Very High</li>
-      <li><center><img class="legend_img" src="images/legend_high.png" /></center><span style="background-color:#F9AC10;"></span>High</li>
-      <li><center><img class="legend_img" src="images/legend_moderate.png" /></center><span style="background-color:#FEFE00;"></span>Moderate</li>
-      <li><center><img class="legend_img" src="images/legend_low.png" /></center><span style="background-color:#00BE00;"></span>Low</li>
-	  <li><center><img class="legend_img" src="images/legend_notranked.png" /></center><span style="background-color:#C4C4C4;"></span>Rank Not Needed</li>
-	  <!--<li><center><img class="legend_img" src="images/infrastructure_issues.png" /></center><span style="background-color:#fff;"></span>Infrastructure Issues</li>-->
-    </ul>
-  </div>
-  </div>
-</div>
-
-</div><!-- Close id="tab1" -->
-
-
-
-        <div id="tab1" class="tab">
-
 <div id='map'></div>
 
-<!--<div><img id="cm-map-logo" src="images/cm_logo_white.png"></div>-->
+<div><img id="cm-map-logo" src="images/cm_logo_white.png"></div>
 
 <div id='legend-content'>
   <div class='my-legend'>
@@ -1233,21 +1196,10 @@
 	</div>
 </div><!-- Close id="navigation" -->
 <!-- Creates the map and adds it to the map DIV -->
-
-</div><!-- Close id="tab2" -->
-</div><!-- Close class="tab-content" -->
-
-<!-- makes the tabs work -->
-<script src='js/tabs.js'></script>
-
-<!-- adds the map -->
-<script>var map2 = L.mapbox.map('map2');</script>
 <script>var map = L.mapbox.map('map');</script>
-
 
 <!--<script src='js/infrastructure_issues.js'></script>-->
 <!--<script src='js/behi1.js'></script>-->
-<script src='js/final_behi_data 2014.js'></script>
 <script src='js/final_behi_data.js'></script>
 
 </body>
